@@ -43,7 +43,7 @@ Framework for leveraging platform-native dynamic creative tools to test multiple
 - **Cannibalization Risk**: ASC/PMax can cannibalize branded search if not configured with exclusions
 - **Fatigue Masking**: DCO rotates assets, potentially hiding overall decline
 
-### DCO vs Manual Testing
+### DCO vs Manual A/B Testing
 - DCO: Fast, many combinations, low control, opaque significance
 - Manual A/B: Slow, one variable, high control, clear significance
 - Use DCO for scale optimization, manual for deep creative learning

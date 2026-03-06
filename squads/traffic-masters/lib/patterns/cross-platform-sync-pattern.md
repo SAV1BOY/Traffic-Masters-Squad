@@ -1,0 +1,217 @@
+# Cross-Platform Sync Pattern
+
+## Purpose
+Pattern for synchronizing paid traffic campaigns across multiple advertising platforms. Ensures consistent messaging, coordinated budget allocation, unified measurement, and strategic synergy between channels.
+
+---
+
+## Cross-Platform Architecture
+
+```
+                    UNIFIED STRATEGY
+                         |
+           +-------------+-------------+
+           |             |             |
+       META ADS     GOOGLE ADS    TIKTOK ADS
+       (Social)     (Search/      (Social/
+                    Shopping/      Video)
+                    Video)
+           |             |             |
+           +-------------+-------------+
+                         |
+                 UNIFIED MEASUREMENT
+                 (GA4 / MMP / BI Tool)
+```
+
+---
+
+## Synchronization Layers
+
+### Layer 1: Strategy Sync
+
+All platforms should serve a unified strategy with coordinated roles.
+
+| Platform | Primary Role | Funnel Stages | Strengths |
+|---|---|---|---|
+| **Meta Ads** | Demand generation, retargeting | TOFU, MOFU, BOFU | Creative storytelling, precise audiences, broad reach |
+| **Google Search** | Intent capture | MOFU, BOFU | High-intent traffic, keyword targeting |
+| **Google Shopping** | Product discovery and conversion | MOFU, BOFU | Product-level targeting, visual shopping |
+| **YouTube** | Awareness, education, retargeting | TOFU, MOFU | Video storytelling, in-stream reach |
+| **TikTok** | Awareness, discovery | TOFU, MOFU | Viral reach, younger demographics, native content |
+| **LinkedIn** | B2B demand gen, thought leadership | TOFU, MOFU | Professional targeting, decision-maker reach |
+
+### Role Assignment Template
+
+```
+Business Objective: {{OBJECTIVE}}
+
+Channel Roles:
+  Primary Prospecting: {{PLATFORM}} -- Role: {{ROLE}}
+  Secondary Prospecting: {{PLATFORM}} -- Role: {{ROLE}}
+  Intent Capture: {{PLATFORM}} -- Role: {{ROLE}}
+  Retargeting: {{PLATFORM}} -- Role: {{ROLE}}
+  Retention: {{PLATFORM}} -- Role: {{ROLE}}
+```
+
+---
+
+### Layer 2: Audience Sync
+
+Coordinate audiences across platforms to avoid gaps and overlap.
+
+#### Audience Mapping
+
+| Audience Segment | Meta | Google | TikTok | YouTube | Sync Method |
+|---|---|---|---|---|---|
+| **Website Retargeting (0-30d)** | Custom Audience (pixel) | RLSA | Custom Audience | RLSA (via Google) | Pixel + CAPI on all platforms |
+| **Customer List** | Custom Audience (upload) | Customer Match | Custom Audience | Customer Match | CRM sync (weekly upload or live) |
+| **Lookalike / Similar** | LAL 1% purchasers | Similar Audiences | LAL purchasers | Similar Audiences | Same seed list, platform builds |
+| **Cart Abandoners** | Custom Audience (event) | RLSA + dynamic | Custom Audience | -- | Pixel event-based |
+| **Video Viewers** | Engaged Video Viewers | YouTube viewers | Video viewers | YouTube viewers | Platform-native |
+| **Broad Prospecting** | Broad / ASC | PMax / Broad Match | Broad | Discovery | Algorithm-driven |
+
+#### Cross-Platform Retargeting Sequence
+
+```
+Day 0: User sees Meta prospecting ad, clicks, visits site
+Day 1-3: Google RLSA captures search intent from same user
+Day 3-7: Meta retargeting shows social proof ad
+Day 7-14: YouTube retargeting shows testimonial video
+Day 14-21: Meta retargeting shows urgency/offer ad
+Day 21-30: Final retargeting across all platforms with strong CTA
+Day 30+: Suppress from retargeting, move to email nurture
+```
+
+---
+
+### Layer 3: Creative Sync
+
+Adapt creative for each platform while maintaining consistent messaging.
+
+#### Creative Adaptation Matrix
+
+| Element | Meta (Feed) | Meta (Stories/Reels) | Google Search | YouTube | TikTok |
+|---|---|---|---|---|---|
+| **Format** | 1:1 or 4:5 image/video | 9:16 vertical video | Text only | 16:9 video | 9:16 vertical video |
+| **Hook** | Visual + text overlay | Motion in first frame | Headline (30 chars) | First 5 seconds | Native, fast-paced |
+| **Tone** | Brand + native | Casual, immersive | Direct, benefit-led | Educational/story | Authentic, UGC-feel |
+| **Length** | 15-60s video | 5-15s | N/A | 15-90s | 9-30s |
+| **CTA** | Button + text | Swipe up | Ad extensions | End card | In-video + button |
+| **Production** | Polished or UGC | Native, phone-shot feel | N/A | Semi-polished | Raw, creator-style |
+
+#### Message Consistency Rules
+- **Core value proposition** must be the same across all platforms
+- **Key claims and proof points** should appear on every platform
+- **Visual identity** (colors, logo, style) should be recognizable across platforms
+- **Offer** must be identical (no platform-specific pricing that creates confusion)
+- **Landing page** should be the same (or platform-optimized versions of the same page)
+
+---
+
+### Layer 4: Budget Sync
+
+Coordinate budgets for maximum cross-platform efficiency.
+
+#### Initial Allocation Model
+
+| Channel | Allocation % | Rationale |
+|---|---|---|
+| Meta Ads | 40-50% | Primary demand generation engine |
+| Google Search | 20-25% | Captures intent generated by other channels |
+| Google Shopping | 10-15% | Product-level conversion capture |
+| YouTube | 5-10% | Awareness and mid-funnel video |
+| TikTok | 5-15% | Awareness and younger demographics |
+| Testing Reserve | 5-10% | New channel and tactic experimentation |
+
+#### Cross-Channel Budget Reallocation Triggers
+
+| Trigger | From | To | Logic |
+|---|---|---|---|
+| Meta CPA rising, Google ROAS strong | Meta (-10%) | Google (+10%) | Follow the efficiency |
+| Google impression share capped | Google (hold) | Meta (+budget) | Can't capture more search; generate more demand |
+| TikTok test proves viable | Reserve | TikTok | Graduate from test to allocation |
+| Seasonal search spike | Meta (-15%) | Google (+15%) | Capture high-intent seasonal traffic |
+| Creative fatigue on Meta | Meta (-10%) | YouTube/TikTok (+10%) | Shift while refreshing Meta creative |
+
+---
+
+### Layer 5: Measurement Sync
+
+Unified measurement framework across platforms.
+
+#### Attribution Challenges
+
+| Challenge | Description | Mitigation |
+|---|---|---|
+| **Double counting** | User clicks Meta ad, then Googles brand and converts -- both platforms claim | Use GA4 or single-source attribution |
+| **View-through inflation** | Meta claims view-through conversions not reflected in GA4 | Compare click-only attribution across sources |
+| **Last-click bias** | Google Search gets credit for conversions that Meta initiated | Use data-driven or multi-touch attribution |
+| **Platform discrepancies** | Each platform reports different conversion numbers | Establish single source of truth (GA4 or BI tool) |
+
+#### Unified Measurement Setup
+
+1. **Single Source of Truth:** Designate one analytics platform (GA4 recommended) as the arbiter of cross-channel attribution
+2. **UTM Discipline:** All campaigns across all platforms must use consistent UTM parameters
+3. **Conversion Windows:** Align conversion windows across platforms where possible (e.g., 7-day click, 1-day view)
+4. **Incrementality Testing:** Run periodic geo-lift or holdout tests to measure true incremental impact per channel
+5. **Blended Metrics:** Calculate blended CPA and ROAS across all channels (Total Spend / Total Conversions from single source)
+
+#### Cross-Platform Reporting Template
+
+| Metric | Meta | Google Search | Google Shopping | YouTube | TikTok | Blended |
+|---|---|---|---|---|---|---|
+| Spend | $`{{}}` | $`{{}}` | $`{{}}` | $`{{}}` | $`{{}}` | $`{{}}` |
+| Conversions (Platform) | `{{}}` | `{{}}` | `{{}}` | `{{}}` | `{{}}` | `{{}}` |
+| Conversions (GA4) | `{{}}` | `{{}}` | `{{}}` | `{{}}` | `{{}}` | `{{}}` |
+| CPA (Platform) | $`{{}}` | $`{{}}` | $`{{}}` | $`{{}}` | $`{{}}` | $`{{}}` |
+| CPA (GA4) | $`{{}}` | $`{{}}` | $`{{}}` | $`{{}}` | $`{{}}` | $`{{}}` |
+| ROAS (Platform) | `{{}}`x | `{{}}`x | `{{}}`x | `{{}}`x | `{{}}`x | `{{}}`x |
+| ROAS (GA4) | `{{}}`x | `{{}}`x | `{{}}`x | `{{}}`x | `{{}}`x | `{{}}`x |
+
+---
+
+### Layer 6: Timing and Launch Sync
+
+#### Coordinated Launch Checklist
+
+- [ ] All platform campaigns set to go live at the same time
+- [ ] Landing page is live and tested
+- [ ] Tracking is verified on all platforms
+- [ ] UTMs are configured and tested
+- [ ] Creative is uploaded and approved on all platforms
+- [ ] Budgets are set per allocation model
+- [ ] Team is notified of launch timing
+- [ ] Monitoring plan is in place for launch day
+
+#### Campaign Calendar Sync
+
+| Week | Meta Activity | Google Activity | TikTok Activity | Notes |
+|---|---|---|---|---|
+| Week 1 | Launch prospecting | Launch search + shopping | Launch awareness | Initial learning phase |
+| Week 2 | Add retargeting | Add RLSA | Add retargeting | Layer in warm audiences |
+| Week 3 | Optimize, test creative | Optimize bids, add negatives | Iterate on creative | Optimization cycle |
+| Week 4 | Scale winners | Scale efficient campaigns | Scale winners | Budget increase |
+
+---
+
+## Cross-Platform Optimization Cadence
+
+| Activity | Frequency | Scope |
+|---|---|---|
+| Check spend pacing across all platforms | Daily | Budget sync |
+| Review cross-platform conversion reporting | Weekly | Measurement sync |
+| Rebalance budget between platforms | Bi-weekly | Budget sync |
+| Refresh creative across platforms | Bi-weekly | Creative sync |
+| Full cross-platform performance review | Monthly | All layers |
+| Incrementality test | Quarterly | Measurement sync |
+
+---
+
+## Anti-Patterns
+
+- **Siloed management:** Running each platform independently without coordination
+- **Duplicate targeting:** Bidding against yourself with identical audiences on multiple platforms
+- **Inconsistent messaging:** Different offers or claims on different platforms
+- **Platform-reported totals:** Summing conversions from all platforms (results in over-counting)
+- **Equal allocation:** Splitting budget equally regardless of channel efficiency
+- **Ignoring halo effects:** Cutting social spend without measuring its impact on search volume
