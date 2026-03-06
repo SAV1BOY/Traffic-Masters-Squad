@@ -1,0 +1,558 @@
+# ============================================================
+# TRAFFIC MASTERS SQUAD — config.yaml (Cerebro de Roteamento)
+# ============================================================
+
+squad:
+  name: traffic-masters
+  version: "1.0.0"
+  description: "Paid Traffic + Customer Acquisition + Creative Strategy + Tracking + Scaling"
+  chief_agent: traffic-chief
+  total_agents: 16
+  budget_target: "R$ 336K/mes"
+
+principles:
+  - data-first
+  - test-before-scale
+  - creative-is-targeting
+  - track-everything
+  - fix-the-funnel
+
+# ============================================================
+# ROUTING: Task → Agents → Frameworks → Checklists → Templates → Registry
+# ============================================================
+
+routing:
+
+  # ---- RESEARCH ----
+  icp-and-avatar-deep-dive:
+    agents: [depesh-mandalia, nicholas-kusmich, traffic-chief]
+    frameworks: [mandalia-5w-avatar, kusmich-targeting-trifecta, icp-and-avatar]
+    checklists: [mandalia/mandalia-5w-avatar-depth-audit, kusmich/kusmich-targeting-trifecta-3fs]
+    templates: [briefs/acquisition-strategy-brief]
+    registry: [data/research/avatar-and-icp]
+
+  competitor-ads-swipe-mining:
+    agents: [creative-analyst, ads-analyst]
+    frameworks: [creative-angle-matrix, hook-library-system]
+    checklists: [creative/angle-coverage-quality]
+    templates: [reports/competitor-ads-analysis-report]
+    registry: [data/research/competitor-ads]
+
+  keyword-research-google:
+    agents: [kasim-aslam, ads-analyst]
+    frameworks: [aslam-4-core-campaign-types]
+    checklists: [aslam/aslam-search-query-hygiene]
+    templates: []
+    registry: [data/research/keyword-research]
+
+  offer-research:
+    agents: [molly-pittman, depesh-mandalia, traffic-chief]
+    frameworks: [pittman-offer-formula, mandalia-ac4, offer-and-proof-stack]
+    checklists: [offer-quality, pittman/pittman-offer-formula-audit]
+    templates: [briefs/acquisition-strategy-brief]
+    registry: [data/research/offer-research]
+
+  hook-and-angle-research:
+    agents: [ad-midas, creative-analyst]
+    frameworks: [creative-angle-matrix, hook-library-system, pittman-hook-framework]
+    checklists: [creative/angle-coverage-quality]
+    templates: []
+    registry: [data/research/hook-and-angle-research]
+
+  platform-feasibility:
+    agents: [traffic-chief, ads-analyst]
+    frameworks: [omnichannel-media-strategy, breeze-5as-readiness]
+    checklists: [cross-platform-consistency-quality]
+    templates: [briefs/acquisition-strategy-brief]
+    registry: [data/registries/decisions-log]
+
+  policy-risk-scan:
+    agents: [ads-analyst, fiscal]
+    frameworks: [policy-risk-classification]
+    checklists: [compliance-ad-policies-quality]
+    templates: []
+    registry: [data/research/policy-risk]
+
+  seasonal-opportunity-research:
+    agents: [traffic-chief, performance-analyst]
+    frameworks: [full-funnel-ads-strategy]
+    checklists: [seasonal-campaign-quality]
+    templates: [plans/seasonal-campaign-plan]
+    registry: [data/research/platform-benchmarks]
+
+  landing-page-benchmark:
+    agents: [creative-analyst, ads-analyst]
+    frameworks: [creative-angle-matrix]
+    checklists: [landing-page-quality, cro/landing-page-speed-quality]
+    templates: [reports/competitor-ads-analysis-report]
+    registry: [data/research/competitor-ads]
+
+  # ---- STRATEGY ----
+  acquisition-plan:
+    agents: [traffic-chief, molly-pittman, ralph-burns]
+    frameworks: [pittman-traffic-engine-9-steps, burns-caamp, ltv-cac-unit-economics, full-funnel-ads-strategy]
+    checklists: [acquisition-strategy-quality, offer-quality, budget-pacing-quality]
+    templates: [briefs/acquisition-strategy-brief, plans/media-plan-template]
+    registry: [data/registries/decisions-log]
+
+  funnel-mapping:
+    agents: [traffic-chief, molly-pittman]
+    frameworks: [customer-journey-mapping, funnel-types-library, pittman-traffic-temperature]
+    checklists: [funnel-integrity-quality]
+    templates: [briefs/acquisition-strategy-brief]
+    registry: [data/registries/decisions-log]
+
+  creative-strategy:
+    agents: [ad-midas, creative-analyst, ralph-burns]
+    frameworks: [burns-kaizen-kreative, creative-testing-framework, creative-angle-matrix, pittman-ad-grid-7-steps]
+    checklists: [creative-brief-quality, burns/burns-creative-lab-deep-dive, creative/angle-coverage-quality]
+    templates: [briefs/creative-brief, plans/creative-production-plan]
+    registry: [data/registries/creatives-registry]
+
+  measurement-plan:
+    agents: [pixel-specialist, performance-analyst, ralph-burns]
+    frameworks: [burns-ncac-method, burns-mpi, attribution-and-incrementality, tracking-stack-standard]
+    checklists: [tracking-plan-quality, attribution-quality]
+    templates: [tracking/event-map-template]
+    registry: [data/registries/pixels-and-events-registry]
+
+  budget-allocation:
+    agents: [traffic-chief, performance-analyst]
+    frameworks: [budget-allocation-model, ltv-cac-unit-economics]
+    checklists: [budget-pacing-quality]
+    templates: [plans/media-plan-template]
+    registry: [data/registries/budgets-and-guardrails]
+
+  launch-traffic-strategy:
+    agents: [pedro-sobral, traffic-chief, media-buyer]
+    frameworks: [sobral-metodo-subido-lancamentos, sobral-geco-ana]
+    checklists: [sobral/sobral-launch-8-stages, campaign-build-quality]
+    templates: [briefs/launch-brief, plans/launch-traffic-plan]
+    registry: [data/registries/campaigns-registry]
+
+  retargeting-strategy:
+    agents: [depesh-mandalia, media-buyer]
+    frameworks: [mandalia-infinity-retargeting, retargeting-architecture, retargeting-sequence-system]
+    checklists: [retargeting-quality]
+    templates: [ads/retargeting-ad-template]
+    registry: [data/registries/audiences-registry]
+
+  scaling-strategy:
+    agents: [scale-optimizer, depesh-mandalia, traffic-chief]
+    frameworks: [mandalia-scaling-recipes, scaling-playbook, kusmich-ponds-lakes-oceans]
+    checklists: [scaling-quality, mandalia/mandalia-cbo-recipes-selection]
+    templates: [plans/scaling-plan-template]
+    registry: [data/registries/decisions-log]
+
+  attribution-strategy:
+    agents: [pixel-specialist, performance-analyst]
+    frameworks: [attribution-and-incrementality, burns-ncac-method]
+    checklists: [attribution-quality]
+    templates: [reports/attribution-report]
+    registry: [data/registries/decisions-log]
+
+  # ---- SETUP ----
+  meta-campaign-build:
+    agents: [media-buyer, pixel-specialist, molly-pittman]
+    frameworks: [account-structure-meta, pittman-ad-grid-7-steps, pittman-traffic-temperature]
+    checklists: [campaign-build-quality, meta/meta-account-structure-quality, meta/meta-capi-quality, pittman/pittman-traffic-temperature-mapping]
+    templates: [ads/meta-ad-template, naming/campaign-naming-standard]
+    registry: [data/registries/campaigns-registry]
+
+  google-search-build:
+    agents: [kasim-aslam, media-buyer, pixel-specialist]
+    frameworks: [aslam-4-core-campaign-types, aslam-manual-cpc-first, account-structure-google]
+    checklists: [campaign-build-quality, google/google-search-build-quality, google/google-bidding-quality, aslam/aslam-4-core-campaign-types]
+    templates: [ads/google-search-ad-template, naming/campaign-naming-standard]
+    registry: [data/registries/campaigns-registry]
+
+  google-shopping-setup:
+    agents: [kasim-aslam, media-buyer]
+    frameworks: [aslam-shopping-pmax-dual, account-structure-google]
+    checklists: [google/google-shopping-quality, campaign-build-quality]
+    templates: [naming/campaign-naming-standard]
+    registry: [data/registries/campaigns-registry]
+
+  pmax-build:
+    agents: [kasim-aslam, media-buyer]
+    frameworks: [aslam-shopping-pmax-dual]
+    checklists: [google/google-pmax-quality, aslam/aslam-shopping-pmax-dual-strategy]
+    templates: [naming/campaign-naming-standard]
+    registry: [data/registries/campaigns-registry]
+
+  youtube-campaign-build:
+    agents: [tom-breeze, media-buyer]
+    frameworks: [breeze-aducate, breeze-3-acts, breeze-5as-readiness, youtube-ads-structure]
+    checklists: [campaign-build-quality, youtube/yt-campaign-setup-quality, youtube/yt-creative-hook-5s, breeze/breeze-aducate-script-audit]
+    templates: [ads/youtube-ad-script-aducate, briefs/video-ad-brief]
+    registry: [data/registries/campaigns-registry]
+
+  tiktok-campaign-build:
+    agents: [media-buyer, ad-midas]
+    frameworks: [creative-angle-matrix]
+    checklists: [campaign-build-quality, tiktok/tiktok-creative-native-quality, tiktok/tiktok-event-tracking-quality]
+    templates: [ads/tiktok-ugc-ad-template]
+    registry: [data/registries/campaigns-registry]
+
+  linkedin-campaign-build:
+    agents: [media-buyer]
+    frameworks: [omnichannel-media-strategy]
+    checklists: [campaign-build-quality, linkedin/linkedin-targeting-quality, linkedin/linkedin-leadgen-forms-quality]
+    templates: [ads/linkedin-b2b-ad-template]
+    registry: [data/registries/campaigns-registry]
+
+  # ---- TRACKING ----
+  event-mapping:
+    agents: [pixel-specialist]
+    frameworks: [tracking-stack-standard]
+    checklists: [tracking-plan-quality]
+    templates: [tracking/event-map-template, tracking/data-layer-spec-template]
+    registry: [data/registries/pixels-and-events-registry]
+
+  gtm-ga4-setup:
+    agents: [pixel-specialist]
+    frameworks: [tracking-stack-standard]
+    checklists: [tracking/gtm-ga4-event-quality]
+    templates: [tracking/gtm-container-template]
+    registry: [data/registries/pixels-and-events-registry]
+
+  pixel-capi-setup:
+    agents: [pixel-specialist]
+    frameworks: [tracking-stack-standard, tracking-layer]
+    checklists: [pixel-and-capi-quality, tracking/conversion-api-dedupe, tracking/tracking-qa-runbook]
+    templates: [tracking/event-map-template, tracking/data-layer-spec-template]
+    registry: [data/registries/pixels-and-events-registry]
+
+  tracking-qa:
+    agents: [pixel-specialist]
+    frameworks: [tracking-stack-standard]
+    checklists: [tracking/tracking-qa-runbook, pixel-and-capi-quality]
+    templates: [tracking/qa-checklist-template]
+    registry: [data/registries/pixels-and-events-registry]
+
+  attribution-sanity-check:
+    agents: [pixel-specialist, performance-analyst]
+    frameworks: [attribution-and-incrementality]
+    checklists: [attribution-quality, tracking/attribution-window-policy]
+    templates: [reports/attribution-report]
+    registry: [data/registries/decisions-log]
+
+  # ---- CREATIVE ----
+  aducate-scriptwriting:
+    agents: [tom-breeze, ad-midas]
+    frameworks: [breeze-aducate, breeze-3-acts, breeze-6cs-aducational]
+    checklists: [video-ad-quality, breeze/breeze-aducate-script-audit, breeze/breeze-3-acts-structure]
+    templates: [ads/youtube-ad-script-aducate]
+    registry: [data/registries/creatives-registry]
+
+  ugc-brief-and-shotlist:
+    agents: [ad-midas, creative-analyst]
+    frameworks: [ugc-creator-framework, creative-angle-matrix]
+    checklists: [creative/ugc-authenticity, creative-brief-quality]
+    templates: [briefs/ugc-creator-brief]
+    registry: [data/registries/creatives-registry]
+
+  creative-production-sprint:
+    agents: [ad-midas, creative-analyst]
+    frameworks: [creative-production-pipeline, burns-kaizen-kreative, creative-angle-matrix]
+    checklists: [creative-brief-quality, creative/thumb-first-frame-quality, creative/claim-proof-compliance]
+    templates: [briefs/creative-brief, briefs/ugc-creator-brief]
+    registry: [data/registries/creatives-registry]
+
+  creative-analysis-and-learnings:
+    agents: [creative-analyst, ralph-burns]
+    frameworks: [burns-kaizen-kreative, creative-iteration-loop, hook-library-system]
+    checklists: [creative-fatigue-quality, burns/burns-kaizen-kreative-iteration]
+    templates: [reports/creative-analysis-report, experiments/learnings-log-template]
+    registry: [data/registries/creatives-registry, data/metrics/learnings-log]
+
+  creative-refresh-plan:
+    agents: [creative-analyst, ad-midas]
+    frameworks: [creative-iteration-loop, creative-production-pipeline]
+    checklists: [creative-fatigue-quality, creative/creative-refresh-cadence]
+    templates: [plans/creative-production-plan]
+    registry: [data/registries/creatives-registry]
+
+  # ---- OPTIMIZATION ----
+  daily-optimization-loop:
+    agents: [media-buyer, performance-analyst, pedro-sobral]
+    frameworks: [optimization-layer, sobral-geco-ana, pacing-and-guardrails]
+    checklists: [budget-pacing-quality, sobral/sobral-geco-ana-cycle]
+    templates: [reports/daily-pacing-report]
+    registry: []
+
+  search-query-mining:
+    agents: [kasim-aslam, media-buyer]
+    frameworks: [aslam-4-core-campaign-types]
+    checklists: [aslam/aslam-search-query-hygiene]
+    templates: []
+    registry: [data/registries/decisions-log]
+
+  budget-reallocation:
+    agents: [scale-optimizer, traffic-chief, depesh-mandalia]
+    frameworks: [budget-allocation-model, mandalia-punisher-method, pacing-and-guardrails]
+    checklists: [budget-pacing-quality, mandalia/mandalia-punisher-optimization]
+    templates: []
+    registry: [data/registries/budgets-and-guardrails, data/registries/decisions-log]
+
+  landing-page-cro-fixes:
+    agents: [creative-analyst, performance-analyst]
+    frameworks: [burns-conversion-architecture]
+    checklists: [landing-page-quality, cro/landing-page-speed-quality, cro/form-friction-quality, cro/post-click-consistency]
+    templates: []
+    registry: [data/registries/decisions-log]
+
+  retargeting-sequence-setup:
+    agents: [media-buyer, depesh-mandalia]
+    frameworks: [mandalia-infinity-retargeting, retargeting-sequence-system]
+    checklists: [retargeting-quality]
+    templates: [ads/retargeting-ad-template]
+    registry: [data/registries/audiences-registry]
+
+  frequency-cap-optimization:
+    agents: [media-buyer, performance-analyst]
+    frameworks: [pacing-and-guardrails]
+    checklists: [creative-fatigue-quality, meta/meta-audience-exclusions-quality]
+    templates: []
+    registry: [data/registries/decisions-log]
+
+  # ---- SCALING ----
+  vertical-scaling:
+    agents: [scale-optimizer, depesh-mandalia]
+    frameworks: [mandalia-scaling-recipes, scaling-playbook, scaling-layer]
+    checklists: [scaling-quality, mandalia/mandalia-cbo-recipes-selection]
+    templates: [plans/scaling-plan-template]
+    registry: [data/registries/decisions-log]
+
+  horizontal-scaling:
+    agents: [scale-optimizer, traffic-chief]
+    frameworks: [scaling-playbook, audience-building-system]
+    checklists: [scaling-quality]
+    templates: [plans/scaling-plan-template]
+    registry: [data/registries/decisions-log]
+
+  ponds-lakes-oceans-scaling:
+    agents: [nicholas-kusmich, scale-optimizer]
+    frameworks: [kusmich-ponds-lakes-oceans, scaling-playbook]
+    checklists: [scaling-quality, kusmich/kusmich-ponds-lakes-oceans-scaling]
+    templates: [plans/scaling-plan-template]
+    registry: [data/registries/decisions-log]
+
+  channel-diversification:
+    agents: [traffic-chief, molly-pittman]
+    frameworks: [pittman-traffic-engine-9-steps, omnichannel-media-strategy]
+    checklists: [cross-platform-consistency-quality]
+    templates: [plans/media-plan-template]
+    registry: [data/registries/decisions-log]
+
+  creative-system-scale:
+    agents: [ad-midas, creative-analyst, ralph-burns]
+    frameworks: [burns-kaizen-kreative, creative-production-pipeline, dynamic-creative-optimization]
+    checklists: [creative-brief-quality, creative/creative-refresh-cadence]
+    templates: [plans/creative-production-plan]
+    registry: [data/registries/creatives-registry]
+
+  international-expansion:
+    agents: [traffic-chief, media-buyer]
+    frameworks: [omnichannel-media-strategy, scaling-playbook]
+    checklists: [cross-platform-consistency-quality, compliance-ad-policies-quality]
+    templates: [plans/scaling-plan-template]
+    registry: [data/registries/decisions-log]
+
+  # ---- REPORTING ----
+  daily-pacing:
+    agents: [media-buyer, performance-analyst]
+    frameworks: [pacing-and-guardrails]
+    checklists: [budget-pacing-quality]
+    templates: [reports/daily-pacing-report]
+    registry: []
+
+  weekly-business-review:
+    agents: [performance-analyst, traffic-chief]
+    frameworks: [burns-mpi, kpi-tree-acquisition]
+    checklists: [reporting-quality]
+    templates: [reports/weekly-performance-report]
+    registry: [data/metrics/weekly-scorecards]
+
+  monthly-growth-review:
+    agents: [traffic-chief, performance-analyst]
+    frameworks: [burns-mpi, ltv-cac-unit-economics, mer-marketing-efficiency-ratio]
+    checklists: [reporting-quality]
+    templates: [reports/monthly-growth-report]
+    registry: [data/metrics/weekly-scorecards]
+
+  account-audit-30-60-90:
+    agents: [ads-analyst, traffic-chief, kasim-aslam]
+    frameworks: [burns-sgp-30-60-90, account-structure-meta, account-structure-google]
+    checklists: [account-audit-quality, burns/burns-ncac-mpi-metrics-audit]
+    templates: [reports/audit-report-template, plans/30-60-90-growth-plan]
+    registry: [data/registries/decisions-log]
+
+  # ---- REVIEW ----
+  campaign-review:
+    agents: [traffic-chief]
+    frameworks: [full-funnel-ads-strategy]
+    checklists: [campaign-build-quality, reporting-quality]
+    templates: [reports/weekly-performance-report]
+    registry: [data/registries/decisions-log]
+
+  creative-review:
+    agents: [creative-analyst]
+    frameworks: [burns-kaizen-kreative, creative-iteration-loop]
+    checklists: [creative-fatigue-quality, creative/angle-coverage-quality]
+    templates: [reports/creative-analysis-report]
+    registry: [data/registries/creatives-registry]
+
+  account-structure-review:
+    agents: [ads-analyst]
+    frameworks: [account-structure-meta, account-structure-google]
+    checklists: [account-audit-quality]
+    templates: [reports/audit-report-template]
+    registry: [data/registries/decisions-log]
+
+  tracking-review:
+    agents: [pixel-specialist]
+    frameworks: [tracking-stack-standard]
+    checklists: [tracking-plan-quality, pixel-and-capi-quality]
+    templates: []
+    registry: [data/registries/pixels-and-events-registry]
+
+  compliance-review:
+    agents: [fiscal, ads-analyst]
+    frameworks: [policy-risk-classification, governance-layer]
+    checklists: [compliance-ad-policies-quality, financial-reconciliation-quality]
+    templates: []
+    registry: [data/registries/decisions-log]
+
+  # ---- FINANCE ----
+  budget-approval:
+    agents: [fiscal, traffic-chief]
+    frameworks: [governance-layer, budget-allocation-model]
+    checklists: [finance/budget-approval]
+    templates: [finance/budget-approval-template]
+    registry: [data/registries/budgets-and-guardrails]
+
+  invoice-reconciliation:
+    agents: [fiscal]
+    frameworks: [governance-layer]
+    checklists: [financial-reconciliation-quality, finance/invoice-vs-platform-audit]
+    templates: [finance/invoice-reconciliation-template]
+    registry: [data/registries/decisions-log]
+
+  tax-and-compliance-log:
+    agents: [fiscal]
+    frameworks: [governance-layer]
+    checklists: [finance/cost-center-tagging]
+    templates: [finance/cost-center-mapping-template]
+    registry: [data/registries/decisions-log]
+
+  # ---- OPERATIONS ----
+  quarterly-traffic-review:
+    agents: [traffic-chief, performance-analyst]
+    frameworks: [governance-layer, burns-mpi]
+    checklists: [reporting-quality]
+    templates: [reports/quarterly-media-report]
+    registry: [data/metrics/kpi-dashboard-spec]
+
+  cross-squad-sync:
+    agents: [traffic-chief]
+    frameworks: [client-ops-handoff]
+    checklists: []
+    templates: []
+    registry: [data/registries/decisions-log]
+
+  new-account-onboarding:
+    agents: [traffic-chief, ads-analyst, pixel-specialist]
+    frameworks: [burns-sgp-30-60-90, tracking-stack-standard]
+    checklists: [account-audit-quality, tracking-plan-quality]
+    templates: [briefs/audit-engagement-brief, reports/audit-report-template]
+    registry: [data/registries/campaigns-registry]
+
+# ============================================================
+# CROSS-SQUAD INTEGRATION
+# ============================================================
+
+cross_squad:
+  copy_squad:
+    handoff_to_traffic:
+      - "ad copy (headlines, primary text, CTAs) → templates/ads/"
+      - "VSL scripts → templates/ads/youtube-ad-script-aducate"
+      - "landing page copy → tasks/setup/"
+    handoff_from_traffic:
+      - "creative performance data → copy/data/"
+      - "audience insights → copy/reference/"
+      - "winning hooks → copy/swipe/"
+    shared_assets:
+      - hook-library
+      - ad-copy-style-guide
+      - objection-reframes
+
+  brand_squad:
+    handoff_to_traffic:
+      - "brand voice guide → voice/"
+      - "brand guidelines → templates/ads/"
+      - "positioning statement → frameworks/strategy-layer"
+    handoff_from_traffic:
+      - "distinctive asset performance → brand/data/"
+      - "brand awareness metrics → brand/data/metrics/"
+    shared_assets:
+      - tone-words-allowed
+      - brand-descriptors
+      - visual-guidelines
+
+# ============================================================
+# QUALITY GATES
+# ============================================================
+
+quality_gates:
+  mandatory:
+    - campaign-build-quality
+    - tracking-plan-quality
+    - reporting-quality
+  per_domain:
+    meta: [meta/meta-account-structure-quality, meta/meta-capi-quality]
+    google: [google/google-search-build-quality, google/google-bidding-quality]
+    youtube: [youtube/yt-campaign-setup-quality, youtube/yt-creative-hook-5s]
+    creative: [creative-brief-quality, creative/angle-coverage-quality]
+    finance: [financial-reconciliation-quality, finance/budget-approval]
+
+# ============================================================
+# KPIs
+# ============================================================
+
+kpis:
+  acquisition:
+    - cac
+    - ncac
+    - cpl
+    - cpa
+  efficiency:
+    - roas
+    - mer
+    - ltv_to_cac
+    - payback_period
+  engagement:
+    - ctr
+    - cvr
+    - hook_rate
+    - thumb_stop_ratio
+  creative:
+    - creative_win_rate
+    - creative_lifespan
+    - creative_diversity_index
+  operational:
+    - budget_pacing_accuracy
+    - test_velocity
+    - platform_diversification
+
+# ============================================================
+# DEFAULTS
+# ============================================================
+
+defaults:
+  review_agent: traffic-chief
+  min_checklists: 1
+  registry_on_completion: true
+  output_format: markdown
+  budget_model: "70/20/10"
+  attribution_window: "7d_click_1d_view"
