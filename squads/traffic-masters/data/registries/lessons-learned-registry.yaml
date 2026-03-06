@@ -1,0 +1,32 @@
+# Lessons Learned Registry
+# Captures key learnings from campaigns, tests, and failures.
+
+schema:
+  lesson_id: "string — unique identifier"
+  date: "date — when lesson was identified"
+  title: "string — concise lesson title"
+  category: "string — creative | targeting | bidding | budget | tracking | scaling"
+  platform: "string — meta | google | tiktok | youtube | linkedin | cross-platform"
+  source: "string — what campaign/test/event generated this lesson"
+  lesson: "string — detailed description of what was learned"
+  evidence: "string — data or metrics supporting the lesson"
+  impact: "string — high | medium | low"
+  actionable: "boolean — can this be applied immediately"
+  action_taken: "string — what was done as a result"
+  applicable_to: "list — situations where this lesson applies"
+  added_by: "string"
+  notes: "string"
+
+lessons: []
+# Example:
+# - lesson_id: "LSN-001"
+#   date: "2026-02-15"
+#   title: "UGC outperforms studio creative for cold Meta audiences"
+#   category: "creative"
+#   platform: "meta"
+#   source: "CMP-001 creative test"
+#   lesson: "UGC-style video ads achieved 40% lower CPA than studio-produced ads for cold audiences on Meta"
+#   evidence: "CPA: UGC $18 vs Studio $30, sample: 5000 conversions"
+#   impact: "high"
+#   actionable: true
+#   action_taken: "Shifted 70% of creative production to UGC format"

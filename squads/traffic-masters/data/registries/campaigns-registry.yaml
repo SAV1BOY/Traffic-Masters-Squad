@@ -1,0 +1,41 @@
+# Campaigns Registry
+# Master registry of all campaigns across platforms and clients.
+
+schema:
+  campaign_id: "string — unique identifier"
+  name: "string — campaign name (follows naming convention)"
+  client: "string — client name"
+  platform: "string — meta | google | tiktok | youtube | linkedin"
+  objective: "string — awareness | traffic | leads | conversions | sales"
+  funnel_stage: "string — tofu | mofu | bofu | retention"
+  audience_ids: "list — linked audiences from audiences-registry"
+  creative_ids: "list — linked creatives from creatives-registry"
+  offer_id: "string — linked offer"
+  landing_page_id: "string — linked landing page"
+  budget:
+    daily: "number"
+    monthly: "number"
+    lifetime: "number"
+  bidding: "string — auto | manual_cpa | target_roas | max_clicks"
+  performance:
+    spend: "number"
+    impressions: "number"
+    clicks: "number"
+    conversions: "number"
+    cpa: "number"
+    roas: "number"
+  start_date: "date"
+  end_date: "date"
+  status: "string — draft | active | paused | completed | archived"
+  last_updated: "date"
+  notes: "string"
+
+campaigns: []
+# Example:
+# - campaign_id: "CMP-001"
+#   name: "META_CONV_US_COLD_Skincare_2026Q1"
+#   client: "Beauty Brand X"
+#   platform: "meta"
+#   objective: "conversions"
+#   funnel_stage: "tofu"
+#   status: "active"

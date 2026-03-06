@@ -1,0 +1,45 @@
+# Budgets & Guardrails Registry
+# Tracks budget allocations, spending limits, and performance guardrails.
+
+schema:
+  entry_id: "string — unique identifier"
+  client: "string — client or project name"
+  period: "string — month/quarter/year"
+  total_budget: "number — total budget in USD"
+  allocation:
+    - platform: "string"
+      amount: "number"
+      percentage: "number"
+  guardrails:
+    max_cpa: "number — maximum acceptable CPA"
+    min_roas: "number — minimum acceptable ROAS"
+    max_daily_spend: "number — daily spending cap"
+    max_cpm: "number — CPM ceiling"
+    frequency_cap: "number — max impressions per user per week"
+    budget_pacing: "string — even | accelerated | front-loaded"
+  alert_thresholds:
+    cpa_warning: "number — CPA level that triggers review"
+    spend_variance: "number — % over/under pacing threshold"
+    roas_floor: "number — ROAS that triggers pause"
+  status: "string — active | planned | completed"
+  approved_by: "string"
+  last_updated: "date"
+  notes: "string"
+
+budgets: []
+# Example:
+# - entry_id: "BUD-001"
+#   client: "Acme Corp"
+#   period: "2026-Q1"
+#   total_budget: 50000
+#   allocation:
+#     - platform: "meta"
+#       amount: 30000
+#       percentage: 60
+#     - platform: "google"
+#       amount: 20000
+#       percentage: 40
+#   guardrails:
+#     max_cpa: 35
+#     min_roas: 3.0
+#   status: "active"

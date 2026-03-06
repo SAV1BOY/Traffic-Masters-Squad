@@ -1,0 +1,33 @@
+# Pixels & Events Registry
+# Tracks all tracking pixels, conversion events, and measurement setup.
+
+schema:
+  pixel_id: "string — unique identifier"
+  platform: "string — meta | google | tiktok | linkedin | analytics"
+  pixel_type: "string — pixel | tag | sdk | api"
+  pixel_platform_id: "string — platform-assigned ID"
+  domain: "string — website domain"
+  events:
+    - event_name: "string — e.g., PageView, Purchase, Lead"
+      event_type: "string — standard | custom"
+      trigger: "string — how the event fires"
+      value_tracked: "boolean — does it pass value"
+      status: "string — active | broken | not_configured"
+  server_side: "boolean — server-side tracking enabled"
+  capi_status: "string — active | not_configured | partial"
+  consent_mode: "string — basic | advanced | not_configured"
+  last_qa_date: "date — last QA verification"
+  qa_status: "string — passing | issues_found | not_tested"
+  status: "string — active | inactive | deprecated"
+  notes: "string"
+
+pixels: []
+# Example:
+# - pixel_id: "PIX-001"
+#   platform: "meta"
+#   pixel_type: "pixel"
+#   pixel_platform_id: "1234567890"
+#   domain: "example.com"
+#   server_side: true
+#   capi_status: "active"
+#   status: "active"

@@ -1,0 +1,36 @@
+# Creatives Registry
+# Tracks all ad creatives across platforms and campaigns.
+
+schema:
+  creative_id: "string — unique identifier"
+  name: "string — descriptive creative name"
+  format: "string — static | video | carousel | collection | document"
+  platform: "string — meta | google | tiktok | youtube | linkedin"
+  hook: "string — hook text or description"
+  angle: "string — pain | desire | proof | mechanism | objection"
+  copy_snippet: "string — first 2 lines of ad copy"
+  cta: "string — call to action text"
+  asset_url: "string — link to creative file"
+  campaign_ids: "list — campaigns using this creative"
+  performance:
+    impressions: "number"
+    ctr: "number"
+    cpa: "number"
+    roas: "number"
+    hook_rate: "number — for video"
+  status: "string — active | testing | fatigued | paused | retired"
+  launch_date: "date"
+  fatigue_date: "date — when performance declined"
+  last_updated: "date"
+  notes: "string"
+
+creatives: []
+# Example:
+# - creative_id: "CRE-001"
+#   name: "UGC Testimonial - Sarah - Skincare"
+#   format: "video"
+#   platform: "meta"
+#   hook: "I never thought I'd find something that actually works"
+#   angle: "proof"
+#   status: "active"
+#   launch_date: "2026-02-15"

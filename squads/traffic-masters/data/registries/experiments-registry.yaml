@@ -1,0 +1,35 @@
+# Experiments Registry
+# Tracks all A/B tests and experiments across campaigns.
+
+schema:
+  experiment_id: "string — unique identifier"
+  name: "string — descriptive experiment name"
+  hypothesis: "string — what we believe and why"
+  variable: "string — what is being tested"
+  control: "string — control variant description"
+  variant: "string — test variant description"
+  platform: "string — meta | google | tiktok | youtube | linkedin"
+  campaign_id: "string — associated campaign"
+  primary_metric: "string — metric used to determine winner"
+  target_sample_size: "number — required for significance"
+  current_sample_size: "number — current observations"
+  start_date: "date"
+  end_date: "date"
+  results:
+    control_value: "number"
+    variant_value: "number"
+    lift: "number — percentage change"
+    confidence: "number — statistical confidence %"
+  winner: "string — control | variant | inconclusive"
+  status: "string — planned | running | completed | cancelled"
+  learnings: "string — key takeaways"
+  next_steps: "string — what to do based on results"
+
+experiments: []
+# Example:
+# - experiment_id: "EXP-001"
+#   name: "Hook Test: Question vs Statement"
+#   hypothesis: "Question hooks will increase CTR by 15%"
+#   variable: "ad hook"
+#   primary_metric: "CTR"
+#   status: "planned"

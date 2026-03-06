@@ -1,0 +1,33 @@
+# Landing Pages Registry
+# Tracks all landing pages used in paid traffic campaigns.
+
+schema:
+  page_id: "string — unique identifier"
+  name: "string — descriptive page name"
+  url: "string — landing page URL"
+  type: "string — leadgen | webinar | ecommerce | application | advertorial | sales"
+  offer_id: "string — linked offer from offers-registry"
+  headline: "string — main headline"
+  conversion_rate: "number — percentage"
+  avg_time_on_page: "number — seconds"
+  bounce_rate: "number — percentage"
+  mobile_optimized: "boolean"
+  page_speed_score: "number — 0-100"
+  ab_test_status: "string — none | running | completed"
+  status: "string — active | testing | paused | retired"
+  created_date: "date"
+  last_updated: "date"
+  notes: "string"
+
+landing_pages: []
+# Example:
+# - page_id: "LP-001"
+#   name: "Traffic Audit Checklist Opt-in"
+#   url: "https://example.com/checklist"
+#   type: "leadgen"
+#   offer_id: "OFR-001"
+#   headline: "Get Your Free Traffic Audit Checklist"
+#   conversion_rate: 35.0
+#   mobile_optimized: true
+#   page_speed_score: 92
+#   status: "active"

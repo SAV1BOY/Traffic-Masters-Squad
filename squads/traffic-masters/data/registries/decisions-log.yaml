@@ -1,0 +1,29 @@
+# Decisions Log
+# Records key strategic and tactical decisions for accountability and learning.
+
+schema:
+  decision_id: "string — unique identifier"
+  date: "date — when decision was made"
+  decision: "string — what was decided"
+  context: "string — situation that prompted the decision"
+  options_considered: "list — alternatives that were evaluated"
+  rationale: "string — why this option was chosen"
+  data_supporting: "string — metrics or evidence used"
+  impact_area: "string — budget | creative | targeting | bidding | structure"
+  campaign_ids: "list — affected campaigns"
+  expected_outcome: "string — what we expect to happen"
+  actual_outcome: "string — what actually happened (filled later)"
+  outcome_date: "date — when outcome was measured"
+  decision_quality: "string — good | neutral | bad (retrospective)"
+  decided_by: "string"
+  notes: "string"
+
+decisions: []
+# Example:
+# - decision_id: "DEC-001"
+#   date: "2026-03-01"
+#   decision: "Shift 30% of Meta budget to TikTok"
+#   context: "Meta CPMs rising 25% MoM, TikTok showing lower CPA in test"
+#   rationale: "Diversify platform risk, capitalize on lower TikTok costs"
+#   expected_outcome: "10-15% reduction in blended CPA"
+#   decided_by: "Traffic Lead"

@@ -1,0 +1,35 @@
+# Offers Registry
+# Tracks all offers, lead magnets, and value propositions in use.
+
+schema:
+  offer_id: "string — unique identifier"
+  name: "string — offer name"
+  type: "string — lead_magnet | tripwire | core | premium | upsell | downsell"
+  price: "number — price in USD (0 for free)"
+  description: "string — brief offer description"
+  target_avatar: "string — avatar/ICP this offer serves"
+  funnel_position: "string — top | middle | bottom"
+  landing_page_url: "string"
+  conversion_rate: "number — percentage"
+  avg_cpa: "number — average cost per acquisition"
+  status: "string — active | testing | paused | retired"
+  created_date: "date"
+  last_updated: "date"
+  notes: "string"
+
+offers: []
+# Example:
+# - offer_id: "OFR-001"
+#   name: "Free Traffic Audit Checklist"
+#   type: "lead_magnet"
+#   price: 0
+#   description: "10-point checklist for auditing paid traffic accounts"
+#   target_avatar: "Marketing Manager"
+#   funnel_position: "top"
+#   landing_page_url: "https://example.com/checklist"
+#   conversion_rate: 35.0
+#   avg_cpa: 4.50
+#   status: "active"
+#   created_date: "2026-01-15"
+#   last_updated: "2026-03-06"
+#   notes: "Best performing lead magnet Q1"

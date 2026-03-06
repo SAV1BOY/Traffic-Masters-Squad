@@ -1,0 +1,39 @@
+# Audiences Registry
+# Tracks all audience definitions across platforms and campaigns.
+
+schema:
+  audience_id: "string — unique identifier"
+  name: "string — descriptive audience name"
+  platform: "string — meta | google | tiktok | youtube | linkedin"
+  type: "string — cold | warm | hot | lookalike | custom | retargeting"
+  definition: "string — targeting criteria or audience source"
+  size_estimate: "number — estimated audience size"
+  campaign_ids: "list — campaigns using this audience"
+  performance:
+    cpm: "number"
+    ctr: "number"
+    cpa: "number"
+    roas: "number"
+  status: "string — active | paused | archived"
+  created_date: "date"
+  last_updated: "date"
+  notes: "string"
+
+audiences: []
+# Example:
+# - audience_id: "AUD-001"
+#   name: "US Women 25-45 Interest Skincare"
+#   platform: "meta"
+#   type: "cold"
+#   definition: "Age 25-45, Female, Interest: Skincare, Geo: US"
+#   size_estimate: 12000000
+#   campaign_ids: ["CMP-001", "CMP-003"]
+#   performance:
+#     cpm: 12.50
+#     ctr: 1.8
+#     cpa: 22.00
+#     roas: 3.2
+#   status: "active"
+#   created_date: "2026-03-01"
+#   last_updated: "2026-03-06"
+#   notes: "Top performing cold audience Q1"
