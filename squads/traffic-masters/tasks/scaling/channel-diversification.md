@@ -7,6 +7,18 @@
 > **Checklists**: channel-diversification-checklist
 > **Output template**: templates/channel-expansion-plan.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.channel-diversification`
+> **Agents**: [traffic-chief](../../agents/traffic-chief.md), [molly-pittman](../../agents/molly-pittman.md)
+> **Frameworks**: `pittman-traffic-engine-9-steps`, `omnichannel-media-strategy`
+> **Checklists**: `cross-platform-consistency-quality`
+> **Templates**: `plans/media-plan-template`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Diversify the advertising portfolio into new channels to reduce platform dependency risk, access new audiences, and find incremental growth opportunities beyond the primary acquisition channels.
 

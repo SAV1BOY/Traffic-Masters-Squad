@@ -7,6 +7,18 @@
 > **Checklists**: scriptwriting-checklist
 > **Output template**: templates/video-scripts.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.aducate-scriptwriting`
+> **Agents**: [tom-breeze](../../agents/tom-breeze.md), [ad-midas](../../agents/ad-midas.md)
+> **Frameworks**: `breeze-aducate`, `breeze-3-acts`, `breeze-6cs-aducational`
+> **Checklists**: `video-ad-quality`, `breeze/breeze-aducate-script-audit`, `breeze/breeze-3-acts-structure`
+> **Templates**: `ads/youtube-ad-script-aducate`
+> **Registry**: `data/registries/creatives-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Write YouTube and video ad scripts using the ADUCATE framework to create compelling video content that captures attention in the first five seconds, builds credibility, and drives specific viewer actions.
 

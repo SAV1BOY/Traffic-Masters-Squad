@@ -7,6 +7,18 @@
 > **Checklists**: keyword-research-checklist
 > **Output template**: templates/keyword-map.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.keyword-research-google`
+> **Agents**: [kasim-aslam](../../agents/kasim-aslam.md), [ads-analyst](../../agents/ads-analyst.md)
+> **Frameworks**: `aslam-4-core-campaign-types`
+> **Checklists**: `aslam/aslam-search-query-hygiene`
+> **Templates**: N/A
+> **Registry**: `data/research/keyword-research`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Conduct comprehensive keyword research for Google Ads campaigns covering search volume, intent classification, competition analysis, cost estimates, and negative keyword identification to build a structured keyword map.
 

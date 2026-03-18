@@ -7,6 +7,18 @@
 > **Checklists**: pmax-build-checklist
 > **Output template**: templates/pmax-build-sheet.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.pmax-build`
+> **Agents**: [kasim-aslam](../../agents/kasim-aslam.md), [media-buyer](../../agents/media-buyer.md)
+> **Frameworks**: `aslam-shopping-pmax-dual`
+> **Checklists**: `google/google-pmax-quality`, `aslam/aslam-shopping-pmax-dual-strategy`
+> **Templates**: `naming/campaign-naming-standard`
+> **Registry**: `data/registries/campaigns-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Build Performance Max campaigns with proper guardrails, asset group strategy, audience signals, and feed optimization to leverage Google's full inventory while maintaining control over performance and brand safety.
 

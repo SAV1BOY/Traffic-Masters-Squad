@@ -7,6 +7,18 @@
 > **Checklists**: hook-angle-checklist
 > **Output template**: templates/hook-angle-bank.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.hook-and-angle-research`
+> **Agents**: [ad-midas](../../agents/ad-midas.md), [creative-analyst](../../agents/creative-analyst.md)
+> **Frameworks**: `creative-angle-matrix`, `hook-library-system`, `pittman-hook-framework`
+> **Checklists**: `creative/angle-coverage-quality`
+> **Templates**: N/A
+> **Registry**: `data/research/hook-and-angle-research`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Mine and catalog high-performing hooks and angles from competitor ads, customer reviews, forums, and social conversations to build a comprehensive hook/angle bank that fuels creative production.
 

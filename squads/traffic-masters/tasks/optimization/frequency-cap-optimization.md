@@ -7,6 +7,18 @@
 > **Checklists**: frequency-optimization-checklist
 > **Output template**: templates/frequency-cap-adjustments.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.frequency-cap-optimization`
+> **Agents**: [media-buyer](../../agents/media-buyer.md), [performance-analyst](../../agents/performance-analyst.md)
+> **Frameworks**: `pacing-and-guardrails`
+> **Checklists**: `creative-fatigue-quality`, `meta/meta-audience-exclusions-quality`
+> **Templates**: N/A
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Optimize frequency caps across all campaigns to reduce ad fatigue, maintain positive brand perception, and maximize the efficiency of each impression by finding the optimal exposure level per audience segment.
 

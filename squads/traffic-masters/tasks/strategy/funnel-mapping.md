@@ -7,6 +7,18 @@
 > **Checklists**: funnel-mapping-checklist
 > **Output template**: templates/funnel-map.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.funnel-mapping`
+> **Agents**: [traffic-chief](../../agents/traffic-chief.md), [molly-pittman](../../agents/molly-pittman.md)
+> **Frameworks**: `customer-journey-mapping`, `funnel-types-library`, `pittman-traffic-temperature`
+> **Checklists**: `funnel-integrity-quality`
+> **Templates**: `briefs/acquisition-strategy-brief`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Map the complete customer funnel from first ad impression to purchase and post-purchase, defining messaging at each stage, conversion events, expected drop-off rates, and optimization levers.
 

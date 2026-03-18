@@ -7,6 +7,18 @@
 > **Checklists**: tracking-review-checklist
 > **Output template**: templates/tracking-audit.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.tracking-review`
+> **Agents**: [pixel-specialist](../../agents/pixel-specialist.md)
+> **Frameworks**: `tracking-stack-standard`
+> **Checklists**: `tracking-plan-quality`, `pixel-and-capi-quality`
+> **Templates**: N/A
+> **Registry**: `data/registries/pixels-and-events-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Review the complete tracking infrastructure to verify ongoing accuracy, identify degradation, check for new tracking gaps, and ensure data quality supports reliable performance reporting and optimization decisions.
 

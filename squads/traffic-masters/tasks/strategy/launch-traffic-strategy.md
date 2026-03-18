@@ -7,6 +7,18 @@
 > **Checklists**: launch-strategy-checklist
 > **Output template**: templates/launch-traffic-plan.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.launch-traffic-strategy`
+> **Agents**: [pedro-sobral](../../agents/pedro-sobral.md), [traffic-chief](../../agents/traffic-chief.md), [media-buyer](../../agents/media-buyer.md)
+> **Frameworks**: `sobral-metodo-subido-lancamentos`, `sobral-geco-ana`
+> **Checklists**: `sobral/sobral-launch-8-stages`, `campaign-build-quality`
+> **Templates**: `briefs/launch-brief`, `plans/launch-traffic-plan`
+> **Registry**: `data/registries/campaigns-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Design the launch traffic strategy using Sobral's 8-stage framework to systematically warm audiences, build anticipation, and maximize conversions during the launch window with precise budget pacing and creative sequencing.
 

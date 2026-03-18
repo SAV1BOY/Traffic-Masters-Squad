@@ -7,6 +7,18 @@
 > **Checklists**: gtm-ga4-setup-checklist
 > **Output template**: templates/gtm-config.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.gtm-ga4-setup`
+> **Agents**: [pixel-specialist](../../agents/pixel-specialist.md)
+> **Frameworks**: `tracking-stack-standard`
+> **Checklists**: `tracking/gtm-ga4-event-quality`
+> **Templates**: `tracking/gtm-container-template`
+> **Registry**: `data/registries/pixels-and-events-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Set up Google Tag Manager containers and GA4 property with proper event configuration, data streams, custom dimensions, and conversion definitions to serve as the central tracking infrastructure.
 

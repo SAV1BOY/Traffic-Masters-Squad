@@ -7,6 +7,13 @@
 > **Checklists**: optimization-checklist, audience-overlap-checklist
 > **Output template**: templates/optimization-report-document.md
 
+## ROUTING
+
+> **Agents**: media-buyer, performance-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Identificar e resolver sobreposição de audiências entre ad sets e campanhas, eliminando competição interna nos leilões que inflaciona custos e reduz eficiência de entrega.
 

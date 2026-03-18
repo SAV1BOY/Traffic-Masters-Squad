@@ -7,6 +7,18 @@
 > **Checklists**: policy-risk-checklist
 > **Output template**: templates/risk-assessment.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.policy-risk-scan`
+> **Agents**: [ads-analyst](../../agents/ads-analyst.md), [fiscal](../../agents/fiscal.md)
+> **Frameworks**: `policy-risk-classification`
+> **Checklists**: `compliance-ad-policies-quality`
+> **Templates**: N/A
+> **Registry**: `data/research/policy-risk`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Scan for advertising policy risks across all planned platforms by evaluating claims, targeting methods, content types, and industry-specific restrictions to prevent ad rejections, account suspensions, and compliance violations.
 

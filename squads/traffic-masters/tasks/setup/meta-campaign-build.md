@@ -7,6 +7,18 @@
 > **Checklists**: meta-campaign-build-checklist
 > **Output template**: templates/campaign-build-sheet.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.meta-campaign-build`
+> **Agents**: [media-buyer](../../agents/media-buyer.md), [pixel-specialist](../../agents/pixel-specialist.md), [molly-pittman](../../agents/molly-pittman.md)
+> **Frameworks**: `account-structure-meta`, `pittman-ad-grid-7-steps`, `pittman-traffic-temperature`
+> **Checklists**: `campaign-build-quality`, `meta/meta-account-structure-quality`, `meta/meta-capi-quality`, `pittman/pittman-traffic-temperature-mapping`
+> **Templates**: `ads/meta-ad-template`, `naming/campaign-naming-standard`
+> **Registry**: `data/registries/campaigns-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Build Meta (Facebook/Instagram) campaigns with proper structure, audience targeting, creative assignments, tracking configuration, and bid strategy to launch prospecting and retargeting campaigns according to the acquisition plan.
 

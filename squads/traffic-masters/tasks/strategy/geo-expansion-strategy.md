@@ -7,6 +7,13 @@
 > **Checklists**: strategy-checklist, geo-expansion-checklist
 > **Output template**: templates/geo-expansion-document.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, molly-pittman
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Planejar a expansão geográfica das campanhas pagas, identificando mercados prioritários, adaptações necessárias e o framework de teste para entrar em novas regiões com risco controlado.
 

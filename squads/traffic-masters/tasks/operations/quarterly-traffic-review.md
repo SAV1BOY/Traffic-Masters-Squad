@@ -7,6 +7,18 @@
 > **Checklists**: quarterly-review-checklist
 > **Output template**: templates/quarterly-review.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.quarterly-traffic-review`
+> **Agents**: [traffic-chief](../../agents/traffic-chief.md), [performance-analyst](../../agents/performance-analyst.md)
+> **Frameworks**: `governance-layer`, `burns-mpi`
+> **Checklists**: `reporting-quality`
+> **Templates**: `reports/quarterly-media-report`
+> **Registry**: `data/metrics/kpi-dashboard-spec`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Conduct a comprehensive quarterly review of the Traffic Masters Squad's performance, processes, and strategic direction to evaluate progress against goals, refine the approach, and set priorities for the next quarter.
 

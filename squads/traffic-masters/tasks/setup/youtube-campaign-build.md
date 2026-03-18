@@ -7,6 +7,18 @@
 > **Checklists**: youtube-campaign-build-checklist
 > **Output template**: templates/youtube-build-sheet.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.youtube-campaign-build`
+> **Agents**: [tom-breeze](../../agents/tom-breeze.md), [media-buyer](../../agents/media-buyer.md)
+> **Frameworks**: `breeze-aducate`, `breeze-3-acts`, `breeze-5as-readiness`, `youtube-ads-structure`
+> **Checklists**: `campaign-build-quality`, `youtube/yt-campaign-setup-quality`, `youtube/yt-creative-hook-5s`, `breeze/breeze-aducate-script-audit`
+> **Templates**: `ads/youtube-ad-script-aducate`, `briefs/video-ad-brief`
+> **Registry**: `data/registries/campaigns-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Build YouTube advertising campaigns with proper format selection, targeting configuration, video creative assignments, bidding strategy, and companion elements to drive awareness, consideration, or direct response actions.
 

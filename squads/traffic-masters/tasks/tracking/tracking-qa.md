@@ -7,6 +7,18 @@
 > **Checklists**: tracking-qa-checklist
 > **Output template**: templates/qa-report.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.tracking-qa`
+> **Agents**: [pixel-specialist](../../agents/pixel-specialist.md)
+> **Frameworks**: `tracking-stack-standard`
+> **Checklists**: `tracking/tracking-qa-runbook`, `pixel-and-capi-quality`
+> **Templates**: `tracking/qa-checklist-template`
+> **Registry**: `data/registries/pixels-and-events-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Perform comprehensive quality assurance on the entire tracking stack to verify all events fire correctly, parameters are accurate, deduplication works, and data flows properly from user action to platform reporting.
 

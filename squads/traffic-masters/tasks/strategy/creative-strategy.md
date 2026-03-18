@@ -7,6 +7,18 @@
 > **Checklists**: creative-strategy-checklist
 > **Output template**: templates/creative-strategy.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.creative-strategy`
+> **Agents**: [ad-midas](../../agents/ad-midas.md), [creative-analyst](../../agents/creative-analyst.md), [ralph-burns](../../agents/ralph-burns.md)
+> **Frameworks**: `burns-kaizen-kreative`, `creative-testing-framework`, `creative-angle-matrix`, `pittman-ad-grid-7-steps`
+> **Checklists**: `creative-brief-quality`, `burns/burns-creative-lab-deep-dive`, `creative/angle-coverage-quality`
+> **Templates**: `briefs/creative-brief`, `plans/creative-production-plan`
+> **Registry**: `data/registries/creatives-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Plan the creative approach for all campaigns including angle prioritization, format selection, creative backlog development, production pipeline design, and testing methodology to ensure a continuous supply of high-performing ad creatives.
 

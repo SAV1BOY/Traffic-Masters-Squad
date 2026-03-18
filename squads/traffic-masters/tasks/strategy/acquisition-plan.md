@@ -7,6 +7,18 @@
 > **Checklists**: acquisition-plan-checklist
 > **Output template**: templates/acquisition-plan.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.acquisition-plan`
+> **Agents**: [traffic-chief](../../agents/traffic-chief.md), [molly-pittman](../../agents/molly-pittman.md), [ralph-burns](../../agents/ralph-burns.md)
+> **Frameworks**: `pittman-traffic-engine-9-steps`, `burns-caamp`, `ltv-cac-unit-economics`, `full-funnel-ads-strategy`
+> **Checklists**: `acquisition-strategy-quality`, `offer-quality`, `budget-pacing-quality`
+> **Templates**: `briefs/acquisition-strategy-brief`, `plans/media-plan-template`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Develop a full acquisition strategy defining channels, campaign architecture, budget allocation, KPI targets, and timeline that aligns paid media investment with business growth objectives.
 

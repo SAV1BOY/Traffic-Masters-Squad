@@ -7,6 +7,18 @@
 > **Checklists**: budget-reallocation-checklist
 > **Output template**: templates/reallocation-plan.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.budget-reallocation`
+> **Agents**: [scale-optimizer](../../agents/scale-optimizer.md), [traffic-chief](../../agents/traffic-chief.md), [depesh-mandalia](../../agents/depesh-mandalia.md)
+> **Frameworks**: `budget-allocation-model`, `mandalia-punisher-method`, `pacing-and-guardrails`
+> **Checklists**: `budget-pacing-quality`, `mandalia/mandalia-punisher-optimization`
+> **Templates**: N/A
+> **Registry**: `data/registries/budgets-and-guardrails`, `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Reallocate budget across channels, campaigns, and ad sets based on performance data to shift spend from underperformers to proven winners while maintaining testing allocation and respecting platform learning requirements.
 

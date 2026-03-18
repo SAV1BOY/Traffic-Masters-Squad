@@ -7,6 +7,18 @@
 > **Checklists**: monthly-review-checklist
 > **Output template**: templates/monthly-report.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.monthly-growth-review`
+> **Agents**: [traffic-chief](../../agents/traffic-chief.md), [performance-analyst](../../agents/performance-analyst.md)
+> **Frameworks**: `burns-mpi`, `ltv-cac-unit-economics`, `mer-marketing-efficiency-ratio`
+> **Checklists**: `reporting-quality`
+> **Templates**: `reports/monthly-growth-report`
+> **Registry**: `data/metrics/weekly-scorecards`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Produce a Monthly Growth Review that analyzes performance trends, unit economics, channel efficiency, creative learnings, and strategic progress to inform budget decisions and strategy adjustments for the coming month.
 

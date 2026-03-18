@@ -7,6 +7,18 @@
 > **Checklists**: event-mapping-checklist
 > **Output template**: templates/event-map.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.event-mapping`
+> **Agents**: [pixel-specialist](../../agents/pixel-specialist.md)
+> **Frameworks**: `tracking-stack-standard`
+> **Checklists**: `tracking-plan-quality`
+> **Templates**: `tracking/event-map-template`, `tracking/data-layer-spec-template`
+> **Registry**: `data/registries/pixels-and-events-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Map all trackable events and their parameters across the entire funnel, defining naming conventions, trigger conditions, parameter schemas, and platform-specific implementations to create a single source of truth for measurement.
 

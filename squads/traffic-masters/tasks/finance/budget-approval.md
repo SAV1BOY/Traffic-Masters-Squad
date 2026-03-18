@@ -7,6 +7,18 @@
 > **Checklists**: budget-approval-checklist
 > **Output template**: templates/approved-budget.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.budget-approval`
+> **Agents**: [fiscal](../../agents/fiscal.md), [traffic-chief](../../agents/traffic-chief.md)
+> **Frameworks**: `governance-layer`, `budget-allocation-model`
+> **Checklists**: `finance/budget-approval`
+> **Templates**: `finance/budget-approval-template`
+> **Registry**: `data/registries/budgets-and-guardrails`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Execute the budget approval process to authorize media spend, ensure financial controls are in place, validate budget alignment with business objectives, and create a documented approval record for financial accountability.
 

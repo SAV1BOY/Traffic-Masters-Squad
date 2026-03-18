@@ -7,6 +7,18 @@
 > **Checklists**: invoice-reconciliation-checklist
 > **Output template**: templates/reconciliation-report.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.invoice-reconciliation`
+> **Agents**: [fiscal](../../agents/fiscal.md)
+> **Frameworks**: `governance-layer`
+> **Checklists**: `financial-reconciliation-quality`, `finance/invoice-vs-platform-audit`
+> **Templates**: `finance/invoice-reconciliation-template`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Reconcile advertising invoices and billing statements against platform-reported spend and internal budget tracking to ensure billing accuracy, catch discrepancies, and maintain clean financial records.
 

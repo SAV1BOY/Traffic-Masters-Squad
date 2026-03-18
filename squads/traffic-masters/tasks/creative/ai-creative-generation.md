@@ -7,6 +7,13 @@
 > **Checklists**: creative-checklist, ai-generation-checklist
 > **Output template**: templates/creative-production-document.md
 
+## ROUTING
+
+> **Agents**: ad-midas, creative-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Utilizar ferramentas de IA para ideação, geração e iteração de criativos para campanhas de paid media, acelerando a produção e testando mais variações com menor custo e tempo.
 

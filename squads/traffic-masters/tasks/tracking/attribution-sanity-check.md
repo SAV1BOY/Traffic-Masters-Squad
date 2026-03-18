@@ -7,6 +7,18 @@
 > **Checklists**: attribution-sanity-checklist
 > **Output template**: templates/attribution-audit.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.attribution-sanity-check`
+> **Agents**: [pixel-specialist](../../agents/pixel-specialist.md), [performance-analyst](../../agents/performance-analyst.md)
+> **Frameworks**: `attribution-and-incrementality`
+> **Checklists**: `attribution-quality`, `tracking/attribution-window-policy`
+> **Templates**: `reports/attribution-report`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Perform a sanity check on attribution data by comparing platform-reported conversions against backend truth, identifying discrepancies, and calibrating reporting to ensure budget decisions are based on accurate performance data.
 

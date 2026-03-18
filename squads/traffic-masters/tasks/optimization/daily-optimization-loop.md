@@ -7,6 +7,18 @@
 > **Checklists**: daily-optimization-checklist
 > **Output template**: templates/daily-actions.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.daily-optimization-loop`
+> **Agents**: [media-buyer](../../agents/media-buyer.md), [performance-analyst](../../agents/performance-analyst.md), [pedro-sobral](../../agents/pedro-sobral.md)
+> **Frameworks**: `optimization-layer`, `sobral-geco-ana`, `pacing-and-guardrails`
+> **Checklists**: `budget-pacing-quality`, `sobral/sobral-geco-ana-cycle`
+> **Templates**: `reports/daily-pacing-report`
+> **Registry**: N/A
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Execute the daily GECO-ANA optimization routine to monitor campaign performance, identify issues and opportunities, and take timely actions that keep campaigns on track toward KPI targets.
 

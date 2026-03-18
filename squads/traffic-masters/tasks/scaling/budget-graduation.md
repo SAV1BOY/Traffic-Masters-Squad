@@ -7,6 +7,13 @@
 > **Checklists**: scaling-checklist, budget-graduation-checklist
 > **Output template**: templates/scaling-report-document.md
 
+## ROUTING
+
+> **Agents**: scale-optimizer, traffic-chief
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Graduar budgets de campanhas do estágio de teste para o estágio de scale seguindo o Graduation Testing framework, garantindo que apenas campanhas validadas recebem investimento incremental.
 

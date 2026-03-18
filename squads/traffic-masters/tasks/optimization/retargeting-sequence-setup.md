@@ -7,6 +7,18 @@
 > **Checklists**: retargeting-setup-checklist
 > **Output template**: templates/retargeting-campaigns.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.retargeting-sequence-setup`
+> **Agents**: [media-buyer](../../agents/media-buyer.md), [depesh-mandalia](../../agents/depesh-mandalia.md)
+> **Frameworks**: `mandalia-infinity-retargeting`, `retargeting-sequence-system`
+> **Checklists**: `retargeting-quality`
+> **Templates**: `ads/retargeting-ad-template`
+> **Registry**: `data/registries/audiences-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Set up retargeting campaigns with sequenced messaging by audience window, implementing exclusion logic, frequency controls, and creative rotation to systematically convert warm audiences through progressive persuasion.
 

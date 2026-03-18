@@ -7,6 +7,18 @@
 > **Checklists**: retargeting-strategy-checklist
 > **Output template**: templates/retargeting-plan.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.retargeting-strategy`
+> **Agents**: [depesh-mandalia](../../agents/depesh-mandalia.md), [media-buyer](../../agents/media-buyer.md)
+> **Frameworks**: `mandalia-infinity-retargeting`, `retargeting-architecture`, `retargeting-sequence-system`
+> **Checklists**: `retargeting-quality`
+> **Templates**: `ads/retargeting-ad-template`
+> **Registry**: `data/registries/audiences-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Plan a comprehensive retargeting strategy defining audience windows, segmentation logic, creative sequences, and frequency controls that systematically moves warm audiences toward conversion without causing fatigue.
 

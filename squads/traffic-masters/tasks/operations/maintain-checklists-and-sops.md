@@ -7,6 +7,13 @@
 > **Checklists**: sop-maintenance-checklist
 > **Output template**: templates/sop-update-log.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, ads-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Keep all squad checklists and standard operating procedures current by reviewing them against actual workflows, incorporating lessons learned, updating for platform changes, and ensuring new team members can execute effectively.
 

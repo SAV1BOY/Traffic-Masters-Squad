@@ -7,6 +7,18 @@
 > **Checklists**: creative-analysis-checklist
 > **Output template**: templates/creative-analysis-report.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.creative-analysis-and-learnings`
+> **Agents**: [creative-analyst](../../agents/creative-analyst.md), [ralph-burns](../../agents/ralph-burns.md)
+> **Frameworks**: `burns-kaizen-kreative`, `creative-iteration-loop`, `hook-library-system`
+> **Checklists**: `creative-fatigue-quality`, `burns/burns-kaizen-kreative-iteration`
+> **Templates**: `reports/creative-analysis-report`, `experiments/learnings-log-template`
+> **Registry**: `data/registries/creatives-registry`, `data/metrics/learnings-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Analyze creative performance data to extract actionable learnings about which hooks, angles, formats, and elements drive results, feeding insights back into the creative strategy and production pipeline.
 

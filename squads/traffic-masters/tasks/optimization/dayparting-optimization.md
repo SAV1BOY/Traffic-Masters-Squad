@@ -7,6 +7,13 @@
 > **Checklists**: optimization-checklist, dayparting-checklist
 > **Output template**: templates/optimization-report-document.md
 
+## ROUTING
+
+> **Agents**: media-buyer, performance-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Otimizar o agendamento de anúncios (ad scheduling) e dayparting para concentrar a entrega de ads nos horários e dias com melhor custo por resultado, reduzindo desperdício em períodos de baixa performance.
 

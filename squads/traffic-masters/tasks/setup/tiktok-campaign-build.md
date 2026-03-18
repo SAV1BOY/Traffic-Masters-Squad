@@ -7,6 +7,18 @@
 > **Checklists**: tiktok-campaign-build-checklist
 > **Output template**: templates/tiktok-build-sheet.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.tiktok-campaign-build`
+> **Agents**: [media-buyer](../../agents/media-buyer.md), [ad-midas](../../agents/ad-midas.md)
+> **Frameworks**: `creative-angle-matrix`
+> **Checklists**: `campaign-build-quality`, `tiktok/tiktok-creative-native-quality`, `tiktok/tiktok-event-tracking-quality`
+> **Templates**: `ads/tiktok-ugc-ad-template`
+> **Registry**: `data/registries/campaigns-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Build TikTok advertising campaigns with native-feeling creative, proper event setup, audience targeting, and bidding configuration to reach younger and engaged audiences through platform-native content formats.
 

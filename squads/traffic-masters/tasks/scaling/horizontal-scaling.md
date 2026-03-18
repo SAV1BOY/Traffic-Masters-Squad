@@ -7,6 +7,18 @@
 > **Checklists**: horizontal-scaling-checklist
 > **Output template**: templates/expansion-plan.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.horizontal-scaling`
+> **Agents**: [scale-optimizer](../../agents/scale-optimizer.md), [traffic-chief](../../agents/traffic-chief.md)
+> **Frameworks**: `scaling-playbook`, `audience-building-system`
+> **Checklists**: `scaling-quality`
+> **Templates**: `plans/scaling-plan-template`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Scale horizontally by expanding into new audiences, geographic markets, ad formats, and placements to increase total addressable reach while maintaining performance efficiency across the expanded portfolio.
 

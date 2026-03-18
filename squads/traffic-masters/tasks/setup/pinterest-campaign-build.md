@@ -7,6 +7,13 @@
 > **Checklists**: setup-checklist, campaign-launch-checklist
 > **Output template**: templates/campaign-build-document.md
 
+## ROUTING
+
+> **Agents**: media-buyer, pixel-specialist
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Configurar e lançar campanhas no Pinterest Ads, aproveitando o comportamento de discovery e alta intenção de compra da plataforma para gerar tráfego qualificado e conversões.
 

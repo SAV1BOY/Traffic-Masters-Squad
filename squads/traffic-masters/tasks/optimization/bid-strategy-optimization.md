@@ -7,6 +7,13 @@
 > **Checklists**: optimization-checklist, bidding-strategy-checklist
 > **Output template**: templates/optimization-report-document.md
 
+## ROUTING
+
+> **Agents**: media-buyer, performance-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Otimizar as estratégias de bidding nas plataformas de ads para alinhar os lances com os objetivos reais de negócio, maximizando conversões ou ROAS dentro do budget disponível.
 

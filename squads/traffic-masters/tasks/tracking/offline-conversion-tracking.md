@@ -7,6 +7,13 @@
 > **Checklists**: tracking-checklist, offline-conversion-checklist
 > **Output template**: templates/tracking-setup-document.md
 
+## ROUTING
+
+> **Agents**: pixel-specialist
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Configurar pipelines de importação de conversões offline nas plataformas de ads, conectando dados de CRM e vendas presenciais ao tracking digital para otimização com dados completos de funil.
 

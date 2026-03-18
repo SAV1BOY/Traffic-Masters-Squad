@@ -7,6 +7,13 @@
 > **Checklists**: creative-checklist, ad-production-checklist
 > **Output template**: templates/creative-production-document.md
 
+## ROUTING
+
+> **Agents**: ad-midas, creative-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Produzir variações de criativos estáticos (imagens) para campanhas de paid media, seguindo frameworks de direct response e otimizando para cada plataforma e posicionamento.
 

@@ -7,6 +7,18 @@
 > **Checklists**: seasonal-research-checklist
 > **Output template**: templates/seasonal-calendar.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.seasonal-opportunity-research`
+> **Agents**: [traffic-chief](../../agents/traffic-chief.md), [performance-analyst](../../agents/performance-analyst.md)
+> **Frameworks**: `full-funnel-ads-strategy`
+> **Checklists**: `seasonal-campaign-quality`
+> **Templates**: `plans/seasonal-campaign-plan`
+> **Registry**: `data/research/platform-benchmarks`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Identify seasonal opportunities, demand fluctuations, and key dates that impact advertising performance to build a timing-optimized traffic calendar that maximizes spend efficiency and captures peak demand periods.
 

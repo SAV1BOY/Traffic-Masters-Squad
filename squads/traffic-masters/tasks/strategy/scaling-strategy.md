@@ -7,6 +7,18 @@
 > **Checklists**: scaling-strategy-checklist
 > **Output template**: templates/scaling-plan.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.scaling-strategy`
+> **Agents**: [scale-optimizer](../../agents/scale-optimizer.md), [depesh-mandalia](../../agents/depesh-mandalia.md), [traffic-chief](../../agents/traffic-chief.md)
+> **Frameworks**: `mandalia-scaling-recipes`, `scaling-playbook`, `kusmich-ponds-lakes-oceans`
+> **Checklists**: `scaling-quality`, `mandalia/mandalia-cbo-recipes-selection`
+> **Templates**: `plans/scaling-plan-template`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Plan the scaling approach for proven campaigns, defining vertical and horizontal scaling methods, budget increase cadence, performance guardrails, and contingency plans to grow spend while maintaining efficiency targets.
 

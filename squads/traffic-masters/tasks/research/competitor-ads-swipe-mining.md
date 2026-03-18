@@ -7,6 +7,18 @@
 > **Checklists**: swipe-file-checklist
 > **Output template**: templates/swipe-file.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.competitor-ads-swipe-mining`
+> **Agents**: [creative-analyst](../../agents/creative-analyst.md), [ads-analyst](../../agents/ads-analyst.md)
+> **Frameworks**: `creative-angle-matrix`, `hook-library-system`
+> **Checklists**: `creative/angle-coverage-quality`
+> **Templates**: `reports/competitor-ads-analysis-report`
+> **Registry**: `data/research/competitor-ads`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Systematically mine competitor advertisements from Meta Ad Library, TikTok Creative Center, and Google Ads Transparency Center to build an annotated swipe file that informs creative strategy and identifies market gaps.
 

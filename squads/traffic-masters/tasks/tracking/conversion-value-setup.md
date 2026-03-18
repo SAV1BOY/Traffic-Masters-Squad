@@ -7,6 +7,13 @@
 > **Checklists**: tracking-checklist, conversion-setup-checklist
 > **Output template**: templates/tracking-setup-document.md
 
+## ROUTING
+
+> **Agents**: pixel-specialist
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Configurar conversion values e value-based bidding nas plataformas de ads, permitindo que os algoritmos otimizem para o valor real de cada conversão e maximizem o ROAS.
 

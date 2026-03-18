@@ -7,6 +7,18 @@
 > **Checklists**: creative-refresh-checklist
 > **Output template**: templates/refresh-calendar.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.creative-refresh-plan`
+> **Agents**: [creative-analyst](../../agents/creative-analyst.md), [ad-midas](../../agents/ad-midas.md)
+> **Frameworks**: `creative-iteration-loop`, `creative-production-pipeline`
+> **Checklists**: `creative-fatigue-quality`, `creative/creative-refresh-cadence`
+> **Templates**: `plans/creative-production-plan`
+> **Registry**: `data/registries/creatives-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Plan the creative refresh cadence to proactively combat ad fatigue, maintain performance consistency, and ensure a continuous pipeline of fresh creatives replaces declining performers before they damage campaign efficiency.
 

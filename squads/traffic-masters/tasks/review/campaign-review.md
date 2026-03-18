@@ -7,6 +7,18 @@
 > **Checklists**: campaign-review-checklist
 > **Output template**: templates/review-notes.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.campaign-review`
+> **Agents**: [traffic-chief](../../agents/traffic-chief.md)
+> **Frameworks**: `full-funnel-ads-strategy`
+> **Checklists**: `campaign-build-quality`, `reporting-quality`
+> **Templates**: `reports/weekly-performance-report`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Conduct a structured campaign review led by the Traffic Chief to evaluate campaign performance, validate strategic alignment, assess execution quality, and make decisions on continuation, optimization, or termination of campaigns.
 

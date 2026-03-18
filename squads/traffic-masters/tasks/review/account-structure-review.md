@@ -7,6 +7,18 @@
 > **Checklists**: account-structure-checklist
 > **Output template**: templates/structure-assessment.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.account-structure-review`
+> **Agents**: [ads-analyst](../../agents/ads-analyst.md)
+> **Frameworks**: `account-structure-meta`, `account-structure-google`
+> **Checklists**: `account-audit-quality`
+> **Templates**: `reports/audit-report-template`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Review the advertising account structure across all platforms to ensure campaigns are properly organized, audiences are not overlapping, naming conventions are consistent, and the architecture supports both performance and reporting clarity.
 

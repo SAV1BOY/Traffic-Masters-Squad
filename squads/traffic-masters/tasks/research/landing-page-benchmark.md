@@ -7,6 +7,18 @@
 > **Checklists**: lp-benchmark-checklist
 > **Output template**: templates/lp-benchmark-report.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.landing-page-benchmark`
+> **Agents**: [creative-analyst](../../agents/creative-analyst.md), [ads-analyst](../../agents/ads-analyst.md)
+> **Frameworks**: `creative-angle-matrix`
+> **Checklists**: `landing-page-quality`, `cro/landing-page-speed-quality`
+> **Templates**: `reports/competitor-ads-analysis-report`
+> **Registry**: `data/research/competitor-ads`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Benchmark competitor landing pages to evaluate conversion architecture, messaging hierarchy, trust elements, page speed, and mobile experience, producing actionable insights for landing page optimization.
 

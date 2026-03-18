@@ -7,6 +7,18 @@
 > **Checklists**: cross-squad-sync-checklist
 > **Output template**: templates/sync-notes.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.cross-squad-sync`
+> **Agents**: [traffic-chief](../../agents/traffic-chief.md)
+> **Frameworks**: `client-ops-handoff`
+> **Checklists**: N/A
+> **Templates**: N/A
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Coordinate with the Copy Squad, Brand Squad, and other relevant teams to ensure alignment on messaging, creative direction, offers, landing pages, and upcoming campaigns that affect traffic performance.
 

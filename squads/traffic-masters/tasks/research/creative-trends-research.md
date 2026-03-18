@@ -7,6 +7,13 @@
 > **Checklists**: research-checklist, creative-trends-checklist
 > **Output template**: templates/creative-trends-document.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, ads-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Pesquisar tendências criativas atuais por plataforma e vertical, identificando formatos, estilos visuais, hooks e abordagens de copy que estão gerando melhor performance em paid media.
 

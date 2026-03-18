@@ -7,6 +7,18 @@
 > **Checklists**: ugc-brief-checklist
 > **Output template**: templates/ugc-briefs.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.ugc-brief-and-shotlist`
+> **Agents**: [ad-midas](../../agents/ad-midas.md), [creative-analyst](../../agents/creative-analyst.md)
+> **Frameworks**: `ugc-creator-framework`, `creative-angle-matrix`
+> **Checklists**: `creative/ugc-authenticity`, `creative-brief-quality`
+> **Templates**: `briefs/ugc-creator-brief`
+> **Registry**: `data/registries/creatives-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Create detailed UGC briefs and shot lists for creator content that feels authentic and native to each platform while delivering strategic messaging aligned with campaign angles and hooks.
 

@@ -7,6 +7,13 @@
 > **Checklists**: swipe-file-curation-checklist
 > **Output template**: templates/swipe-file-index.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, ads-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Curate and maintain the squad's swipe file by continuously adding new competitive ads, annotating entries with strategic insights, removing outdated examples, and organizing the collection for easy creative reference.
 

@@ -7,6 +7,18 @@
 > **Checklists**: creative-production-checklist
 > **Output template**: templates/creative-assets.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.creative-production-sprint`
+> **Agents**: [ad-midas](../../agents/ad-midas.md), [creative-analyst](../../agents/creative-analyst.md)
+> **Frameworks**: `creative-production-pipeline`, `burns-kaizen-kreative`, `creative-angle-matrix`
+> **Checklists**: `creative-brief-quality`, `creative/thumb-first-frame-quality`, `creative/claim-proof-compliance`
+> **Templates**: `briefs/creative-brief`, `briefs/ugc-creator-brief`
+> **Registry**: `data/registries/creatives-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Execute a focused creative production sprint to produce a batch of ad creative assets across multiple formats and angles, ready for campaign deployment and testing.
 

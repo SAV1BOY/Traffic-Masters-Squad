@@ -7,6 +7,18 @@
 > **Checklists**: international-expansion-checklist
 > **Output template**: templates/international-plan.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.international-expansion`
+> **Agents**: [traffic-chief](../../agents/traffic-chief.md), [media-buyer](../../agents/media-buyer.md)
+> **Frameworks**: `omnichannel-media-strategy`, `scaling-playbook`
+> **Checklists**: `cross-platform-consistency-quality`, `compliance-ad-policies-quality`
+> **Templates**: `plans/scaling-plan-template`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Expand advertising campaigns into new international markets by evaluating market viability, adapting creative and messaging for local audiences, configuring proper tracking and currency handling, and managing multi-market campaign operations.
 

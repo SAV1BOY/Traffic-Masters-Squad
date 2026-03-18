@@ -7,6 +7,13 @@
 > **Checklists**: tracking-checklist, cross-domain-checklist
 > **Output template**: templates/tracking-setup-document.md
 
+## ROUTING
+
+> **Agents**: pixel-specialist
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Configurar cross-domain e cross-device tracking para garantir atribuição precisa quando o usuário navega entre múltiplos domínios (site principal, checkout, subdomínios) e dispositivos diferentes.
 

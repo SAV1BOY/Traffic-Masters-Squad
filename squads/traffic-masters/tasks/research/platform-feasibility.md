@@ -7,6 +7,18 @@
 > **Checklists**: platform-feasibility-checklist
 > **Output template**: templates/platform-recommendation.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.platform-feasibility`
+> **Agents**: [traffic-chief](../../agents/traffic-chief.md), [ads-analyst](../../agents/ads-analyst.md)
+> **Frameworks**: `omnichannel-media-strategy`, `breeze-5as-readiness`
+> **Checklists**: `cross-platform-consistency-quality`
+> **Templates**: `briefs/acquisition-strategy-brief`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Assess which advertising platforms are viable and optimal for the business based on audience presence, creative requirements, budget thresholds, policy constraints, and expected performance benchmarks.
 

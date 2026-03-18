@@ -7,6 +7,18 @@
 > **Checklists**: pixel-capi-setup-checklist
 > **Output template**: templates/tracking-documentation.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.pixel-capi-setup`
+> **Agents**: [pixel-specialist](../../agents/pixel-specialist.md)
+> **Frameworks**: `tracking-stack-standard`, `tracking-layer`
+> **Checklists**: `pixel-and-capi-quality`, `tracking/conversion-api-dedupe`, `tracking/tracking-qa-runbook`
+> **Templates**: `tracking/event-map-template`, `tracking/data-layer-spec-template`
+> **Registry**: `data/registries/pixels-and-events-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Set up browser-side pixels and server-side Conversions API (CAPI) for all advertising platforms with proper deduplication to maximize event match quality and ensure reliable conversion data despite browser privacy restrictions.
 

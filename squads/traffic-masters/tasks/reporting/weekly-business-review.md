@@ -7,6 +7,18 @@
 > **Checklists**: wbr-checklist
 > **Output template**: templates/weekly-report.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.weekly-business-review`
+> **Agents**: [performance-analyst](../../agents/performance-analyst.md), [traffic-chief](../../agents/traffic-chief.md)
+> **Frameworks**: `burns-mpi`, `kpi-tree-acquisition`
+> **Checklists**: `reporting-quality`
+> **Templates**: `reports/weekly-performance-report`
+> **Registry**: `data/metrics/weekly-scorecards`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Produce a Weekly Business Review that summarizes performance across all channels, highlights key wins and issues, provides actionable insights, and documents decisions made for the upcoming week.
 

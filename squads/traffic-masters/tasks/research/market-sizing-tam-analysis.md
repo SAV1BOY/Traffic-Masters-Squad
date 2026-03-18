@@ -7,6 +7,13 @@
 > **Checklists**: research-checklist, market-sizing-checklist
 > **Output template**: templates/tam-analysis-document.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, ads-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Estimar o Total Addressable Market (TAM), Serviceable Addressable Market (SAM) e Serviceable Obtainable Market (SOM) para os canais de aquisição paga, dimensionando o potencial real de crescimento via paid media.
 

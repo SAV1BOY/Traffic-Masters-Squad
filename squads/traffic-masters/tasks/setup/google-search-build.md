@@ -7,6 +7,18 @@
 > **Checklists**: google-search-build-checklist
 > **Output template**: templates/google-search-build-sheet.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.google-search-build`
+> **Agents**: [kasim-aslam](../../agents/kasim-aslam.md), [media-buyer](../../agents/media-buyer.md), [pixel-specialist](../../agents/pixel-specialist.md)
+> **Frameworks**: `aslam-4-core-campaign-types`, `aslam-manual-cpc-first`, `account-structure-google`
+> **Checklists**: `campaign-build-quality`, `google/google-search-build-quality`, `google/google-bidding-quality`, `aslam/aslam-4-core-campaign-types`
+> **Templates**: `ads/google-search-ad-template`, `naming/campaign-naming-standard`
+> **Registry**: `data/registries/campaigns-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Build Google Search campaigns with proper ad group structure, keyword match types, Responsive Search Ads, bidding strategy, and conversion tracking to capture high-intent search traffic aligned with the keyword research.
 

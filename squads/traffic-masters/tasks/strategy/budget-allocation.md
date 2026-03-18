@@ -7,6 +7,18 @@
 > **Checklists**: budget-allocation-checklist
 > **Output template**: templates/budget-allocation.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.budget-allocation`
+> **Agents**: [traffic-chief](../../agents/traffic-chief.md), [performance-analyst](../../agents/performance-analyst.md)
+> **Frameworks**: `budget-allocation-model`, `ltv-cac-unit-economics`
+> **Checklists**: `budget-pacing-quality`
+> **Templates**: `plans/media-plan-template`
+> **Registry**: `data/registries/budgets-and-guardrails`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Allocate the total media budget across channels, campaign types, and funnel stages using data-driven allocation models that balance proven performance with testing and innovation.
 

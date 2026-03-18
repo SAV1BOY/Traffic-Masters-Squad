@@ -7,6 +7,13 @@
 > **Checklists**: onboarding-checklist
 > **Output template**: templates/onboarding-document.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, ads-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Onboard a new client or account into the Traffic Masters Squad by conducting discovery, auditing existing assets, setting up access and tracking, and building the initial campaign plan through a structured onboarding process.
 

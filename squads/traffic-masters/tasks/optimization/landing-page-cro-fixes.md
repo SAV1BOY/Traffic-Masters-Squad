@@ -7,6 +7,18 @@
 > **Checklists**: cro-fixes-checklist
 > **Output template**: templates/cro-fixes.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.landing-page-cro-fixes`
+> **Agents**: [creative-analyst](../../agents/creative-analyst.md), [performance-analyst](../../agents/performance-analyst.md)
+> **Frameworks**: `burns-conversion-architecture`
+> **Checklists**: `landing-page-quality`, `cro/landing-page-speed-quality`, `cro/form-friction-quality`, `cro/post-click-consistency`
+> **Templates**: N/A
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Identify and fix conversion rate optimization issues on landing pages by analyzing user behavior data, heatmaps, and funnel drop-off points to improve the conversion rate and reduce cost per acquisition.
 

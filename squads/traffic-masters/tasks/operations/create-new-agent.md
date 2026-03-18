@@ -7,6 +7,13 @@
 > **Checklists**: new-agent-checklist
 > **Output template**: templates/agent-definition.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, ads-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Design and create a new agent for the Traffic Masters Squad by defining its role, expertise domain, decision authority, interaction patterns, and integration with existing squad workflows.
 

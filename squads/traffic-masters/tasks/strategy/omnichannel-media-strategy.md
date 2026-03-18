@@ -7,6 +7,13 @@
 > **Checklists**: strategy-checklist, media-plan-checklist
 > **Output template**: templates/omnichannel-strategy-document.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, molly-pittman
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Construir uma estratégia de mídia cross-platform integrada, definindo o papel de cada canal no funil de aquisição e como as plataformas trabalham em sinergia para maximizar o ROAS total.
 

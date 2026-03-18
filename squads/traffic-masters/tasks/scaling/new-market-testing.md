@@ -7,6 +7,13 @@
 > **Checklists**: scaling-checklist, market-testing-checklist
 > **Output template**: templates/scaling-report-document.md
 
+## ROUTING
+
+> **Agents**: scale-optimizer, traffic-chief
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Testar novos mercados geográficos com budgets controlados, validando a viabilidade de expansão antes de alocar investimento significativo, seguindo um protocolo estruturado de teste.
 

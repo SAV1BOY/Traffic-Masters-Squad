@@ -7,6 +7,18 @@
 > **Checklists**: creative-review-checklist
 > **Output template**: templates/creative-feedback.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.creative-review`
+> **Agents**: [creative-analyst](../../agents/creative-analyst.md)
+> **Frameworks**: `burns-kaizen-kreative`, `creative-iteration-loop`
+> **Checklists**: `creative-fatigue-quality`, `creative/angle-coverage-quality`
+> **Templates**: `reports/creative-analysis-report`
+> **Registry**: `data/registries/creatives-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Review creative assets for strategic alignment, brand consistency, platform compliance, and performance potential before deployment, and evaluate live creatives for ongoing performance and optimization opportunities.
 

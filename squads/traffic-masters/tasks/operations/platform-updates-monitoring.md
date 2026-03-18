@@ -7,6 +7,13 @@
 > **Checklists**: platform-monitoring-checklist
 > **Output template**: templates/platform-update-log.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, ads-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Monitor advertising platform changes including algorithm updates, new features, policy changes, and deprecations to proactively adapt campaigns and squad procedures before changes impact performance.
 

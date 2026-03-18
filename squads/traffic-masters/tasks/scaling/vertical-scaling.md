@@ -7,6 +7,18 @@
 > **Checklists**: vertical-scaling-checklist
 > **Output template**: templates/scaling-actions.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.vertical-scaling`
+> **Agents**: [scale-optimizer](../../agents/scale-optimizer.md), [depesh-mandalia](../../agents/depesh-mandalia.md)
+> **Frameworks**: `mandalia-scaling-recipes`, `scaling-playbook`, `scaling-layer`
+> **Checklists**: `scaling-quality`, `mandalia/mandalia-cbo-recipes-selection`
+> **Templates**: `plans/scaling-plan-template`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Scale budget vertically on proven winning campaigns by systematically increasing daily spend while monitoring for efficiency degradation, learning phase disruption, and audience saturation.
 

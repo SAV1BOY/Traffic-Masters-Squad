@@ -7,6 +7,13 @@
 > **Checklists**: scaling-checklist, lookalike-expansion-checklist
 > **Output template**: templates/scaling-report-document.md
 
+## ROUTING
+
+> **Agents**: scale-optimizer, traffic-chief
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Expandir audiências lookalike progressivamente de 1% para 3% e 5%, aumentando o volume de conversões mantendo o CPA dentro dos limites aceitáveis através de um processo controlado de scaling.
 

@@ -7,6 +7,13 @@
 > **Checklists**: creative-checklist, dco-setup-checklist
 > **Output template**: templates/creative-production-document.md
 
+## ROUTING
+
+> **Agents**: ad-midas, creative-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Configurar campanhas de Dynamic Creative Optimization (DCO) que combinam automaticamente variações de imagem, vídeo, headline, copy e CTA para encontrar as melhores combinações por segmento de audiência.
 

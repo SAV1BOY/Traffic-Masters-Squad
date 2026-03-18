@@ -7,6 +7,13 @@
 > **Checklists**: creative-library-checklist
 > **Output template**: templates/creative-library-index.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, ads-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Curate and maintain the creative asset library with consistent tagging, performance annotations, and organized structure so that any squad member can quickly find, reference, and build upon existing creative assets.
 

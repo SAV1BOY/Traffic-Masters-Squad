@@ -7,6 +7,13 @@
 > **Checklists**: reporting-checklist, funnel-analysis-checklist
 > **Output template**: templates/reporting-document.md
 
+## ROUTING
+
+> **Agents**: performance-analyst, traffic-chief
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Analisar os pontos de drop-off no funil de conversão, quantificando as perdas em cada etapa e recomendando ações corretivas para melhorar a taxa de conversão end-to-end das campanhas pagas.
 

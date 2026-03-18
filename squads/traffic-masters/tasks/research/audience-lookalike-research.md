@@ -7,6 +7,13 @@
 > **Checklists**: research-checklist, audience-validation-checklist
 > **Output template**: templates/lookalike-research-document.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, ads-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Pesquisar e mapear audiências lookalike/similares com base nos dados de clientes existentes, identificando padrões comportamentais e demográficos que permitam expandir o alcance pago com alta qualidade de lead.
 

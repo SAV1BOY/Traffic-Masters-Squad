@@ -7,6 +7,18 @@
 > **Checklists**: tax-compliance-checklist
 > **Output template**: templates/compliance-log.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.tax-and-compliance-log`
+> **Agents**: [fiscal](../../agents/fiscal.md)
+> **Frameworks**: `governance-layer`
+> **Checklists**: `finance/cost-center-tagging`
+> **Templates**: `finance/cost-center-mapping-template`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Maintain a comprehensive tax and compliance log for all advertising expenditures, ensuring proper documentation of tax obligations, withholding requirements, and regulatory compliance for Brazilian and international digital advertising operations.
 

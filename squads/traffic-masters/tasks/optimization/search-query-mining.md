@@ -7,6 +7,18 @@
 > **Checklists**: search-query-mining-checklist
 > **Output template**: templates/negative-keyword-list.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.search-query-mining`
+> **Agents**: [kasim-aslam](../../agents/kasim-aslam.md), [media-buyer](../../agents/media-buyer.md)
+> **Frameworks**: `aslam-4-core-campaign-types`
+> **Checklists**: `aslam/aslam-search-query-hygiene`
+> **Templates**: N/A
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Mine search query reports to identify irrelevant queries consuming budget, discover new keyword opportunities, refine match type strategy, and maintain a comprehensive negative keyword list that improves campaign efficiency.
 

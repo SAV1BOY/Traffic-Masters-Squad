@@ -7,6 +7,18 @@
 > **Checklists**: compliance-review-checklist
 > **Output template**: templates/compliance-report.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.compliance-review`
+> **Agents**: [fiscal](../../agents/fiscal.md), [ads-analyst](../../agents/ads-analyst.md)
+> **Frameworks**: `policy-risk-classification`, `governance-layer`
+> **Checklists**: `compliance-ad-policies-quality`, `financial-reconciliation-quality`
+> **Templates**: N/A
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Review all active advertising for compliance with platform policies, advertising regulations, privacy laws, and industry-specific requirements to prevent ad rejections, account suspensions, legal issues, and reputational damage.
 

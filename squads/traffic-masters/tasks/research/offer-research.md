@@ -7,6 +7,18 @@
 > **Checklists**: offer-research-checklist
 > **Output template**: templates/offer-hypothesis-document.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.offer-research`
+> **Agents**: [molly-pittman](../../agents/molly-pittman.md), [depesh-mandalia](../../agents/depesh-mandalia.md), [traffic-chief](../../agents/traffic-chief.md)
+> **Frameworks**: `pittman-offer-formula`, `mandalia-ac4`, `offer-and-proof-stack`
+> **Checklists**: `offer-quality`, `pittman/pittman-offer-formula-audit`
+> **Templates**: `briefs/acquisition-strategy-brief`
+> **Registry**: `data/research/offer-research`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Research and document competitor offers, available proof elements, guarantee options, and pricing structures to develop a differentiated offer hypothesis that maximizes conversion potential.
 

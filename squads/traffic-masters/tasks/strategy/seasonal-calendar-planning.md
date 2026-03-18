@@ -7,6 +7,13 @@
 > **Checklists**: strategy-checklist, seasonal-planning-checklist
 > **Output template**: templates/seasonal-calendar-document.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, molly-pittman
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Construir um calendário sazonal e promocional de campanhas pagas, antecipando períodos de alta demanda, ajustando budgets e criativos para maximizar resultados em datas estratégicas.
 

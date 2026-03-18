@@ -7,6 +7,18 @@
 > **Checklists**: linkedin-campaign-build-checklist
 > **Output template**: templates/linkedin-build-sheet.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.linkedin-campaign-build`
+> **Agents**: [media-buyer](../../agents/media-buyer.md)
+> **Frameworks**: `omnichannel-media-strategy`
+> **Checklists**: `campaign-build-quality`, `linkedin/linkedin-targeting-quality`, `linkedin/linkedin-leadgen-forms-quality`
+> **Templates**: `ads/linkedin-b2b-ad-template`
+> **Registry**: `data/registries/campaigns-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Build LinkedIn advertising campaigns with B2B-specific targeting, lead form integration, professional creative formats, and bidding strategy to reach decision-makers and generate qualified B2B leads.
 

@@ -7,6 +7,18 @@
 > **Checklists**: ponds-lakes-oceans-checklist
 > **Output template**: templates/stage-progression-plan.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.ponds-lakes-oceans-scaling`
+> **Agents**: [nicholas-kusmich](../../agents/nicholas-kusmich.md), [scale-optimizer](../../agents/scale-optimizer.md)
+> **Frameworks**: `kusmich-ponds-lakes-oceans`, `scaling-playbook`
+> **Checklists**: `scaling-quality`, `kusmich/kusmich-ponds-lakes-oceans-scaling`
+> **Templates**: `plans/scaling-plan-template`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Scale campaigns through the Ponds, Lakes, Oceans framework by progressively expanding audience size and budget as the pixel matures and accumulates conversion data, ensuring each stage builds on validated performance from the previous one.
 

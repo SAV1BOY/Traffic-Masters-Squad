@@ -7,6 +7,18 @@
 > **Checklists**: google-shopping-setup-checklist
 > **Output template**: templates/google-shopping-build-sheet.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.google-shopping-setup`
+> **Agents**: [kasim-aslam](../../agents/kasim-aslam.md), [media-buyer](../../agents/media-buyer.md)
+> **Frameworks**: `aslam-shopping-pmax-dual`, `account-structure-google`
+> **Checklists**: `google/google-shopping-quality`, `campaign-build-quality`
+> **Templates**: `naming/campaign-naming-standard`
+> **Registry**: `data/registries/campaigns-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Set up Google Merchant Center, configure product feeds, and build Shopping campaigns with proper product group segmentation, bidding strategy, and feed optimization for e-commerce product advertising.
 

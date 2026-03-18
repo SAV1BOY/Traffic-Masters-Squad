@@ -7,6 +7,18 @@
 > **Checklists**: research-checklist, avatar-validation-checklist
 > **Output template**: templates/icp-avatar-document.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.icp-and-avatar-deep-dive`
+> **Agents**: [depesh-mandalia](../../agents/depesh-mandalia.md), [nicholas-kusmich](../../agents/nicholas-kusmich.md), [traffic-chief](../../agents/traffic-chief.md)
+> **Frameworks**: `mandalia-5w-avatar`, `kusmich-targeting-trifecta`, `icp-and-avatar`
+> **Checklists**: `mandalia/mandalia-5w-avatar-depth-audit`, `kusmich/kusmich-targeting-trifecta-3fs`
+> **Templates**: `briefs/acquisition-strategy-brief`
+> **Registry**: `data/research/avatar-and-icp`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Build a comprehensive Ideal Customer Profile and detailed avatar using the Mandalia 5W framework and Kusmich Trifecta methodology, capturing real language, emotional triggers, and behavioral patterns that drive ad targeting and messaging decisions.
 

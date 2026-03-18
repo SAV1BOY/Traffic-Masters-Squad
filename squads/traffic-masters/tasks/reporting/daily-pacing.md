@@ -7,6 +7,18 @@
 > **Checklists**: daily-pacing-checklist
 > **Output template**: templates/pacing-report.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.daily-pacing`
+> **Agents**: [media-buyer](../../agents/media-buyer.md), [performance-analyst](../../agents/performance-analyst.md)
+> **Frameworks**: `pacing-and-guardrails`
+> **Checklists**: `budget-pacing-quality`
+> **Templates**: `reports/daily-pacing-report`
+> **Registry**: N/A
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Perform daily pacing checks to verify campaigns are delivering on budget targets, identify delivery issues early, and provide a quick performance snapshot that enables timely intervention.
 

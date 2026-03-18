@@ -7,6 +7,18 @@
 > **Checklists**: measurement-plan-checklist
 > **Output template**: templates/measurement-plan.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.measurement-plan`
+> **Agents**: [pixel-specialist](../../agents/pixel-specialist.md), [performance-analyst](../../agents/performance-analyst.md), [ralph-burns](../../agents/ralph-burns.md)
+> **Frameworks**: `burns-ncac-method`, `burns-mpi`, `attribution-and-incrementality`, `tracking-stack-standard`
+> **Checklists**: `tracking-plan-quality`, `attribution-quality`
+> **Templates**: `tracking/event-map-template`
+> **Registry**: `data/registries/pixels-and-events-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Plan the complete measurement infrastructure including event definitions, attribution model selection, dashboard design, and reporting cadence to ensure accurate performance tracking and data-driven decision making.
 

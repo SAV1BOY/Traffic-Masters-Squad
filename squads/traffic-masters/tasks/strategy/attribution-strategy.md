@@ -7,6 +7,18 @@
 > **Checklists**: attribution-strategy-checklist
 > **Output template**: templates/attribution-plan.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.attribution-strategy`
+> **Agents**: [pixel-specialist](../../agents/pixel-specialist.md), [performance-analyst](../../agents/performance-analyst.md)
+> **Frameworks**: `attribution-and-incrementality`, `burns-ncac-method`
+> **Checklists**: `attribution-quality`
+> **Templates**: `reports/attribution-report`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Plan the attribution approach including model selection, tool configuration, cross-platform reconciliation methods, and truth-source definition to ensure accurate credit assignment and informed budget decisions.
 

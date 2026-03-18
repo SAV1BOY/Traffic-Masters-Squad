@@ -7,6 +7,18 @@
 > **Checklists**: creative-system-scale-checklist
 > **Output template**: templates/production-pipeline.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.creative-system-scale`
+> **Agents**: [ad-midas](../../agents/ad-midas.md), [creative-analyst](../../agents/creative-analyst.md), [ralph-burns](../../agents/ralph-burns.md)
+> **Frameworks**: `burns-kaizen-kreative`, `creative-production-pipeline`, `dynamic-creative-optimization`
+> **Checklists**: `creative-brief-quality`, `creative/creative-refresh-cadence`
+> **Templates**: `plans/creative-production-plan`
+> **Registry**: `data/registries/creatives-registry`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Scale the creative production system to support increased ad spend by expanding production capacity, systemizing workflows, implementing modular creative approaches, and building a sustainable pipeline that prevents creative bottlenecks.
 

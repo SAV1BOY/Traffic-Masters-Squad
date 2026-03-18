@@ -7,6 +7,13 @@
 > **Checklists**: reporting-checklist, creative-analysis-checklist
 > **Output template**: templates/reporting-document.md
 
+## ROUTING
+
+> **Agents**: performance-analyst, traffic-chief
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Realizar análise profunda da performance criativa across todas as dimensões (formato, angle, copy, visual, placement), identificando padrões de sucesso e oportunidades de iteração para melhorar resultados.
 

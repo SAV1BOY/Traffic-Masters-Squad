@@ -7,6 +7,13 @@
 > **Checklists**: research-checklist, bid-analysis-checklist
 > **Output template**: templates/bid-landscape-document.md
 
+## ROUTING
+
+> **Agents**: traffic-chief, ads-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Analisar o cenário competitivo de lances (bids) nas principais plataformas de ads, mapeando CPCs, CPMs e dinâmicas de leilão para informar estratégias de bidding mais eficientes.
 

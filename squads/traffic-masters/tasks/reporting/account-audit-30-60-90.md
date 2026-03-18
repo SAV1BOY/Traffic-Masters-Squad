@@ -7,6 +7,18 @@
 > **Checklists**: account-audit-checklist
 > **Output template**: templates/audit-report-plan.md
 
+## ROUTING (from config.yaml)
+
+> **Config key**: `routing.account-audit-30-60-90`
+> **Agents**: [ads-analyst](../../agents/ads-analyst.md), [traffic-chief](../../agents/traffic-chief.md), [kasim-aslam](../../agents/kasim-aslam.md)
+> **Frameworks**: `burns-sgp-30-60-90`, `account-structure-meta`, `account-structure-google`
+> **Checklists**: `account-audit-quality`, `burns/burns-ncac-mpi-metrics-audit`
+> **Templates**: `reports/audit-report-template`, `plans/30-60-90-growth-plan`
+> **Registry**: `data/registries/decisions-log`
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Conduct a comprehensive account audit evaluating campaign structure, targeting, creative, bidding, tracking, and overall strategy to identify improvement opportunities and build a prioritized 30-60-90 day action plan.
 

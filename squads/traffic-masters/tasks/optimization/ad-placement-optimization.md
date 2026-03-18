@@ -7,6 +7,13 @@
 > **Checklists**: optimization-checklist, placement-analysis-checklist
 > **Output template**: templates/optimization-report-document.md
 
+## ROUTING
+
+> **Agents**: media-buyer, performance-analyst
+> **Escalation**: Traffic Chief if quality gate fails 2x → see `config.yaml > rework_loop`
+> **Rework**: Max 3 iterations per gate → team lead → Traffic Chief
+
+
 ## Objective
 Otimizar os posicionamentos de anúncios (placements) e configurar exclusões estratégicas para concentrar budget nos placements que entregam melhor custo por resultado.
 
