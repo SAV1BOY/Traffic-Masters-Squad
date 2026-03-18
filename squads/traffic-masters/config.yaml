@@ -559,21 +559,164 @@ cross_squad:
       - feature-benefit-mapping
     sync_cadence: "Monthly product-traffic alignment"
 
+  storytelling_squad:
+    handoff_to_traffic:
+      - "Narrative frameworks for campaign storytelling → frameworks/"
+      - "Video scripts and storyboards → templates/ads/"
+      - "Brand story arcs for sequential ad campaigns → tasks/creative/"
+    handoff_from_traffic:
+      - "Ad engagement data on narrative formats → storytelling/data/"
+      - "Top-performing story-driven creatives → storytelling/swipe/"
+    shared_assets:
+      - narrative-arc-library
+      - story-hook-frameworks
+    sync_cadence: "Monthly creative alignment"
+
+  design_squad:
+    handoff_to_traffic:
+      - "Ad creative assets (images, videos, animations) → templates/ads/"
+      - "Landing page designs → templates/landing-pages/"
+      - "Design system components for ad templates → lib/components/"
+    handoff_from_traffic:
+      - "Creative performance data by visual element → design/data/"
+      - "Platform spec requirements → design/reference/"
+      - "A/B test results on design variations → design/data/"
+    shared_assets:
+      - visual-asset-library
+      - platform-spec-guide
+      - design-performance-benchmarks
+    sync_cadence: "Weekly creative production sync"
+
+  deepresearch_squad:
+    handoff_to_traffic:
+      - "Market research reports → data/research/"
+      - "Competitive landscape analysis → data/research/competitor-ads/"
+      - "Industry trend reports → reference/industries/"
+      - "Audience psychographic deep-dives → data/research/avatar-and-icp/"
+    handoff_from_traffic:
+      - "Ad performance data for research validation → deepresearch/data/"
+      - "Hypothesis from campaign experiments → deepresearch/data/"
+    shared_assets:
+      - research-methodology-standards
+      - data-source-registry
+    sync_cadence: "Bi-weekly research briefing"
+
+  cybersecurity_squad:
+    handoff_to_traffic:
+      - "Platform security policies and compliance requirements → reference/policies/"
+      - "Data privacy guidelines (LGPD/GDPR) → docs/"
+      - "Ad fraud detection patterns → reference/tracking/"
+    handoff_from_traffic:
+      - "Tracking implementation specs for privacy review → cybersecurity/reference/"
+      - "Third-party tool/pixel inventory → cybersecurity/data/"
+    shared_assets:
+      - privacy-compliance-checklist
+      - data-processor-registry
+    sync_cadence: "Quarterly compliance review"
+
+  c_level_squad:
+    handoff_to_traffic:
+      - "Strategic direction and priority changes → tasks/strategy/"
+      - "Budget approvals and ceiling changes → data/registries/budgets-and-guardrails"
+      - "Go/no-go decisions on major initiatives → data/registries/decisions-log"
+    handoff_from_traffic:
+      - "Monthly growth reports → c-level/reports/"
+      - "Budget utilization and ROI summaries → c-level/data/"
+      - "Quarterly strategic recommendations → c-level/strategy/"
+    shared_assets:
+      - executive-dashboard
+      - budget-authority-matrix
+    sync_cadence: "Monthly executive review"
+
+  advisory_board_squad:
+    handoff_to_traffic:
+      - "Strategic recommendations and pivots → tasks/strategy/"
+      - "Market intelligence briefings → data/research/"
+    handoff_from_traffic:
+      - "Performance data and trend analysis → advisory-board/data/"
+      - "Strategic challenge briefs for advisory input → advisory-board/briefs/"
+    shared_assets:
+      - strategic-priorities-registry
+    sync_cadence: "Quarterly advisory session"
+
+  pre_programming_squad:
+    handoff_to_traffic:
+      - "Landing page technical specs → templates/landing-pages/"
+      - "Tracking implementation architecture → reference/tracking/"
+      - "API integration specs for automation → scripts/"
+    handoff_from_traffic:
+      - "Tracking requirements and pixel specs → pre-programming/reference/"
+      - "Landing page performance requirements → pre-programming/specs/"
+    shared_assets:
+      - technical-requirements-template
+      - api-integration-registry
+    sync_cadence: "As needed for technical implementations"
+
+  movement_squad:
+    handoff_to_traffic:
+      - "Community engagement insights → data/research/"
+      - "Cultural trend signals for ad creative → swipe/"
+      - "Movement messaging for campaign alignment → voice/"
+    handoff_from_traffic:
+      - "Community response data from paid campaigns → movement/data/"
+      - "Audience sentiment signals → movement/data/"
+    shared_assets:
+      - cultural-moment-calendar
+      - community-sentiment-tracker
+    sync_cadence: "Monthly cultural alignment"
+
 # ============================================================
 # QUALITY GATES
 # ============================================================
 
 quality_gates:
+  gate_types:
+    checklist: "Predefined item list — all items must pass before proceeding"
+    threshold: "Quantitative metric compared against defined limit — blocks if outside range"
+    approval: "Explicit sign-off from designated agent — can approve, reject, or request changes"
+    validation: "Automated/systematic data integrity check — pass/fail determines progression"
+
   mandatory:
     - campaign-build-quality
     - tracking-plan-quality
     - reporting-quality
+
   per_domain:
     meta: [meta/meta-account-structure-quality, meta/meta-capi-quality]
     google: [google/google-search-build-quality, google/google-bidding-quality]
     youtube: [youtube/yt-campaign-setup-quality, youtube/yt-creative-hook-5s]
     creative: [creative-brief-quality, creative/angle-coverage-quality]
     finance: [financial-reconciliation-quality, finance/budget-approval]
+
+  non_overridable:
+    - tracking-plan-quality
+    - pixel-and-capi-quality
+    - compliance-ad-policies-quality
+    - financial-reconciliation-quality
+
+  failure_handling: "See rework_loop section — gate failure triggers rework protocol"
+
+  go_nogo:
+    campaign_launch:
+      - "Tracking QA passed (pixel-specialist sign-off)"
+      - "Creative assets approved (ad-midas sign-off)"
+      - "Budget approved (fiscal sign-off)"
+      - "Naming conventions validated"
+      - "Landing page load time < 3s"
+      - "UTMs validated and firing correctly"
+      - "Campaign build checklist 100% complete"
+    scaling:
+      - "CPA stable within 15% for 14+ consecutive days"
+      - "Minimum 3 active winning creatives"
+      - "Budget increment does not exceed 30% per phase"
+      - "performance-analyst stability assessment complete"
+      - "No active tracking issues or data gaps"
+    new_channel_launch:
+      - "Platform feasibility assessment complete"
+      - "Tracking infrastructure ready and tested"
+      - "Minimum 30-day test budget approved by fiscal"
+      - "Creative assets adapted for platform specs"
+      - "traffic-chief approval with documented rationale"
 
 # ============================================================
 # KPIs
@@ -615,6 +758,44 @@ defaults:
   output_format: markdown
   budget_model: "70/20/10"
   attribution_window: "7d_click_1d_view"
+
+# ============================================================
+# OUTPUT FORMATS (Expected Deliverable per Task Category)
+# ============================================================
+
+output_formats:
+  research: "Markdown document + registry entry in data/research/"
+  strategy: "Markdown brief + media plan template + registry entry in data/registries/decisions-log"
+  setup: "Platform configuration + naming standard applied + registry entry in data/registries/campaigns-registry"
+  tracking: "Event map + data layer spec + registry entry in data/registries/pixels-and-events-registry"
+  creative: "Creative brief + asset list + registry entry in data/registries/creatives-registry"
+  optimization: "Change log with rationale + pacing report update"
+  scaling: "Scaling plan + registry entry in data/registries/decisions-log"
+  reporting: "Report template filled + metrics update in data/metrics/"
+  review: "Audit report + decisions-log entry with findings and remediation plan"
+  finance: "Financial template filled + registry entry in data/registries/budgets-and-guardrails"
+  operations: "Process documentation + registry entry in data/registries/decisions-log"
+
+# ============================================================
+# SWIPE INTEGRATION (Linking Swipe Files to Routing)
+# ============================================================
+
+swipe_integration:
+  config_file: "swipe.config"
+  usage_in_routing:
+    hook-and-angle-research: [swipe/hooks/, swipe/angles/]
+    competitor-ads-swipe-mining: [swipe/meta/, swipe/google/, swipe/tiktok/, swipe/youtube/, swipe/linkedin/]
+    creative-production-sprint: [swipe/iconic-campaigns/, swipe/landing-pages/]
+    creative-analysis-and-learnings: [swipe/]
+    creative-strategy: [swipe/angles/, swipe/hooks/, swipe/funnels/]
+    aducate-scriptwriting: [swipe/youtube/]
+    ugc-brief-and-shotlist: [swipe/tiktok/, swipe/meta/]
+    landing-page-benchmark: [swipe/landing-pages/]
+  curation:
+    cadence: "Weekly additions, quarterly full audit"
+    sources: "swipe-sources/"
+    archive_policy: "Move to archive/past-creatives/ after 6 months without reference"
+    tagging: "Platform, funnel stage, format, angle type, hook type, industry"
 
 # ============================================================
 # TEAMS (Functional Agent Groupings)

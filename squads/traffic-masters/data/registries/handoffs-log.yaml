@@ -1,0 +1,39 @@
+# ============================================================
+# HANDOFFS LOG — Cross-Squad & Intra-Squad Handoff Tracking
+# ============================================================
+# Tracks all formal handoffs between agents and between squads.
+# Updated on every handoff event. Reviewed weekly by traffic-chief.
+
+schema:
+  handoff_id: "string — HND-XXX format"
+  date: "date — ISO 8601"
+  from_agent: "string — agent slug from config.yaml"
+  from_squad: "string — squad name (traffic-masters if internal)"
+  to_agent: "string — agent slug or external squad agent"
+  to_squad: "string — target squad name"
+  task: "string — task name from config.yaml routing"
+  deliverable: "string — what was handed off"
+  deliverable_format: "string — markdown | yaml | template | brief"
+  status: "string — pending | accepted | rejected | rework | completed"
+  sla: "string — expected turnaround time"
+  sla_met: "boolean — true if delivered within SLA"
+  notes: "string — additional context"
+  return_expected: "string — what is expected back (if applicable)"
+  return_date: "date — when the return was received"
+
+handoffs:
+  - handoff_id: HND-001
+    date: 2026-03-01
+    from_agent: traffic-chief
+    from_squad: traffic-masters
+    to_agent: copy-lead
+    to_squad: copy
+    task: creative-production-sprint
+    deliverable: "Creative brief with 5 angle variations requiring ad copy"
+    deliverable_format: brief
+    status: completed
+    sla: "48h"
+    sla_met: true
+    notes: "Standard creative brief handoff for Q1 campaign refresh"
+    return_expected: "Ad copy variations (3 headlines + 3 primary texts per angle)"
+    return_date: 2026-03-03

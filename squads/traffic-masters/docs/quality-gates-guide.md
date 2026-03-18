@@ -67,72 +67,72 @@ Automated checks that verify data integrity, configuration accuracy, or system r
 ### Pre-Planning
 | Gate | Type | Criteria | Owner |
 |------|------|----------|-------|
-| Business goal clarity | Approval | Goals are specific, measurable, and documented | Strategy Agent |
-| Budget confirmation | Threshold | Budget is confirmed and within feasible range | Budget Agent |
-| Platform access | Validation | All required platform accounts are accessible | Integration Agent |
+| Business goal clarity | Approval | Goals are specific, measurable, and documented | traffic-chief |
+| Budget confirmation | Threshold | Budget is confirmed and within feasible range | fiscal |
+| Platform access | Validation | All required platform accounts are accessible | traffic-chief |
 
 ### Strategy & Planning
 | Gate | Type | Criteria | Owner |
 |------|------|----------|-------|
-| Strategy approval | Approval | Strategy document approved by stakeholder | Strategy Agent |
-| KPI feasibility | Threshold | Targets are achievable based on benchmarks | Strategy Agent |
-| Audience viability | Threshold | Target audiences meet minimum size requirements | Audience Agent |
+| Strategy approval | Approval | Strategy document approved by stakeholder | traffic-chief |
+| KPI feasibility | Threshold | Targets are achievable based on benchmarks | traffic-chief |
+| Audience viability | Threshold | Target audiences meet minimum size requirements | depesh-mandalia |
 
 ### Creative Development
 | Gate | Type | Criteria | Owner |
 |------|------|----------|-------|
-| Creative brief approval | Approval | Brief approved by Creative Strategist | Creative Strategist |
-| Brand compliance | Checklist | Creative meets all brand guidelines | Creative Strategist |
-| Platform specs | Validation | Assets meet platform technical requirements | Launch Agent |
-| Copy proofread | Checklist | Copy is error-free and approved | Copy Agent |
-| Compliance review | Checklist | Ads comply with platform and regulatory policies | Compliance Agent |
+| Creative brief approval | Approval | Brief approved by ad-midas | ad-midas |
+| Brand compliance | Checklist | Creative meets all brand guidelines | ad-midas |
+| Platform specs | Validation | Assets meet platform technical requirements | media-buyer |
+| Copy proofread | Checklist | Copy is error-free and approved | Cross-squad (Copy Squad) |
+| Compliance review | Checklist | Ads comply with platform and regulatory policies | ads-analyst |
 
 ### Pre-Launch
 | Gate | Type | Criteria | Owner |
 |------|------|----------|-------|
-| Pre-Launch Checklist | Checklist | All 20+ items verified | Launch Agent |
-| Tracking verification | Validation | Pixel/events firing correctly | Tracking Agent |
-| UTM validation | Validation | All UTMs follow convention and resolve correctly | Tracking Agent |
-| Settings review | Checklist | Bid, budget, targeting, scheduling all correct | Launch Agent |
+| Pre-Launch Checklist | Checklist | All 20+ items verified | media-buyer |
+| Tracking verification | Validation | Pixel/events firing correctly | pixel-specialist |
+| UTM validation | Validation | All UTMs follow convention and resolve correctly | pixel-specialist |
+| Settings review | Checklist | Bid, budget, targeting, scheduling all correct | media-buyer |
 
 ### Post-Launch (72-Hour)
 | Gate | Type | Criteria | Owner |
 |------|------|----------|-------|
-| Delivery confirmation | Threshold | Impressions within expected range within 4 hours | Optimization Agent |
-| Tracking confirmation | Validation | Conversions being recorded | Tracking Agent |
-| Spend pacing | Threshold | Spend within 80-120% of expected daily rate | Optimization Agent |
-| No policy violations | Validation | Zero ad disapprovals | Compliance Agent |
+| Delivery confirmation | Threshold | Impressions within expected range within 4 hours | performance-analyst |
+| Tracking confirmation | Validation | Conversions being recorded | pixel-specialist |
+| Spend pacing | Threshold | Spend within 80-120% of expected daily rate | performance-analyst |
+| No policy violations | Validation | Zero ad disapprovals | ads-analyst |
 
 ### Optimization
 | Gate | Type | Criteria | Owner |
 |------|------|----------|-------|
-| Learning phase protection | Threshold | No changes during active learning phase | Optimization Agent |
-| Minimum data requirement | Threshold | At least 7 days of data before optimization | Optimization Agent |
-| Change limit | Threshold | Maximum changes per cycle not exceeded | Optimization Agent |
+| Learning phase protection | Threshold | No changes during active learning phase | performance-analyst |
+| Minimum data requirement | Threshold | At least 7 days of data before optimization | performance-analyst |
+| Change limit | Threshold | Maximum changes per cycle not exceeded | performance-analyst |
 
 ### Scaling
 | Gate | Type | Criteria | Owner |
 |------|------|----------|-------|
-| Scaling readiness | Checklist | All readiness criteria met | Scaling Agent |
-| Performance stability | Threshold | CPA/ROAS stable within 15% for 14+ days | Scaling Agent |
-| Creative depth | Threshold | Minimum 3 active winning creatives | Creative Strategist |
-| Budget increment limit | Threshold | Increase does not exceed 30% per phase | Budget Agent |
+| Scaling readiness | Checklist | All readiness criteria met | scale-optimizer |
+| Performance stability | Threshold | CPA/ROAS stable within 15% for 14+ days | scale-optimizer |
+| Creative depth | Threshold | Minimum 3 active winning creatives | ad-midas |
+| Budget increment limit | Threshold | Increase does not exceed 30% per phase | fiscal |
 
 ### Reporting
 | Gate | Type | Criteria | Owner |
 |------|------|----------|-------|
-| Data accuracy | Validation | All data points verified against source | Reporting Agent |
-| Calculation verification | Validation | Percentages and derived metrics recalculated | Reporting Agent |
-| Completeness | Checklist | All required sections populated | Reporting Agent |
-| Review approval | Approval | Internal review completed | Reporting Agent |
+| Data accuracy | Validation | All data points verified against source | performance-analyst |
+| Calculation verification | Validation | Percentages and derived metrics recalculated | performance-analyst |
+| Completeness | Checklist | All required sections populated | performance-analyst |
+| Review approval | Approval | Internal review completed | traffic-chief |
 
 ### Testing
 | Gate | Type | Criteria | Owner |
 |------|------|----------|-------|
-| Hypothesis clarity | Checklist | Hypothesis is specific and testable | Experimentation Agent |
-| Test isolation | Validation | Only one variable differs between variants | Experimentation Agent |
-| Sample size minimum | Threshold | Minimum sample size reached before analysis | Experimentation Agent |
-| Significance threshold | Threshold | 95% statistical significance before declaring winner | Experimentation Agent |
+| Hypothesis clarity | Checklist | Hypothesis is specific and testable | performance-analyst |
+| Test isolation | Validation | Only one variable differs between variants | performance-analyst |
+| Sample size minimum | Threshold | Minimum sample size reached before analysis | performance-analyst |
+| Significance threshold | Threshold | 95% statistical significance before declaring winner | performance-analyst |
 
 ---
 

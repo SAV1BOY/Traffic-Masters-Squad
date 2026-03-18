@@ -1,0 +1,68 @@
+# ============================================================
+# BACKLOG — ICE-Scored Task Backlog
+# ============================================================
+# Prioritized backlog of improvement tasks, experiments, and
+# operational upgrades. Scored using ICE (Impact x Confidence x Ease).
+# Reviewed and reprioritized weekly by traffic-chief.
+
+schema:
+  item_id: "string — BKL-XXX format"
+  title: "string — concise task title"
+  description: "string — what needs to be done and why"
+  category: "string — optimization | creative | tracking | scaling | operations | research | compliance"
+  impact: "number — 1-10 (how much value does this create?)"
+  confidence: "number — 1-10 (how confident are we in the impact estimate?)"
+  ease: "number — 1-10 (how easy is this to implement?)"
+  ice_score: "number — (impact x confidence x ease) / 10"
+  requested_by: "string — agent slug or stakeholder"
+  assigned_to: "string — agent slug or 'unassigned'"
+  status: "string — backlog | prioritized | in-progress | done | blocked | deferred"
+  deadline: "date — target completion date (if applicable)"
+  related_task: "string — config.yaml routing key (if applicable)"
+  notes: "string — additional context"
+
+backlog:
+  - item_id: BKL-001
+    title: "Implement offline conversion tracking for Google Ads"
+    description: "Connect CRM pipeline data to Google Ads via offline conversion imports to optimize for revenue, not just leads"
+    category: tracking
+    impact: 9
+    confidence: 8
+    ease: 5
+    ice_score: 36
+    requested_by: traffic-chief
+    assigned_to: pixel-specialist
+    status: prioritized
+    deadline: 2026-04-15
+    related_task: pixel-capi-setup
+    notes: "Requires coordination with Sales Squad for CRM data access"
+
+  - item_id: BKL-002
+    title: "Expand TikTok swipe file with 50 new native-style references"
+    description: "TikTok creative library is thin (3 files) compared to Meta (7 files). Need more native-style references for creative briefing."
+    category: creative
+    impact: 7
+    confidence: 9
+    ease: 8
+    ice_score: 50.4
+    requested_by: ad-midas
+    assigned_to: creative-analyst
+    status: backlog
+    deadline: null
+    related_task: creative-production-sprint
+    notes: "Use TikTok Creative Center and spy tools for sourcing"
+
+  - item_id: BKL-003
+    title: "Build automated budget pacing alert system"
+    description: "Script that triggers alerts when daily spend deviates >20% from target, reducing manual monitoring burden"
+    category: operations
+    impact: 8
+    confidence: 9
+    ease: 6
+    ice_score: 43.2
+    requested_by: media-buyer
+    assigned_to: performance-analyst
+    status: backlog
+    deadline: null
+    related_task: daily-optimization-loop
+    notes: "Reference scripts/alert-system.md for implementation pattern"

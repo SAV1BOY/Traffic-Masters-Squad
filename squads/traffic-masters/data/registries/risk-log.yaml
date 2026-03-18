@@ -1,0 +1,50 @@
+# ============================================================
+# RISK LOG — Operational Risk Tracking
+# ============================================================
+# Tracks identified risks to campaign performance, account health,
+# compliance, and operational continuity.
+# Updated as risks are identified. Reviewed weekly by traffic-chief.
+
+schema:
+  risk_id: "string — RSK-XXX format"
+  date_identified: "date — ISO 8601"
+  category: "string — account | tracking | budget | creative | compliance | platform | cross-squad | data"
+  description: "string — clear description of the risk"
+  probability: "string — high | medium | low"
+  impact: "string — critical | high | medium | low"
+  risk_score: "string — probability x impact (e.g., high-critical)"
+  mitigation: "string — planned or active mitigation strategy"
+  owner: "string — agent slug responsible for mitigation"
+  status: "string — open | mitigating | mitigated | accepted | closed"
+  resolution_date: "date — when risk was resolved or accepted"
+  related_task: "string — config.yaml routing key if applicable"
+  notes: "string — additional context"
+
+risks:
+  - risk_id: RSK-001
+    date_identified: 2026-03-01
+    category: tracking
+    description: "iOS privacy changes may reduce Meta CAPI match rates below 70%"
+    probability: medium
+    impact: high
+    risk_score: medium-high
+    mitigation: "Implement enhanced matching parameters, monitor match rate weekly, prepare server-side fallback"
+    owner: pixel-specialist
+    status: mitigating
+    resolution_date: null
+    related_task: pixel-capi-setup
+    notes: "Industry-wide issue. Monitoring Apple announcements for further changes."
+
+  - risk_id: RSK-002
+    date_identified: 2026-03-05
+    category: creative
+    description: "Creative fatigue accelerating — average creative lifespan dropped from 21 days to 14 days"
+    probability: high
+    impact: medium
+    risk_score: high-medium
+    mitigation: "Increase creative production cadence from monthly to bi-weekly, expand UGC creator roster"
+    owner: ad-midas
+    status: mitigating
+    resolution_date: null
+    related_task: creative-refresh-plan
+    notes: "Trend observed across Meta and TikTok. Google campaigns unaffected."

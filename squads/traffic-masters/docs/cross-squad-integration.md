@@ -92,7 +92,7 @@ Copy Squad <------> Traffic Masters Squad <------> Sales Squad
 - **Creative development:** Brand guidelines are referenced in every creative brief
 - **Compliance review:** Brand Squad reviews creative before launch (part of Creative Review Checklist)
 - **Campaign reporting:** Brand lift and sentiment metrics shared with Brand Squad
-- **Competitive intelligence:** Brand positioning insights shared through Intelligence Agent
+- **Competitive intelligence:** Brand positioning insights shared through ads-analyst
 
 ---
 
@@ -289,11 +289,11 @@ inbound:
 |----------|-----------|
 | Brand guidelines restrict high-performing creative | Discuss with Brand Squad; test compliant variations |
 | Copy Squad deliverables delayed | Use phrase libraries for interim copy; flag delay in weekly sync |
-| Inconsistent messaging across squads | Integration Agent aligns all parties to messaging framework |
+| Inconsistent messaging across squads | traffic-chief aligns all parties to messaging framework |
 | Data interpretation disagreements | Refer to standardized metric definitions and attribution model |
 
 ### Escalation Path
-1. **Agent-level resolution:** Integration Agent coordinates between squad agents
+1. **Agent-level resolution:** traffic-chief coordinates between squad agents
 2. **Squad lead discussion:** Squad owners discuss and resolve
 3. **Stakeholder decision:** Escalate to shared stakeholder for final decision
 
