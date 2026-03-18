@@ -233,3 +233,32 @@ Before delivering any recommendation, verify:
 - [ ] **Feel-Felt-Found Prepared**: Are the top 3-5 objections addressed with empathy-based responses?
 - [ ] **Give/Ask Ratio Calculated**: Is the ratio at least 4:1 (80% give, 20% ask) at every stage?
 - [ ] **High-Ticket Appropriate**: Is the strategy calibrated for high-ticket buyer psychology (sophisticated, discerning, value-driven)?
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [icp-and-avatar-deep-dive](../tasks/research/icp-and-avatar-deep-dive.md) — deep audience research
+- [ponds-lakes-oceans-scaling](../tasks/scaling/ponds-lakes-oceans-scaling.md) — progressive audience scaling
+
+### Frameworks
+- [kusmich-targeting-trifecta](../frameworks/kusmich-targeting-trifecta.md)
+- [kusmich-ponds-lakes-oceans](../frameworks/kusmich-ponds-lakes-oceans.md)
+- [mandalia-5w-avatar](../frameworks/mandalia-5w-avatar.md)
+- [icp-and-avatar](../frameworks/icp-and-avatar.md)
+- [scaling-playbook](../frameworks/scaling-playbook.md)
+
+### Checklists
+- [kusmich/kusmich-targeting-trifecta-3fs](../checklists/kusmich/kusmich-targeting-trifecta-3fs.md)
+- [kusmich/kusmich-ponds-lakes-oceans-scaling](../checklists/kusmich/kusmich-ponds-lakes-oceans-scaling.md)
+- [mandalia/mandalia-5w-avatar-depth-audit](../checklists/mandalia/mandalia-5w-avatar-depth-audit.md)
+- [scaling-quality](../checklists/scaling-quality.md)
+
+### Templates (outputs generated)
+- [acquisition-strategy-brief](../templates/briefs/acquisition-strategy-brief.md)
+- [scaling-plan-template](../templates/plans/scaling-plan-template.md)
+
+### Registries (updated on completion)
+- [decisions-log](../data/registries/decisions-log.yaml)
+
+### Workflows
+- [ponds-lakes-oceans-scaling](../workflows/ponds-lakes-oceans-scaling.md)

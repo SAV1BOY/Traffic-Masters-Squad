@@ -1,20 +1,20 @@
 # Launch Traffic Workflow (Sobral 8 Stages)
 > **Type**: Workflow
 > **Duration**: 21-30 days (full launch cycle)
-> **Agents involved**: Strategist, Media Buyer, Creative Producer, Analyst
+> **Agents involved**: traffic-chief, media-buyer, ad-midas, performance-analyst
 
 ## Trigger
 Product or course launch with defined open/close cart dates.
 
 ## Steps
-1. Pre-Launch (Day -14 to -7) → Agent: Strategist → Framework: Audience Warming → Output: Lead capture campaigns, email list building, content distribution
-2. Capture (Day -7 to -1) → Agent: Media Buyer → Framework: Lead Gen Optimization → Output: Registration campaigns for webinar/challenge/event with CPL targets
-3. Warm-Up (Day -3 to 0) → Agent: Media Buyer → Framework: Engagement Campaigns → Output: Reminder sequences, anticipation content, social proof to registrants
-4. Open Cart (Day 1) → Agent: Media Buyer → Framework: Maximum Reach → Output: Cart open announcement to all warm audiences, budget surge (2-3x normal)
-5. Sustain (Day 2-4) → Agent: Media Buyer → Framework: Objection Handling → Output: Testimonial ads, FAQ ads, case study content to engaged non-buyers
-6. Urgency (Day 5-6) → Agent: Media Buyer → Framework: Scarcity Triggers → Output: Countdown ads, bonus deadlines, limited spots messaging
-7. Close Cart (Day 7) → Agent: Media Buyer → Framework: Final Push → Output: Last-chance ads with maximum budget, real-time countdown
-8. Post-Launch (Day 8-14) → Agent: Analyst → Framework: Launch Debrief → Output: Full performance analysis, ROI calculation, lessons learned document
+1. Pre-Launch (Day -14 to -7) → Agent: traffic-chief → Framework: Audience Warming → Output: Lead capture campaigns, email list building, content distribution
+2. Capture (Day -7 to -1) → Agent: media-buyer → Framework: Lead Gen Optimization → Output: Registration campaigns for webinar/challenge/event with CPL targets
+3. Warm-Up (Day -3 to 0) → Agent: media-buyer → Framework: Engagement Campaigns → Output: Reminder sequences, anticipation content, social proof to registrants
+4. Open Cart (Day 1) → Agent: media-buyer → Framework: Maximum Reach → Output: Cart open announcement to all warm audiences, budget surge (2-3x normal)
+5. Sustain (Day 2-4) → Agent: media-buyer → Framework: Objection Handling → Output: Testimonial ads, FAQ ads, case study content to engaged non-buyers
+6. Urgency (Day 5-6) → Agent: media-buyer → Framework: Scarcity Triggers → Output: Countdown ads, bonus deadlines, limited spots messaging
+7. Close Cart (Day 7) → Agent: media-buyer → Framework: Final Push → Output: Last-chance ads with maximum budget, real-time countdown
+8. Post-Launch (Day 8-14) → Agent: performance-analyst → Framework: Launch Debrief → Output: Full performance analysis, ROI calculation, lessons learned document
 
 ## Quality Gates
 - [ ] Pre-launch list size meets minimum threshold for launch viability
@@ -39,3 +39,5 @@ Audience assets built during launch for future campaigns.
 - Always have backup creatives ready for each phase
 - Monitor ad account health — high spend spikes can trigger reviews
 - Brazilian launch context: consider boleto payment window (3 days to clear)
+
+> **Quality Gates Reference**: See [Quality Gates Guide](../docs/quality-gates-guide.md) for gate definitions and override policy.

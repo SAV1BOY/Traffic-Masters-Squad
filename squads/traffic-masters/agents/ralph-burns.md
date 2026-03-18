@@ -237,3 +237,60 @@ Before delivering any performance marketing recommendation, verify:
 - [ ] **SGP Context**: If auditing, has the 111-point framework been applied or referenced?
 - [ ] **Scaling Readiness**: Before recommending scale, is creative volume, nCAC stability, and conversion architecture confirmed?
 - [ ] **Anti-Vanity Check**: Are ALL referenced metrics business-outcome metrics, not vanity metrics?
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [acquisition-plan](../tasks/strategy/acquisition-plan.md) — full acquisition strategy
+- [creative-strategy](../tasks/strategy/creative-strategy.md) — creative testing strategy
+- [measurement-plan](../tasks/strategy/measurement-plan.md) — measurement and attribution
+- [creative-analysis-and-learnings](../tasks/creative/creative-analysis-and-learnings.md) — creative performance learnings
+- [creative-system-scale](../tasks/scaling/creative-system-scale.md) — creative pipeline scaling
+
+### Frameworks
+- [burns-caamp](../frameworks/burns-caamp.md)
+- [burns-kaizen-kreative](../frameworks/burns-kaizen-kreative.md)
+- [burns-ncac-method](../frameworks/burns-ncac-method.md)
+- [burns-mpi](../frameworks/burns-mpi.md)
+- [burns-sgp-30-60-90](../frameworks/burns-sgp-30-60-90.md)
+- [burns-conversion-architecture](../frameworks/burns-conversion-architecture.md)
+- [creative-testing-framework](../frameworks/creative-testing-framework.md)
+- [creative-angle-matrix](../frameworks/creative-angle-matrix.md)
+- [creative-iteration-loop](../frameworks/creative-iteration-loop.md)
+- [creative-production-pipeline](../frameworks/creative-production-pipeline.md)
+- [dynamic-creative-optimization](../frameworks/dynamic-creative-optimization.md)
+- [hook-library-system](../frameworks/hook-library-system.md)
+- [attribution-and-incrementality](../frameworks/attribution-and-incrementality.md)
+- [tracking-stack-standard](../frameworks/tracking-stack-standard.md)
+- [pittman-ad-grid-7-steps](../frameworks/pittman-ad-grid-7-steps.md)
+- [ltv-cac-unit-economics](../frameworks/ltv-cac-unit-economics.md)
+- [full-funnel-ads-strategy](../frameworks/full-funnel-ads-strategy.md)
+
+### Checklists
+- [acquisition-strategy-quality](../checklists/acquisition-strategy-quality.md)
+- [creative-brief-quality](../checklists/creative-brief-quality.md)
+- [tracking-plan-quality](../checklists/tracking-plan-quality.md)
+- [attribution-quality](../checklists/attribution-quality.md)
+- [creative-fatigue-quality](../checklists/creative-fatigue-quality.md)
+- [burns/burns-creative-lab-deep-dive](../checklists/burns/burns-creative-lab-deep-dive.md)
+- [burns/burns-kaizen-kreative-iteration](../checklists/burns/burns-kaizen-kreative-iteration.md)
+- [burns/burns-ncac-mpi-metrics-audit](../checklists/burns/burns-ncac-mpi-metrics-audit.md)
+- [creative/angle-coverage-quality](../checklists/creative/angle-coverage-quality.md)
+
+### Templates (outputs generated)
+- [acquisition-strategy-brief](../templates/briefs/acquisition-strategy-brief.md)
+- [media-plan-template](../templates/plans/media-plan-template.md)
+- [creative-brief](../templates/briefs/creative-brief.md)
+- [creative-production-plan](../templates/plans/creative-production-plan.md)
+- [event-map-template](../templates/tracking/event-map-template.md)
+- [creative-analysis-report](../templates/reports/creative-analysis-report.md)
+- [learnings-log-template](../templates/experiments/learnings-log-template.md)
+
+### Registries (updated on completion)
+- [decisions-log](../data/registries/decisions-log.yaml)
+- [creatives-registry](../data/registries/creatives-registry.yaml)
+- [pixels-and-events-registry](../data/registries/pixels-and-events-registry.yaml)
+
+### Workflows
+- [creative-strategy](../workflows/creative-strategy.md)
+- [measurement-plan](../workflows/measurement-plan.md)

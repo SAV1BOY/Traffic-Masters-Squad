@@ -281,3 +281,37 @@ Your mantra: "Every real accounted for, every obligation met, every stakeholder 
 - [ ] Vendor payments verified and processed on schedule
 - [ ] All financial documentation filed in audit-ready state
 - [ ] Spend forecast current and shared with Traffic Chief
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [policy-risk-scan](../tasks/research/policy-risk-scan.md) — policy compliance scan
+- [compliance-review](../tasks/review/compliance-review.md) — compliance quality review
+- [budget-approval](../tasks/finance/budget-approval.md) — budget approval process
+- [invoice-reconciliation](../tasks/finance/invoice-reconciliation.md) — invoice reconciliation
+- [tax-and-compliance-log](../tasks/finance/tax-and-compliance-log.md) — tax compliance tracking
+
+### Frameworks
+- [governance-layer](../frameworks/governance-layer.md)
+- [policy-risk-classification](../frameworks/policy-risk-classification.md)
+- [budget-allocation-model](../frameworks/budget-allocation-model.md)
+
+### Checklists
+- [financial-reconciliation-quality](../checklists/financial-reconciliation-quality.md)
+- [compliance-ad-policies-quality](../checklists/compliance-ad-policies-quality.md)
+- [finance/budget-approval](../checklists/finance/budget-approval.md)
+- [finance/invoice-vs-platform-audit](../checklists/finance/invoice-vs-platform-audit.md)
+- [finance/cost-center-tagging](../checklists/finance/cost-center-tagging.md)
+
+### Templates (outputs generated)
+- [budget-approval-template](../templates/finance/budget-approval-template.md)
+- [invoice-reconciliation-template](../templates/finance/invoice-reconciliation-template.md)
+- [cost-center-mapping-template](../templates/finance/cost-center-mapping-template.md)
+
+### Registries (updated on completion)
+- [decisions-log](../data/registries/decisions-log.yaml)
+- [budgets-and-guardrails](../data/registries/budgets-and-guardrails.yaml)
+
+### Workflows
+- [budget-approval](../workflows/budget-approval.md)
+- [invoice-reconciliation](../workflows/invoice-reconciliation.md)

@@ -258,3 +258,40 @@ You collaborate with Performance Analyst (stability metrics), Creative Analyst (
 - [ ] Pullback triggers defined and documented
 - [ ] Scaling plan approved by Traffic Chief before execution
 - [ ] Post-scaling performance documented for institutional learning
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [scaling-strategy](../tasks/strategy/scaling-strategy.md) — scaling strategy design
+- [budget-reallocation](../tasks/optimization/budget-reallocation.md) — budget redistribution
+- [vertical-scaling](../tasks/scaling/vertical-scaling.md) — vertical budget scaling
+- [horizontal-scaling](../tasks/scaling/horizontal-scaling.md) — audience expansion scaling
+- [ponds-lakes-oceans-scaling](../tasks/scaling/ponds-lakes-oceans-scaling.md) — progressive audience scaling
+
+### Frameworks
+- [mandalia-scaling-recipes](../frameworks/mandalia-scaling-recipes.md)
+- [scaling-playbook](../frameworks/scaling-playbook.md)
+- [scaling-layer](../frameworks/scaling-layer.md)
+- [kusmich-ponds-lakes-oceans](../frameworks/kusmich-ponds-lakes-oceans.md)
+- [audience-building-system](../frameworks/audience-building-system.md)
+- [budget-allocation-model](../frameworks/budget-allocation-model.md)
+- [mandalia-punisher-method](../frameworks/mandalia-punisher-method.md)
+- [pacing-and-guardrails](../frameworks/pacing-and-guardrails.md)
+
+### Checklists
+- [scaling-quality](../checklists/scaling-quality.md)
+- [mandalia/mandalia-cbo-recipes-selection](../checklists/mandalia/mandalia-cbo-recipes-selection.md)
+- [mandali/mandalia-punisher-optimization](../checklists/mandalia/mandalia-punisher-optimization.md)
+- [kusmich/kusmich-ponds-lakes-oceans-scaling](../checklists/kusmich/kusmich-ponds-lakes-oceans-scaling.md)
+- [budget-pacing-quality](../checklists/budget-pacing-quality.md)
+
+### Templates (outputs generated)
+- [scaling-plan-template](../templates/plans/scaling-plan-template.md)
+
+### Registries (updated on completion)
+- [decisions-log](../data/registries/decisions-log.yaml)
+- [budgets-and-guardrails](../data/registries/budgets-and-guardrails.yaml)
+
+### Workflows
+- [vertical-scaling](../workflows/vertical-scaling.md)
+- [horizontal-scaling](../workflows/horizontal-scaling.md)

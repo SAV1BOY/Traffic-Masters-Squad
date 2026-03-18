@@ -242,3 +242,62 @@ You believe that patterns beat individual winners, leading indicators beat laggi
 - [ ] Creative pipeline health assessed (sufficient winners for current spend level)
 - [ ] A/B test interpretations include creative direction, not just statistical results
 - [ ] Winning patterns communicated to Ad Midas within 24 hours of identification
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [competitor-ads-swipe-mining](../tasks/research/competitor-ads-swipe-mining.md) — competitor creative analysis
+- [hook-and-angle-research](../tasks/research/hook-and-angle-research.md) — hook and angle mining
+- [landing-page-benchmark](../tasks/research/landing-page-benchmark.md) — landing page benchmarking
+- [creative-strategy](../tasks/strategy/creative-strategy.md) — creative testing strategy
+- [ugc-brief-and-shotlist](../tasks/creative/ugc-brief-and-shotlist.md) — UGC brief production
+- [creative-production-sprint](../tasks/creative/creative-production-sprint.md) — creative batch production
+- [creative-analysis-and-learnings](../tasks/creative/creative-analysis-and-learnings.md) — creative performance learnings
+- [creative-refresh-plan](../tasks/creative/creative-refresh-plan.md) — creative refresh cadence
+- [landing-page-cro-fixes](../tasks/optimization/landing-page-cro-fixes.md) — CRO improvements
+- [creative-system-scale](../tasks/scaling/creative-system-scale.md) — creative pipeline scaling
+- [creative-review](../tasks/review/creative-review.md) — creative quality review
+
+### Frameworks
+- [creative-angle-matrix](../frameworks/creative-angle-matrix.md)
+- [hook-library-system](../frameworks/hook-library-system.md)
+- [burns-kaizen-kreative](../frameworks/burns-kaizen-kreative.md)
+- [creative-testing-framework](../frameworks/creative-testing-framework.md)
+- [creative-iteration-loop](../frameworks/creative-iteration-loop.md)
+- [creative-production-pipeline](../frameworks/creative-production-pipeline.md)
+- [ugc-creator-framework](../frameworks/ugc-creator-framework.md)
+- [dynamic-creative-optimization](../frameworks/dynamic-creative-optimization.md)
+- [burns-conversion-architecture](../frameworks/burns-conversion-architecture.md)
+- [pittman-hook-framework](../frameworks/pittman-hook-framework.md)
+
+### Checklists
+- [creative/angle-coverage-quality](../checklists/creative/angle-coverage-quality.md)
+- [creative/ugc-authenticity](../checklists/creative/ugc-authenticity.md)
+- [creative/thumb-first-frame-quality](../checklists/creative/thumb-first-frame-quality.md)
+- [creative/claim-proof-compliance](../checklists/creative/claim-proof-compliance.md)
+- [creative/creative-refresh-cadence](../checklists/creative/creative-refresh-cadence.md)
+- [creative-brief-quality](../checklists/creative-brief-quality.md)
+- [creative-fatigue-quality](../checklists/creative-fatigue-quality.md)
+- [landing-page-quality](../checklists/landing-page-quality.md)
+- [cro/landing-page-speed-quality](../checklists/cro/landing-page-speed-quality.md)
+- [cro/form-friction-quality](../checklists/cro/form-friction-quality.md)
+- [cro/post-click-consistency](../checklists/cro/post-click-consistency.md)
+- [burns/burns-kaizen-kreative-iteration](../checklists/burns/burns-kaizen-kreative-iteration.md)
+- [burns/burns-creative-lab-deep-dive](../checklists/burns/burns-creative-lab-deep-dive.md)
+
+### Templates (outputs generated)
+- [creative-brief](../templates/briefs/creative-brief.md)
+- [ugc-creator-brief](../templates/briefs/ugc-creator-brief.md)
+- [creative-production-plan](../templates/plans/creative-production-plan.md)
+- [creative-analysis-report](../templates/reports/creative-analysis-report.md)
+- [competitor-ads-analysis-report](../templates/reports/competitor-ads-analysis-report.md)
+- [learnings-log-template](../templates/experiments/learnings-log-template.md)
+
+### Registries (updated on completion)
+- [creatives-registry](../data/registries/creatives-registry.yaml)
+- [decisions-log](../data/registries/decisions-log.yaml)
+- [learnings-log](../data/metrics/learnings-log.yaml)
+
+### Workflows
+- [creative-analysis-and-learnings](../workflows/creative-analysis-and-learnings.md)
+- [creative-review](../workflows/creative-review.md)

@@ -1,20 +1,20 @@
 # Budget Review Workflow
 > **Type**: Workflow
 > **Duration**: 1-2 business days
-> **Agents involved**: Analyst, Strategist, Media Buyer, Squad Lead
+> **Agents involved**: fiscal, performance-analyst, traffic-chief, media-buyer
 
 ## Trigger
 Monthly budget cycle, mid-month performance deviation, or client budget change request.
 
 ## Steps
-1. Spend Analysis → Agent: Analyst → Framework: Budget vs Actual → Output: Detailed spend breakdown by platform, campaign, and funnel stage
-2. Efficiency Mapping → Agent: Analyst → Framework: Marginal CPA Curves → Output: Diminishing returns analysis showing optimal spend zone per campaign
-3. Reallocation Modeling → Agent: Strategist → Framework: Budget Optimizer → Output: Proposed reallocation from underperforming to high-performing campaigns
-4. Forecast Update → Agent: Analyst → Framework: Linear + Seasonal Forecast → Output: Updated month-end and quarter-end projections based on current trajectory
-5. Scenario Planning → Agent: Strategist → Framework: Best/Base/Worst Case → Output: Three scenarios with different budget levels and expected outcomes
-6. Approval Presentation → Agent: Squad Lead → Framework: Executive Budget Brief → Output: Budget proposal with clear rationale for stakeholder approval
-7. Implementation → Agent: Media Buyer → Framework: Budget Adjustment SOP → Output: Budgets updated across platforms with change log documented
-8. Monitoring Setup → Agent: Analyst → Framework: Pacing Alerts → Output: Daily pacing alerts configured for new budget levels
+1. Spend Analysis → Agent: fiscal → Framework: Budget vs Actual → Output: Detailed spend breakdown by platform, campaign, and funnel stage
+2. Efficiency Mapping → Agent: performance-analyst → Framework: Marginal CPA Curves → Output: Diminishing returns analysis showing optimal spend zone per campaign
+3. Reallocation Modeling → Agent: traffic-chief → Framework: Budget Optimizer → Output: Proposed reallocation from underperforming to high-performing campaigns
+4. Forecast Update → Agent: fiscal → Framework: Linear + Seasonal Forecast → Output: Updated month-end and quarter-end projections based on current trajectory
+5. Scenario Planning → Agent: traffic-chief → Framework: Best/Base/Worst Case → Output: Three scenarios with different budget levels and expected outcomes
+6. Approval Presentation → Agent: traffic-chief → Framework: Executive Budget Brief → Output: Budget proposal with clear rationale for stakeholder approval
+7. Implementation → Agent: media-buyer → Framework: Budget Adjustment SOP → Output: Budgets updated across platforms with change log documented
+8. Monitoring Setup → Agent: fiscal → Framework: Pacing Alerts → Output: Daily pacing alerts configured for new budget levels
 
 ## Quality Gates
 - [ ] All spend data reconciled across platforms
@@ -41,3 +41,5 @@ Pacing alerts configured for ongoing monitoring.
 - Consider payment method limits and billing thresholds
 - Align budget reviews with client billing cycles
 - Document every budget change for audit trail
+
+> **Quality Gates Reference**: See [Quality Gates Guide](../docs/quality-gates-guide.md) for gate definitions and override policy.

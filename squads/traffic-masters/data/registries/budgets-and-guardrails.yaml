@@ -1,45 +1,54 @@
-# Budgets & Guardrails Registry
-# Tracks budget allocations, spending limits, and performance guardrails.
+# ============================================================
+# BUDGETS & GUARDRAILS REGISTRY — Traffic Masters Squad
+# ============================================================
+# Registro de alocação de budget e guardrails operacionais.
+# Define limites de gasto, distribuição por canal, e thresholds
+# que disparam alertas ou pausas automáticas. Cada conta/projeto
+# deve ter uma entrada atualizada mensalmente.
+# ============================================================
 
 schema:
-  entry_id: "string — unique identifier"
-  client: "string — client or project name"
-  period: "string — month/quarter/year"
-  total_budget: "number — total budget in USD"
-  allocation:
-    - platform: "string"
-      amount: "number"
-      percentage: "number"
+  account_id: "string — identificador único da conta (ACC-XXX)"
+  account_name: "string — nome do cliente ou projeto"
+  monthly_budget: "number — orçamento mensal total em R$"
+  daily_cap: "number — limite diário de gasto em R$"
+  channel_allocation:
+    meta_pct: "number — % alocado para Meta Ads"
+    google_pct: "number — % alocado para Google Ads (Search + Shopping)"
+    youtube_pct: "number — % alocado para YouTube Ads"
+    tiktok_pct: "number — % alocado para TikTok Ads"
+    linkedin_pct: "number — % alocado para LinkedIn Ads"
+    other_pct: "number — % alocado para outros canais"
   guardrails:
-    max_cpa: "number — maximum acceptable CPA"
-    min_roas: "number — minimum acceptable ROAS"
-    max_daily_spend: "number — daily spending cap"
-    max_cpm: "number — CPM ceiling"
-    frequency_cap: "number — max impressions per user per week"
-    budget_pacing: "string — even | accelerated | front-loaded"
-  alert_thresholds:
-    cpa_warning: "number — CPA level that triggers review"
-    spend_variance: "number — % over/under pacing threshold"
-    roas_floor: "number — ROAS that triggers pause"
-  status: "string — active | planned | completed"
-  approved_by: "string"
-  last_updated: "date"
-  notes: "string"
+    max_cpa: "number — CPA máximo aceitável em R$"
+    min_roas: "number — ROAS mínimo aceitável"
+    max_frequency_cold: "number — frequência máxima semanal para audiências cold"
+    max_frequency_warm: "number — frequência máxima semanal para audiências warm/retargeting"
+    max_cpc: "number — CPC máximo aceitável em R$"
+    budget_pacing_tolerance_pct: "number — variação % aceitável no pacing diário (ex: 15 = ±15%)"
+  review_cadence: "string — weekly | biweekly | monthly"
+  last_reviewed: "date — última data de revisão"
+  owner_agent: "string — agente responsável pelo controle"
 
-budgets: []
-# Example:
-# - entry_id: "BUD-001"
-#   client: "Acme Corp"
-#   period: "2026-Q1"
-#   total_budget: 50000
-#   allocation:
-#     - platform: "meta"
-#       amount: 30000
-#       percentage: 60
-#     - platform: "google"
-#       amount: 20000
-#       percentage: 40
-#   guardrails:
-#     max_cpa: 35
-#     min_roas: 3.0
-#   status: "active"
+budgets:
+  - account_id: "ACC-001"
+    account_name: "Projeto Aurora — E-commerce Skincare"
+    monthly_budget: 336000
+    daily_cap: 11200
+    channel_allocation:
+      meta_pct: 50
+      google_pct: 25
+      youtube_pct: 10
+      tiktok_pct: 10
+      linkedin_pct: 0
+      other_pct: 5
+    guardrails:
+      max_cpa: 62.00
+      min_roas: 3.0
+      max_frequency_cold: 2.5
+      max_frequency_warm: 5.0
+      max_cpc: 4.80
+      budget_pacing_tolerance_pct: 15
+    review_cadence: "weekly"
+    last_reviewed: "2026-03-15"
+    owner_agent: "traffic-chief"

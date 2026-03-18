@@ -251,3 +251,58 @@ Collaborate closely with Media Buyer (pre-launch QA), Performance Analyst (data 
 - [ ] All tracking changes logged with timestamp, rationale, and impact assessment
 - [ ] Server-side infrastructure health monitored (uptime, latency, delivery rate)
 - [ ] Troubleshooting reports filed for all incidents with prevention measures documented
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [measurement-plan](../tasks/strategy/measurement-plan.md) — measurement and attribution
+- [attribution-strategy](../tasks/strategy/attribution-strategy.md) — attribution model design
+- [meta-campaign-build](../tasks/setup/meta-campaign-build.md) — Meta campaign setup
+- [google-search-build](../tasks/setup/google-search-build.md) — Google Search campaign setup
+- [event-mapping](../tasks/tracking/event-mapping.md) — conversion event mapping
+- [gtm-ga4-setup](../tasks/tracking/gtm-ga4-setup.md) — GTM and GA4 setup
+- [pixel-capi-setup](../tasks/tracking/pixel-capi-setup.md) — pixel and CAPI config
+- [tracking-qa](../tasks/tracking/tracking-qa.md) — tracking QA validation
+- [attribution-sanity-check](../tasks/tracking/attribution-sanity-check.md) — attribution validation
+- [tracking-review](../tasks/review/tracking-review.md) — tracking quality review
+- [new-account-onboarding](../tasks/operations/onboard-new-account.md) — new account setup
+
+### Frameworks
+- [tracking-stack-standard](../frameworks/tracking-stack-standard.md)
+- [tracking-layer](../frameworks/tracking-layer.md)
+- [attribution-and-incrementality](../frameworks/attribution-and-incrementality.md)
+- [burns-ncac-method](../frameworks/burns-ncac-method.md)
+- [burns-mpi](../frameworks/burns-mpi.md)
+- [burns-sgp-30-60-90](../frameworks/burns-sgp-30-60-90.md)
+- [account-structure-meta](../frameworks/account-structure-meta.md)
+- [account-structure-google](../frameworks/account-structure-google.md)
+
+### Checklists
+- [tracking-plan-quality](../checklists/tracking-plan-quality.md)
+- [pixel-and-capi-quality](../checklists/pixel-and-capi-quality.md)
+- [attribution-quality](../checklists/attribution-quality.md)
+- [tracking/gtm-ga4-event-quality](../checklists/tracking/gtm-ga4-event-quality.md)
+- [tracking/conversion-api-dedupe](../checklists/tracking/conversion-api-dedupe.md)
+- [tracking/tracking-qa-runbook](../checklists/tracking/tracking-qa-runbook.md)
+- [tracking/attribution-window-policy](../checklists/tracking/attribution-window-policy.md)
+- [meta/meta-capi-quality](../checklists/meta/meta-capi-quality.md)
+- [account-audit-quality](../checklists/account-audit-quality.md)
+
+### Templates (outputs generated)
+- [event-map-template](../templates/tracking/event-map-template.md)
+- [data-layer-spec-template](../templates/tracking/data-layer-spec-template.md)
+- [gtm-container-template](../templates/tracking/gtm-container-template.md)
+- [qa-checklist-template](../templates/tracking/qa-checklist-template.md)
+- [attribution-report](../templates/reports/attribution-report.md)
+- [audit-engagement-brief](../templates/briefs/audit-engagement-brief.md)
+- [audit-report-template](../templates/reports/audit-report-template.md)
+
+### Registries (updated on completion)
+- [pixels-and-events-registry](../data/registries/pixels-and-events-registry.yaml)
+- [decisions-log](../data/registries/decisions-log.yaml)
+- [campaigns-registry](../data/registries/campaigns-registry.yaml)
+
+### Workflows
+- [pixel-capi-setup](../workflows/pixel-capi-setup.md)
+- [tracking-qa](../workflows/tracking-qa.md)
+- [event-mapping](../workflows/event-mapping.md)

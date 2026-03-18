@@ -1,20 +1,20 @@
 # Retargeting Sequence Build
 > **Type**: Workflow
 > **Duration**: 3-4 business days
-> **Agents involved**: Strategist, Media Buyer, Creative Producer
+> **Agents involved**: traffic-chief, media-buyer, ad-midas
 
 ## Trigger
 Cold traffic campaigns generating sufficient audience pools (1,000+ in each retargeting window).
 
 ## Steps
-1. Audience Definition → Agent: Strategist → Framework: Sobral Funnel Windows → Output: Retargeting windows defined (1-3d, 4-7d, 8-14d, 15-30d, 31-60d, 61-180d)
-2. Audience Creation → Agent: Media Buyer → Framework: Custom Audience Builder → Output: Audiences created in platform with proper exclusions
-3. Exclusion Logic → Agent: Media Buyer → Framework: Funnel Exclusion Matrix → Output: Each stage excludes downstream audiences (retarget excludes converters)
-4. Message Mapping → Agent: Strategist → Framework: Temperature-Based Messaging → Output: Message matrix mapping content type to each window
-5. Creative Production → Agent: Creative Producer → Framework: Retarget Creative Specs → Output: Creatives tailored per window (testimonials, urgency, objection handling)
-6. Sequence Build → Agent: Media Buyer → Framework: Sequential Exposure → Output: Campaigns built with frequency caps and sequential logic
-7. Budget Allocation → Agent: Media Buyer → Framework: Pool-Based Budgeting → Output: Budget split proportional to audience pool size
-8. Launch and Monitor → Agent: Media Buyer → Framework: GECO-ANA → Output: Retargeting live with daily monitoring
+1. Audience Definition → Agent: traffic-chief → Framework: Sobral Funnel Windows → Output: Retargeting windows defined (1-3d, 4-7d, 8-14d, 15-30d, 31-60d, 61-180d)
+2. Audience Creation → Agent: media-buyer → Framework: Custom Audience Builder → Output: Audiences created in platform with proper exclusions
+3. Exclusion Logic → Agent: media-buyer → Framework: Funnel Exclusion Matrix → Output: Each stage excludes downstream audiences (retarget excludes converters)
+4. Message Mapping → Agent: traffic-chief → Framework: Temperature-Based Messaging → Output: Message matrix mapping content type to each window
+5. Creative Production → Agent: ad-midas → Framework: Retarget Creative Specs → Output: Creatives tailored per window (testimonials, urgency, objection handling)
+6. Sequence Build → Agent: media-buyer → Framework: Sequential Exposure → Output: Campaigns built with frequency caps and sequential logic
+7. Budget Allocation → Agent: media-buyer → Framework: Pool-Based Budgeting → Output: Budget split proportional to audience pool size
+8. Launch and Monitor → Agent: media-buyer → Framework: GECO-ANA → Output: Retargeting live with daily monitoring
 
 ## Quality Gates
 - [ ] All retargeting audiences have 1,000+ people minimum
@@ -43,3 +43,5 @@ Performance benchmarks by retargeting stage.
 - Video viewers retargeting is highest-intent warm audience
 - Always create a "super warm" audience (add to cart, initiate checkout)
 - Refresh retargeting creatives every 2 weeks to prevent fatigue
+
+> **Quality Gates Reference**: See [Quality Gates Guide](../docs/quality-gates-guide.md) for gate definitions and override policy.

@@ -241,3 +241,51 @@ Before delivering any traffic recommendation, verify:
 - [ ] **Testing Plan**: Is there a structured plan to test, measure, and iterate — not just "launch and hope"?
 - [ ] **Scaling Criteria**: Are there clear triggers for when to scale (e.g., CPA below target for 7+ days, 50+ conversions)?
 - [ ] **Exit Criteria**: Are there clear triggers for when to kill an ad, ad set, or campaign?
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [offer-research](../tasks/research/offer-research.md) — offer validation and research
+- [acquisition-plan](../tasks/strategy/acquisition-plan.md) — full acquisition strategy
+- [funnel-mapping](../tasks/strategy/funnel-mapping.md) — customer journey mapping
+- [meta-campaign-build](../tasks/setup/meta-campaign-build.md) — Meta campaign setup
+- [channel-diversification](../tasks/scaling/channel-diversification.md) — multi-channel expansion
+
+### Frameworks
+- [pittman-traffic-engine-9-steps](../frameworks/pittman-traffic-engine-9-steps.md)
+- [pittman-ad-grid-7-steps](../frameworks/pittman-ad-grid-7-steps.md)
+- [pittman-traffic-temperature](../frameworks/pittman-traffic-temperature.md)
+- [pittman-offer-formula](../frameworks/pittman-offer-formula.md)
+- [pittman-hook-framework](../frameworks/pittman-hook-framework.md)
+- [burns-caamp](../frameworks/burns-caamp.md)
+- [ltv-cac-unit-economics](../frameworks/ltv-cac-unit-economics.md)
+- [full-funnel-ads-strategy](../frameworks/full-funnel-ads-strategy.md)
+- [customer-journey-mapping](../frameworks/customer-journey-mapping.md)
+- [funnel-types-library](../frameworks/funnel-types-library.md)
+- [account-structure-meta](../frameworks/account-structure-meta.md)
+- [omnichannel-media-strategy](../frameworks/omnichannel-media-strategy.md)
+- [offer-and-proof-stack](../frameworks/offer-and-proof-stack.md)
+- [mandalia-ac4](../frameworks/mandalia-ac4.md)
+
+### Checklists
+- [offer-quality](../checklists/offer-quality.md)
+- [acquisition-strategy-quality](../checklists/acquisition-strategy-quality.md)
+- [funnel-integrity-quality](../checklists/funnel-integrity-quality.md)
+- [budget-pacing-quality](../checklists/budget-pacing-quality.md)
+- [campaign-build-quality](../checklists/campaign-build-quality.md)
+- [cross-platform-consistency-quality](../checklists/cross-platform-consistency-quality.md)
+- [pittman/pittman-offer-formula-audit](../checklists/pittman/pittman-offer-formula-audit.md)
+- [pittman/pittman-traffic-temperature-mapping](../checklists/pittman/pittman-traffic-temperature-mapping.md)
+
+### Templates (outputs generated)
+- [acquisition-strategy-brief](../templates/briefs/acquisition-strategy-brief.md)
+- [media-plan-template](../templates/plans/media-plan-template.md)
+- [meta-ad-template](../templates/ads/meta-ad-template.md)
+
+### Registries (updated on completion)
+- [decisions-log](../data/registries/decisions-log.yaml)
+- [campaigns-registry](../data/registries/campaigns-registry.yaml)
+
+### Workflows
+- [acquisition-plan](../workflows/acquisition-plan.md)
+- [funnel-mapping](../workflows/funnel-mapping.md)

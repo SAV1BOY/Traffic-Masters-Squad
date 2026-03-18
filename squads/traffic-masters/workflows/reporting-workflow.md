@@ -1,21 +1,21 @@
 # Reporting Workflow
 > **Type**: Workflow
 > **Duration**: 3-4 hours (weekly), 1-2 days (monthly)
-> **Agents involved**: Analyst, Strategist, Squad Lead
+> **Agents involved**: performance-analyst, traffic-chief
 
 ## Trigger
 Weekly: every Monday. Monthly: first week of month. Ad-hoc: client or stakeholder request.
 
 ## Steps
-1. Data Collection → Agent: Analyst → Framework: Multi-Platform Pull → Output: Raw data exported from all platforms, GA4, CRM into unified format
-2. Data Cleaning → Agent: Analyst → Framework: QA Protocol → Output: Verified data with discrepancies flagged and resolved
-3. Metric Calculation → Agent: Analyst → Framework: KPI Normalization → Output: Standardized metrics (blended CPA, blended ROAS, LTV-based metrics)
-4. Trend Analysis → Agent: Analyst → Framework: WoW and MoM Trends → Output: Performance trends with directional indicators and variance explanations
-5. Insight Generation → Agent: Strategist → Framework: So-What Analysis → Output: 3-5 actionable insights derived from data (not just data recitation)
-6. Visualization → Agent: Analyst → Framework: Dashboard Design → Output: Charts, graphs, and tables that tell the performance story
-7. Narrative Writing → Agent: Strategist → Framework: Executive Summary → Output: Written narrative explaining what happened, why, and what to do next
-8. Review and Polish → Agent: Squad Lead → Framework: Quality Review → Output: Final report reviewed for accuracy, clarity, and actionability
-9. Distribution → Agent: Squad Lead → Framework: Delivery Protocol → Output: Report delivered to stakeholders via agreed channel
+1. Data Collection → Agent: performance-analyst → Framework: Multi-Platform Pull → Output: Raw data exported from all platforms, GA4, CRM into unified format
+2. Data Cleaning → Agent: performance-analyst → Framework: QA Protocol → Output: Verified data with discrepancies flagged and resolved
+3. Metric Calculation → Agent: performance-analyst → Framework: KPI Normalization → Output: Standardized metrics (blended CPA, blended ROAS, LTV-based metrics)
+4. Trend Analysis → Agent: performance-analyst → Framework: WoW and MoM Trends → Output: Performance trends with directional indicators and variance explanations
+5. Insight Generation → Agent: traffic-chief → Framework: So-What Analysis → Output: 3-5 actionable insights derived from data (not just data recitation)
+6. Visualization → Agent: performance-analyst → Framework: Dashboard Design → Output: Charts, graphs, and tables that tell the performance story
+7. Narrative Writing → Agent: traffic-chief → Framework: Executive Summary → Output: Written narrative explaining what happened, why, and what to do next
+8. Review and Polish → Agent: traffic-chief → Framework: Quality Review → Output: Final report reviewed for accuracy, clarity, and actionability
+9. Distribution → Agent: traffic-chief → Framework: Delivery Protocol → Output: Report delivered to stakeholders via agreed channel
 
 ## Quality Gates
 - [ ] All data sources included and reconciled
@@ -43,3 +43,5 @@ Quarterly strategic review (10-15 pages with recommendations).
 - Use consistent templates for easy comparison over time
 - Brazilian clients may need BRL and USD views
 - Archive all reports for historical reference
+
+> **Quality Gates Reference**: See [Quality Gates Guide](../docs/quality-gates-guide.md) for gate definitions and override policy.

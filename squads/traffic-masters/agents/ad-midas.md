@@ -204,3 +204,58 @@ When asked for creative, always deliver volume with intent. Never fewer than 5 o
 - [ ] Angle map covers at least 3 funnel stages (TOFU, MOFU, BOFU)
 - [ ] No regulatory/compliance-sensitive claims without Traffic Chief approval
 - [ ] Creative inventory backlog updated with new concepts
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [hook-and-angle-research](../tasks/research/hook-and-angle-research.md) — hook and angle mining
+- [creative-strategy](../tasks/strategy/creative-strategy.md) — creative testing strategy
+- [tiktok-campaign-build](../tasks/setup/tiktok-campaign-build.md) — TikTok campaign setup
+- [aducate-scriptwriting](../tasks/creative/aducate-scriptwriting.md) — YouTube ad scripting
+- [ugc-brief-and-shotlist](../tasks/creative/ugc-brief-and-shotlist.md) — UGC brief production
+- [creative-production-sprint](../tasks/creative/creative-production-sprint.md) — creative batch production
+- [creative-refresh-plan](../tasks/creative/creative-refresh-plan.md) — creative refresh cadence
+- [creative-system-scale](../tasks/scaling/creative-system-scale.md) — creative pipeline scaling
+
+### Frameworks
+- [creative-angle-matrix](../frameworks/creative-angle-matrix.md)
+- [hook-library-system](../frameworks/hook-library-system.md)
+- [pittman-hook-framework](../frameworks/pittman-hook-framework.md)
+- [burns-kaizen-kreative](../frameworks/burns-kaizen-kreative.md)
+- [creative-testing-framework](../frameworks/creative-testing-framework.md)
+- [creative-production-pipeline](../frameworks/creative-production-pipeline.md)
+- [creative-iteration-loop](../frameworks/creative-iteration-loop.md)
+- [ugc-creator-framework](../frameworks/ugc-creator-framework.md)
+- [dynamic-creative-optimization](../frameworks/dynamic-creative-optimization.md)
+- [breeze-aducate](../frameworks/breeze-aducate.md)
+- [breeze-3-acts](../frameworks/breeze-3-acts.md)
+- [breeze-6cs-aducational](../frameworks/breeze-6cs-aducational.md)
+- [pittman-ad-grid-7-steps](../frameworks/pittman-ad-grid-7-steps.md)
+
+### Checklists
+- [creative-brief-quality](../checklists/creative-brief-quality.md)
+- [creative/angle-coverage-quality](../checklists/creative/angle-coverage-quality.md)
+- [creative/ugc-authenticity](../checklists/creative/ugc-authenticity.md)
+- [creative/thumb-first-frame-quality](../checklists/creative/thumb-first-frame-quality.md)
+- [creative/claim-proof-compliance](../checklists/creative/claim-proof-compliance.md)
+- [creative/creative-refresh-cadence](../checklists/creative/creative-refresh-cadence.md)
+- [creative-fatigue-quality](../checklists/creative-fatigue-quality.md)
+- [video-ad-quality](../checklists/video-ad-quality.md)
+- [campaign-build-quality](../checklists/campaign-build-quality.md)
+- [tiktok/tiktok-creative-native-quality](../checklists/tiktok/tiktok-creative-native-quality.md)
+- [breeze/breeze-aducate-script-audit](../checklists/breeze/breeze-aducate-script-audit.md)
+- [burns/burns-creative-lab-deep-dive](../checklists/burns/burns-creative-lab-deep-dive.md)
+
+### Templates (outputs generated)
+- [creative-brief](../templates/briefs/creative-brief.md)
+- [ugc-creator-brief](../templates/briefs/ugc-creator-brief.md)
+- [creative-production-plan](../templates/plans/creative-production-plan.md)
+- [youtube-ad-script-aducate](../templates/ads/youtube-ad-script-aducate.md)
+- [tiktok-ugc-ad-template](../templates/ads/tiktok-ugc-ad-template.md)
+
+### Registries (updated on completion)
+- [creatives-registry](../data/registries/creatives-registry.yaml)
+
+### Workflows
+- [creative-production-sprint](../workflows/creative-production-sprint.md)
+- [creative-refresh-plan](../workflows/creative-refresh-plan.md)

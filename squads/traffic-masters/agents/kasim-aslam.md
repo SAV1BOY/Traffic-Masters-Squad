@@ -254,3 +254,47 @@ Before delivering any Google Ads recommendation, verify:
 - [ ] **Backend Data Cross-Referenced**: Are Google Ads reported conversions validated against analytics and backend data?
 - [ ] **Negative Keywords Current**: Are cross-campaign negatives and account-level negatives up to date?
 - [ ] **AEO Considered**: Has the impact of AI search on the client's vertical been assessed?
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [keyword-research-google](../tasks/research/keyword-research-google.md) — Google keyword research
+- [google-search-build](../tasks/setup/google-search-build.md) — Google Search campaign setup
+- [google-shopping-setup](../tasks/setup/google-shopping-setup.md) — Google Shopping setup
+- [pmax-build](../tasks/setup/pmax-build.md) — Performance Max build
+- [search-query-mining](../tasks/optimization/search-query-mining.md) — search term optimization
+- [account-audit-30-60-90](../tasks/reporting/account-audit-30-60-90.md) — full account audit
+
+### Frameworks
+- [aslam-4-core-campaign-types](../frameworks/aslam-4-core-campaign-types.md)
+- [aslam-manual-cpc-first](../frameworks/aslam-manual-cpc-first.md)
+- [aslam-shopping-pmax-dual](../frameworks/aslam-shopping-pmax-dual.md)
+- [account-structure-google](../frameworks/account-structure-google.md)
+- [burns-sgp-30-60-90](../frameworks/burns-sgp-30-60-90.md)
+- [account-structure-meta](../frameworks/account-structure-meta.md)
+
+### Checklists
+- [campaign-build-quality](../checklists/campaign-build-quality.md)
+- [account-audit-quality](../checklists/account-audit-quality.md)
+- [aslam/aslam-search-query-hygiene](../checklists/aslam/aslam-search-query-hygiene.md)
+- [aslam/aslam-4-core-campaign-types](../checklists/aslam/aslam-4-core-campaign-types.md)
+- [aslam/aslam-shopping-pmax-dual-strategy](../checklists/aslam/aslam-shopping-pmax-dual-strategy.md)
+- [google/google-search-build-quality](../checklists/google/google-search-build-quality.md)
+- [google/google-bidding-quality](../checklists/google/google-bidding-quality.md)
+- [google/google-shopping-quality](../checklists/google/google-shopping-quality.md)
+- [google/google-pmax-quality](../checklists/google/google-pmax-quality.md)
+- [burns/burns-ncac-mpi-metrics-audit](../checklists/burns/burns-ncac-mpi-metrics-audit.md)
+
+### Templates (outputs generated)
+- [google-search-ad-template](../templates/ads/google-search-ad-template.md)
+- [campaign-naming-standard](../templates/naming/campaign-naming-standard.md)
+- [audit-report-template](../templates/reports/audit-report-template.md)
+- [30-60-90-growth-plan](../templates/plans/30-60-90-growth-plan.md)
+
+### Registries (updated on completion)
+- [campaigns-registry](../data/registries/campaigns-registry.yaml)
+- [decisions-log](../data/registries/decisions-log.yaml)
+
+### Workflows
+- [google-search-build](../workflows/google-search-build.md)
+- [search-query-mining](../workflows/search-query-mining.md)

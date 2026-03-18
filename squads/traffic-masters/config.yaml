@@ -500,6 +500,65 @@ cross_squad:
       - brand-descriptors
       - visual-guidelines
 
+  content_squad:
+    handoff_to_traffic:
+      - "Blog content for promotion → tasks/strategy/"
+      - "Lead magnets for funnel → templates/landing-pages/"
+      - "Content calendar → tasks/strategy/seasonal-calendar-planning"
+    handoff_from_traffic:
+      - "Top-performing content topics from ad data → content/data/"
+      - "Audience engagement signals → content/reference/"
+      - "Traffic volume and conversion data per content piece → content/data/metrics/"
+    shared_assets:
+      - content-calendar
+      - topic-performance-data
+      - audience-intent-signals
+
+  sales_squad:
+    handoff_to_traffic:
+      - "Lead quality feedback (MQL→SQL rates) → data/metrics/"
+      - "Close rate data by source → data/metrics/"
+      - "CRM pipeline data → data/registries/"
+    handoff_from_traffic:
+      - "Lead volume and cost per lead by channel → sales/data/"
+      - "Attribution data linking ad click to sale → sales/data/"
+      - "Audience segment performance → sales/reference/"
+    shared_assets:
+      - lead-scoring-model
+      - utm-to-crm-mapping
+      - offline-conversion-data
+    sync_cadence: "Bi-weekly lead quality review"
+
+  analytics_squad:
+    handoff_to_traffic:
+      - "Attribution model outputs → data/metrics/"
+      - "Cohort analysis and LTV curves → data/research/"
+      - "Custom dashboards → data/metrics/kpi-dashboard-spec"
+    handoff_from_traffic:
+      - "Raw campaign data exports → analytics/data/"
+      - "Experiment results for meta-analysis → analytics/data/"
+      - "Tracking implementation specs → analytics/reference/"
+    shared_assets:
+      - attribution-methodology
+      - data-dictionary
+      - metric-definitions
+    sync_cadence: "Weekly data quality check"
+
+  product_squad:
+    handoff_to_traffic:
+      - "Product launch dates and messaging → tasks/strategy/"
+      - "Feature updates for ad angle mining → data/research/"
+      - "Pricing changes → frameworks/offer-and-proof-stack"
+    handoff_from_traffic:
+      - "Market demand signals from ad performance → product/data/"
+      - "Customer objection patterns → product/reference/"
+      - "Competitive positioning data → product/data/"
+    shared_assets:
+      - launch-calendar
+      - pricing-matrix
+      - feature-benefit-mapping
+    sync_cadence: "Monthly product-traffic alignment"
+
 # ============================================================
 # QUALITY GATES
 # ============================================================
@@ -556,3 +615,200 @@ defaults:
   output_format: markdown
   budget_model: "70/20/10"
   attribution_window: "7d_click_1d_view"
+
+# ============================================================
+# TEAMS (Functional Agent Groupings)
+# ============================================================
+
+teams:
+  research_team:
+    lead: traffic-chief
+    members: [depesh-mandalia, nicholas-kusmich, ads-analyst]
+    scope: "ICP, avatar, competitor analysis, offer research, keyword research, platform feasibility"
+
+  creative_team:
+    lead: ad-midas
+    members: [creative-analyst, tom-breeze, ralph-burns]
+    scope: "Creative strategy, angles, hooks, scripts, briefs, fatigue analysis, iteration"
+
+  execution_team:
+    lead: media-buyer
+    members: [pixel-specialist, kasim-aslam, molly-pittman, pedro-sobral]
+    scope: "Campaign build, tracking setup, platform configuration, launch, daily optimization"
+
+  optimization_team:
+    lead: performance-analyst
+    members: [scale-optimizer, depesh-mandalia]
+    scope: "Performance analysis, budget reallocation, scaling, diagnostics, reporting"
+
+  governance_team:
+    lead: traffic-chief
+    members: [fiscal, ads-analyst]
+    scope: "Compliance, financial reconciliation, account audits, policy risk, quality gates"
+
+# ============================================================
+# ESCALATION RULES
+# ============================================================
+
+escalation_rules:
+  performance_crisis:
+    trigger: "CPA > 2x target for 48h OR ROAS < 50% target for 48h"
+    escalate_to: traffic-chief
+    action: "Pause affected campaigns, diagnose root cause, present recovery plan within 4h"
+
+  budget_overrun:
+    trigger: "Daily spend > 120% of daily cap OR monthly pacing > 110%"
+    escalate_to: [traffic-chief, fiscal]
+    action: "Immediate budget cap enforcement, root cause analysis, pacing correction plan"
+
+  compliance_violation:
+    trigger: "Ad disapproval, account warning, or policy flag from platform"
+    escalate_to: [fiscal, traffic-chief]
+    action: "Pause flagged ads immediately, compliance review within 2h, remediation plan"
+
+  creative_emergency:
+    trigger: "All active creatives fatigued (CTR < 50% of baseline across all creatives)"
+    escalate_to: [ad-midas, traffic-chief]
+    action: "Emergency creative sprint, activate backup creatives from inventory"
+
+  tracking_failure:
+    trigger: "Pixel not firing, CAPI dedup > 30%, or conversion data gap > 6h"
+    escalate_to: [pixel-specialist, traffic-chief]
+    action: "Pause affected campaigns, diagnose tracking issue, restore within 4h"
+
+  cross_squad_block:
+    trigger: "Dependency on another squad blocking task for > 24h"
+    escalate_to: traffic-chief
+    action: "Chief contacts counterpart squad chief, defines SLA, creates workaround if needed"
+
+# ============================================================
+# DELEGATION RULES (Out-of-Scope Handling)
+# ============================================================
+
+delegation_rules:
+  copy_production:
+    trigger: "Task requires long-form copy, VSL scripts, or email sequences"
+    delegate_to: copy_squad
+    handoff_template: "briefs/creative-brief"
+    return_expected: "Ad copy variations, scripts, landing page copy"
+    sla: "48h for standard, 24h for urgent"
+
+  brand_assets:
+    trigger: "Task requires new brand visuals, logo usage, or brand voice changes"
+    delegate_to: brand_squad
+    handoff_template: "briefs/creative-brief"
+    return_expected: "Approved visual assets, updated brand guidelines"
+    sla: "72h for standard"
+
+  landing_page_dev:
+    trigger: "Task requires new landing page build or major structural changes"
+    delegate_to: content_squad
+    handoff_template: "briefs/landing-page-brief"
+    return_expected: "Published landing page URL with tracking ready"
+    sla: "5 business days"
+
+  crm_integration:
+    trigger: "Task requires CRM pipeline changes, lead scoring updates, or sales handoff modifications"
+    delegate_to: sales_squad
+    handoff_template: "tracking/offline-conversion-spec-template"
+    return_expected: "Updated CRM configuration, lead quality feedback"
+    sla: "48h"
+
+  data_engineering:
+    trigger: "Task requires custom attribution model, data warehouse query, or cohort analysis infrastructure"
+    delegate_to: analytics_squad
+    handoff_template: "reports/attribution-report"
+    return_expected: "Data pipeline, dashboard, or analysis output"
+    sla: "5 business days"
+
+# ============================================================
+# REWORK LOOP (Quality Failure Protocol)
+# ============================================================
+
+rework_loop:
+  protocol:
+    - "Gate fails → Output returned to owning agent with specific failure reasons"
+    - "Agent revises output addressing all failure points"
+    - "Output re-submitted to same quality gate"
+    - "If gate fails again (2nd attempt) → Escalate to team lead"
+    - "Team lead reviews, provides direction, agent revises (3rd attempt)"
+    - "If gate fails 3rd time → Escalate to Traffic Chief for decision"
+    - "Traffic Chief decides: approve with exceptions, reassign task, or restructure approach"
+  max_iterations: 3
+  timeout_per_iteration: "4h for standard tasks, 1h for urgent tasks"
+  documentation: "Every rework cycle logged in data/registries/decisions-log.yaml with failure reasons and corrections"
+
+# ============================================================
+# CADENCE (Operational Rhythm)
+# ============================================================
+
+cadence:
+  daily:
+    - task: daily-optimization-loop
+      time: "09:00 BRT"
+      owner: media-buyer
+    - task: daily-pacing
+      time: "17:00 BRT"
+      owner: performance-analyst
+
+  weekly:
+    - task: weekly-business-review
+      day: monday
+      owner: traffic-chief
+    - task: creative-review
+      day: wednesday
+      owner: creative-analyst
+    - task: cross-squad-sync
+      day: friday
+      owner: traffic-chief
+
+  monthly:
+    - task: monthly-growth-review
+      week: first
+      owner: traffic-chief
+    - task: budget-reallocation
+      week: first
+      owner: traffic-chief
+    - task: creative-refresh-plan
+      week: second
+      owner: ad-midas
+
+  quarterly:
+    - task: quarterly-traffic-review
+      owner: traffic-chief
+    - task: account-audit-30-60-90
+      owner: ads-analyst
+    - task: compliance-review
+      owner: fiscal
+
+# ============================================================
+# SCORE THRESHOLDS (Minimum Quality Standards)
+# ============================================================
+
+score_thresholds:
+  research_tasks:
+    min_score: 8
+    scale: 10
+    gate: "All research dimensions documented with real data sources cited"
+  strategy_tasks:
+    min_score: 9
+    scale: 10
+    gate: "Strategy approved by Traffic Chief with measurable KPIs defined"
+  setup_tasks:
+    pass_fail: true
+    gate: "All checklist items verified, tracking confirmed firing"
+  creative_tasks:
+    min_score: 8
+    scale: 10
+    gate: "Brief complete, angles documented, psychological grounding present"
+  optimization_tasks:
+    pass_fail: true
+    gate: "Action documented with rationale, expected outcome stated"
+  reporting_tasks:
+    min_score: 8
+    scale: 10
+    gate: "Data accurate, insights actionable, recommendations specific"
+  review_tasks:
+    min_score: 9
+    scale: 10
+    gate: "All checklist items audited, gaps identified with remediation plan"

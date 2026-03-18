@@ -223,3 +223,57 @@ Before delivering any recommendation, verify:
 - [ ] **4-Funnel Check**: Are all four funnels (Prospecting, Engagement, Retargeting, Retention) addressed?
 - [ ] **Infinity Retargeting Active**: Is the evergreen retargeting infrastructure in place before scaling?
 - [ ] **Mathematical Precision**: Are recommendations backed by numbers, not feelings?
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [icp-and-avatar-deep-dive](../tasks/research/icp-and-avatar-deep-dive.md) — deep audience research
+- [offer-research](../tasks/research/offer-research.md) — offer validation and research
+- [retargeting-strategy](../tasks/strategy/retargeting-strategy.md) — retargeting architecture
+- [scaling-strategy](../tasks/strategy/scaling-strategy.md) — scaling strategy design
+- [budget-reallocation](../tasks/optimization/budget-reallocation.md) — budget redistribution
+- [retargeting-sequence-setup](../tasks/optimization/retargeting-sequence-setup.md) — retargeting sequence config
+- [vertical-scaling](../tasks/scaling/vertical-scaling.md) — vertical budget scaling
+
+### Frameworks
+- [mandalia-5w-avatar](../frameworks/mandalia-5w-avatar.md)
+- [mandalia-ac4](../frameworks/mandalia-ac4.md)
+- [mandalia-scaling-recipes](../frameworks/mandalia-scaling-recipes.md)
+- [mandalia-infinity-retargeting](../frameworks/mandalia-infinity-retargeting.md)
+- [mandalia-punisher-method](../frameworks/mandalia-punisher-method.md)
+- [kusmich-targeting-trifecta](../frameworks/kusmich-targeting-trifecta.md)
+- [kusmich-ponds-lakes-oceans](../frameworks/kusmich-ponds-lakes-oceans.md)
+- [icp-and-avatar](../frameworks/icp-and-avatar.md)
+- [pittman-offer-formula](../frameworks/pittman-offer-formula.md)
+- [offer-and-proof-stack](../frameworks/offer-and-proof-stack.md)
+- [retargeting-architecture](../frameworks/retargeting-architecture.md)
+- [retargeting-sequence-system](../frameworks/retargeting-sequence-system.md)
+- [scaling-playbook](../frameworks/scaling-playbook.md)
+- [budget-allocation-model](../frameworks/budget-allocation-model.md)
+- [pacing-and-guardrails](../frameworks/pacing-and-guardrails.md)
+- [scaling-layer](../frameworks/scaling-layer.md)
+
+### Checklists
+- [mandalia/mandalia-5w-avatar-depth-audit](../checklists/mandalia/mandalia-5w-avatar-depth-audit.md)
+- [mandalia/mandalia-cbo-recipes-selection](../checklists/mandalia/mandalia-cbo-recipes-selection.md)
+- [mandalia/mandalia-punisher-optimization](../checklists/mandalia/mandalia-punisher-optimization.md)
+- [kusmich/kusmich-targeting-trifecta-3fs](../checklists/kusmich/kusmich-targeting-trifecta-3fs.md)
+- [offer-quality](../checklists/offer-quality.md)
+- [retargeting-quality](../checklists/retargeting-quality.md)
+- [scaling-quality](../checklists/scaling-quality.md)
+- [budget-pacing-quality](../checklists/budget-pacing-quality.md)
+- [pittman/pittman-offer-formula-audit](../checklists/pittman/pittman-offer-formula-audit.md)
+
+### Templates (outputs generated)
+- [acquisition-strategy-brief](../templates/briefs/acquisition-strategy-brief.md)
+- [retargeting-ad-template](../templates/ads/retargeting-ad-template.md)
+- [scaling-plan-template](../templates/plans/scaling-plan-template.md)
+
+### Registries (updated on completion)
+- [decisions-log](../data/registries/decisions-log.yaml)
+- [audiences-registry](../data/registries/audiences-registry.yaml)
+- [budgets-and-guardrails](../data/registries/budgets-and-guardrails.yaml)
+
+### Workflows
+- [retargeting-strategy](../workflows/retargeting-strategy.md)
+- [scaling-strategy](../workflows/scaling-strategy.md)

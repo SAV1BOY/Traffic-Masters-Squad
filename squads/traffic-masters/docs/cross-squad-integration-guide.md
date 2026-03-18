@@ -1,3 +1,5 @@
+> **Note**: This guide has been consolidated with [Cross-Squad Integration](cross-squad-integration.md). For the complete integration protocol including all 6 squads, see that document.
+
 # Cross-Squad Integration Guide
 
 ## Purpose

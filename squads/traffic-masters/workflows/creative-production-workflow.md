@@ -1,21 +1,21 @@
 # Creative Production Workflow
 > **Type**: Workflow
 > **Duration**: 5-7 business days per batch
-> **Agents involved**: Creative Strategist, Designer, Video Editor, Copywriter, QA
+> **Agents involved**: ad-midas, ads-analyst, media-buyer (Cross-squad: Copy Squad for copywriting)
 
 ## Trigger
 Campaign launch, creative refresh cycle, or new testing sprint.
 
 ## Steps
-1. Creative Brief → Agent: Creative Strategist → Framework: Brief Template → Output: Completed brief with objective, audience, angle, references, specs
-2. Concept Development → Agent: Creative Strategist → Framework: Hook-Story-Offer → Output: 3-5 creative concepts with hook variations
-3. Copy Production → Agent: Copywriter → Framework: Ad Copy Framework → Output: Primary text, headlines, descriptions per concept (Cross-squad with Copy Squad)
-4. Visual Production → Agent: Designer → Framework: Platform Specs → Output: Static images, carousels in all required sizes and formats
-5. Video Production → Agent: Video Editor → Framework: Video Ad Structure → Output: Video ads with hook variations, captions, and platform-specific edits
-6. Internal Review → Agent: Creative Strategist → Framework: Creative QA Checklist → Output: All creatives reviewed for brand, message, and policy compliance
-7. Revision Round → Agent: Designer/Editor → Framework: Feedback Loop → Output: Revisions applied, final versions exported
-8. Asset Organization → Agent: QA → Framework: Asset Naming Convention → Output: All files named, organized, and uploaded to asset library
-9. Handoff to Media Buyer → Agent: Creative Strategist → Framework: Creative Handoff Doc → Output: Brief summary of each creative with testing recommendations
+1. Creative Brief → Agent: ad-midas → Framework: Brief Template → Output: Completed brief with objective, audience, angle, references, specs
+2. Concept Development → Agent: ad-midas → Framework: Hook-Story-Offer → Output: 3-5 creative concepts with hook variations
+3. Copy Production → Agent: ad-midas → Framework: Ad Copy Framework → Output: Primary text, headlines, descriptions per concept (Cross-squad with Copy Squad)
+4. Visual Production → Agent: ad-midas → Framework: Platform Specs → Output: Static images, carousels in all required sizes and formats
+5. Video Production → Agent: ad-midas → Framework: Video Ad Structure → Output: Video ads with hook variations, captions, and platform-specific edits
+6. Internal Review → Agent: ad-midas → Framework: Creative QA Checklist → Output: All creatives reviewed for brand, message, and policy compliance
+7. Revision Round → Agent: ad-midas → Framework: Feedback Loop → Output: Revisions applied, final versions exported
+8. Asset Organization → Agent: ads-analyst → Framework: Asset Naming Convention → Output: All files named, organized, and uploaded to asset library
+9. Handoff to media-buyer → Agent: ad-midas → Framework: Creative Handoff Doc → Output: Brief summary of each creative with testing recommendations
 
 ## Quality Gates
 - [ ] Brief approved before production starts
@@ -43,3 +43,5 @@ Organized asset library with performance tracking.
 - Include at least one UGC-style creative per batch
 - Test static vs video in every sprint
 - Keep a swipe file of winning concepts for future reference
+
+> **Quality Gates Reference**: See [Quality Gates Guide](../docs/quality-gates-guide.md) for gate definitions and override policy.

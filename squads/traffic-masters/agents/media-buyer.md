@@ -216,3 +216,95 @@ When asked to build a campaign, always provide the full structure with naming, t
 - [ ] Change log updated for every modification
 - [ ] No active campaigns with policy warnings unaddressed
 - [ ] Audience inventory current (refreshed within last 30 days)
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [launch-traffic-strategy](../tasks/strategy/launch-traffic-strategy.md) — launch traffic planning
+- [retargeting-strategy](../tasks/strategy/retargeting-strategy.md) — retargeting architecture
+- [meta-campaign-build](../tasks/setup/meta-campaign-build.md) — Meta campaign setup
+- [google-search-build](../tasks/setup/google-search-build.md) — Google Search campaign setup
+- [google-shopping-setup](../tasks/setup/google-shopping-setup.md) — Google Shopping setup
+- [pmax-build](../tasks/setup/pmax-build.md) — Performance Max build
+- [youtube-campaign-build](../tasks/setup/youtube-campaign-build.md) — YouTube campaign setup
+- [tiktok-campaign-build](../tasks/setup/tiktok-campaign-build.md) — TikTok campaign setup
+- [linkedin-campaign-build](../tasks/setup/linkedin-campaign-build.md) — LinkedIn campaign setup
+- [daily-optimization-loop](../tasks/optimization/daily-optimization-loop.md) — daily optimization cycle
+- [search-query-mining](../tasks/optimization/search-query-mining.md) — search term optimization
+- [retargeting-sequence-setup](../tasks/optimization/retargeting-sequence-setup.md) — retargeting sequence config
+- [frequency-cap-optimization](../tasks/optimization/frequency-cap-optimization.md) — frequency management
+- [international-expansion](../tasks/scaling/international-expansion.md) — geo expansion planning
+- [daily-pacing](../tasks/reporting/daily-pacing.md) — daily spend pacing
+
+### Frameworks
+- [account-structure-meta](../frameworks/account-structure-meta.md)
+- [account-structure-google](../frameworks/account-structure-google.md)
+- [pittman-ad-grid-7-steps](../frameworks/pittman-ad-grid-7-steps.md)
+- [pittman-traffic-temperature](../frameworks/pittman-traffic-temperature.md)
+- [aslam-4-core-campaign-types](../frameworks/aslam-4-core-campaign-types.md)
+- [aslam-manual-cpc-first](../frameworks/aslam-manual-cpc-first.md)
+- [aslam-shopping-pmax-dual](../frameworks/aslam-shopping-pmax-dual.md)
+- [breeze-aducate](../frameworks/breeze-aducate.md)
+- [breeze-3-acts](../frameworks/breeze-3-acts.md)
+- [breeze-5as-readiness](../frameworks/breeze-5as-readiness.md)
+- [youtube-ads-structure](../frameworks/youtube-ads-structure.md)
+- [creative-angle-matrix](../frameworks/creative-angle-matrix.md)
+- [omnichannel-media-strategy](../frameworks/omnichannel-media-strategy.md)
+- [optimization-layer](../frameworks/optimization-layer.md)
+- [sobral-geco-ana](../frameworks/sobral-geco-ana.md)
+- [pacing-and-guardrails](../frameworks/pacing-and-guardrails.md)
+- [mandalia-infinity-retargeting](../frameworks/mandalia-infinity-retargeting.md)
+- [retargeting-sequence-system](../frameworks/retargeting-sequence-system.md)
+- [scaling-playbook](../frameworks/scaling-playbook.md)
+- [sobral-metodo-subido-lancamentos](../frameworks/sobral-metodo-subido-lancamentos.md)
+
+### Checklists
+- [campaign-build-quality](../checklists/campaign-build-quality.md)
+- [budget-pacing-quality](../checklists/budget-pacing-quality.md)
+- [retargeting-quality](../checklists/retargeting-quality.md)
+- [cross-platform-consistency-quality](../checklists/cross-platform-consistency-quality.md)
+- [compliance-ad-policies-quality](../checklists/compliance-ad-policies-quality.md)
+- [meta/meta-account-structure-quality](../checklists/meta/meta-account-structure-quality.md)
+- [meta/meta-capi-quality](../checklists/meta/meta-capi-quality.md)
+- [meta/meta-audience-exclusions-quality](../checklists/meta/meta-audience-exclusions-quality.md)
+- [google/google-search-build-quality](../checklists/google/google-search-build-quality.md)
+- [google/google-bidding-quality](../checklists/google/google-bidding-quality.md)
+- [google/google-shopping-quality](../checklists/google/google-shopping-quality.md)
+- [google/google-pmax-quality](../checklists/google/google-pmax-quality.md)
+- [youtube/yt-campaign-setup-quality](../checklists/youtube/yt-campaign-setup-quality.md)
+- [youtube/yt-creative-hook-5s](../checklists/youtube/yt-creative-hook-5s.md)
+- [tiktok/tiktok-creative-native-quality](../checklists/tiktok/tiktok-creative-native-quality.md)
+- [tiktok/tiktok-event-tracking-quality](../checklists/tiktok/tiktok-event-tracking-quality.md)
+- [linkedin/linkedin-targeting-quality](../checklists/linkedin/linkedin-targeting-quality.md)
+- [linkedin/linkedin-leadgen-forms-quality](../checklists/linkedin/linkedin-leadgen-forms-quality.md)
+- [aslam/aslam-search-query-hygiene](../checklists/aslam/aslam-search-query-hygiene.md)
+- [aslam/aslam-4-core-campaign-types](../checklists/aslam/aslam-4-core-campaign-types.md)
+- [aslam/aslam-shopping-pmax-dual-strategy](../checklists/aslam/aslam-shopping-pmax-dual-strategy.md)
+- [sobral/sobral-launch-8-stages](../checklists/sobral/sobral-launch-8-stages.md)
+- [sobral/sobral-geco-ana-cycle](../checklists/sobral/sobral-geco-ana-cycle.md)
+- [pittman/pittman-traffic-temperature-mapping](../checklists/pittman/pittman-traffic-temperature-mapping.md)
+- [breeze/breeze-aducate-script-audit](../checklists/breeze/breeze-aducate-script-audit.md)
+- [creative-fatigue-quality](../checklists/creative-fatigue-quality.md)
+
+### Templates (outputs generated)
+- [meta-ad-template](../templates/ads/meta-ad-template.md)
+- [google-search-ad-template](../templates/ads/google-search-ad-template.md)
+- [youtube-ad-script-aducate](../templates/ads/youtube-ad-script-aducate.md)
+- [tiktok-ugc-ad-template](../templates/ads/tiktok-ugc-ad-template.md)
+- [linkedin-b2b-ad-template](../templates/ads/linkedin-b2b-ad-template.md)
+- [retargeting-ad-template](../templates/ads/retargeting-ad-template.md)
+- [campaign-naming-standard](../templates/naming/campaign-naming-standard.md)
+- [launch-brief](../templates/briefs/launch-brief.md)
+- [launch-traffic-plan](../templates/plans/launch-traffic-plan.md)
+- [video-ad-brief](../templates/briefs/video-ad-brief.md)
+- [daily-pacing-report](../templates/reports/daily-pacing-report.md)
+- [scaling-plan-template](../templates/plans/scaling-plan-template.md)
+
+### Registries (updated on completion)
+- [campaigns-registry](../data/registries/campaigns-registry.yaml)
+- [audiences-registry](../data/registries/audiences-registry.yaml)
+- [decisions-log](../data/registries/decisions-log.yaml)
+
+### Workflows
+- [meta-campaign-build](../workflows/meta-campaign-build.md)
+- [daily-optimization-loop](../workflows/daily-optimization-loop.md)

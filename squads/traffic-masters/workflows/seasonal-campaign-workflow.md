@@ -1,21 +1,21 @@
 # Seasonal Campaign Workflow
 > **Type**: Workflow
 > **Duration**: 4-6 weeks (plan to post-mortem)
-> **Agents involved**: Strategist, Media Buyer, Creative Producer, Analyst
+> **Agents involved**: traffic-chief, media-buyer, ad-midas, performance-analyst
 
 ## Trigger
 Upcoming seasonal event (Black Friday, Christmas, Carnaval, Dia das Maes, back-to-school, etc.).
 
 ## Steps
-1. Historical Analysis (T-6 weeks) → Agent: Analyst → Framework: YoY Comparison → Output: Past performance data for the same season with CPM trends and conversion patterns
-2. Strategy Definition (T-5 weeks) → Agent: Strategist → Framework: Seasonal Playbook → Output: Campaign strategy with offers, audiences, timeline, budget
-3. Creative Production (T-4 weeks) → Agent: Creative Producer → Framework: Seasonal Creative Sprint → Output: Full creative set with seasonal themes, urgency elements
-4. Audience Preparation (T-3 weeks) → Agent: Media Buyer → Framework: Warm Audience Build → Output: Retargeting pools built, lookalikes refreshed, email lists synced
-5. Pre-Season Launch (T-2 weeks) → Agent: Media Buyer → Framework: Early Bird Campaigns → Output: Awareness and lead gen campaigns to warm audiences before peak
-6. Peak Season (T-0) → Agent: Media Buyer → Framework: Maximum Impact → Output: Full budget deployed with real-time optimization
-7. Daily Optimization → Agent: Media Buyer → Framework: Aggressive Daily Loop → Output: Twice-daily checks during peak with rapid creative rotation
-8. Post-Season Wind-Down → Agent: Media Buyer → Framework: Graceful Decline → Output: Budget reduction, evergreen campaigns restored
-9. Post-Mortem (T+1 week) → Agent: Analyst → Framework: Season Debrief → Output: Full analysis with revenue, ROAS, learnings, recommendations
+1. Historical Analysis (T-6 weeks) → Agent: performance-analyst → Framework: YoY Comparison → Output: Past performance data for the same season with CPM trends and conversion patterns
+2. Strategy Definition (T-5 weeks) → Agent: traffic-chief → Framework: Seasonal Playbook → Output: Campaign strategy with offers, audiences, timeline, budget
+3. Creative Production (T-4 weeks) → Agent: ad-midas → Framework: Seasonal Creative Sprint → Output: Full creative set with seasonal themes, urgency elements
+4. Audience Preparation (T-3 weeks) → Agent: media-buyer → Framework: Warm Audience Build → Output: Retargeting pools built, lookalikes refreshed, email lists synced
+5. Pre-Season Launch (T-2 weeks) → Agent: media-buyer → Framework: Early Bird Campaigns → Output: Awareness and lead gen campaigns to warm audiences before peak
+6. Peak Season (T-0) → Agent: media-buyer → Framework: Maximum Impact → Output: Full budget deployed with real-time optimization
+7. Daily Optimization → Agent: media-buyer → Framework: Aggressive Daily Loop → Output: Twice-daily checks during peak with rapid creative rotation
+8. Post-Season Wind-Down → Agent: media-buyer → Framework: Graceful Decline → Output: Budget reduction, evergreen campaigns restored
+9. Post-Mortem (T+1 week) → Agent: performance-analyst → Framework: Season Debrief → Output: Full analysis with revenue, ROAS, learnings, recommendations
 
 ## Quality Gates
 - [ ] Historical data analyzed before strategy finalized
@@ -40,3 +40,5 @@ Lessons learned document for future seasons.
 - Start audience warming 3+ weeks before peak to beat CPM inflation
 - Reserve 20% of seasonal budget for real-time opportunities
 - Document everything for next year's planning
+
+> **Quality Gates Reference**: See [Quality Gates Guide](../docs/quality-gates-guide.md) for gate definitions and override policy.

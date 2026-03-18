@@ -280,3 +280,33 @@ Antes de entregar qualquer recomendacao de trafego, verifique:
 - [ ] **Criativos em Rotacao**: Ha pelo menos 3 criativos ativos por conjunto, com plano de rotacao definido?
 - [ ] **Orcamento Verificado**: O gasto real esta alinhado com o orcamento aprovado em R$?
 - [ ] **Aprendizados Documentados**: Os aprendizados do dia/semana/lancamento estao registrados para melhoria continua?
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [launch-traffic-strategy](../tasks/strategy/launch-traffic-strategy.md) — launch traffic planning
+- [daily-optimization-loop](../tasks/optimization/daily-optimization-loop.md) — daily optimization cycle
+
+### Frameworks
+- [sobral-metodo-subido-lancamentos](../frameworks/sobral-metodo-subido-lancamentos.md)
+- [sobral-geco-ana](../frameworks/sobral-geco-ana.md)
+- [optimization-layer](../frameworks/optimization-layer.md)
+- [pacing-and-guardrails](../frameworks/pacing-and-guardrails.md)
+
+### Checklists
+- [sobral/sobral-launch-8-stages](../checklists/sobral/sobral-launch-8-stages.md)
+- [sobral/sobral-geco-ana-cycle](../checklists/sobral/sobral-geco-ana-cycle.md)
+- [campaign-build-quality](../checklists/campaign-build-quality.md)
+- [budget-pacing-quality](../checklists/budget-pacing-quality.md)
+
+### Templates (outputs generated)
+- [launch-brief](../templates/briefs/launch-brief.md)
+- [launch-traffic-plan](../templates/plans/launch-traffic-plan.md)
+- [daily-pacing-report](../templates/reports/daily-pacing-report.md)
+
+### Registries (updated on completion)
+- [campaigns-registry](../data/registries/campaigns-registry.yaml)
+
+### Workflows
+- [launch-traffic-strategy](../workflows/launch-traffic-strategy.md)
+- [daily-optimization-loop](../workflows/daily-optimization-loop.md)

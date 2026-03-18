@@ -1,19 +1,19 @@
 # Scaling and Stability Loop
 > **Type**: Workflow
 > **Duration**: Ongoing (weekly cycles)
-> **Agents involved**: Media Buyer, Analyst, Strategist
+> **Agents involved**: media-buyer, performance-analyst, traffic-chief, scale-optimizer
 
 ## Trigger
 Campaign achieves stable CPA/ROAS for 7+ consecutive days with 50+ conversions.
 
 ## Steps
-1. Stability Validation → Agent: Analyst → Framework: Coefficient of Variation → Output: Stability score confirming CPA variance below 20% over 7 days
-2. Scale Readiness Check → Agent: Media Buyer → Framework: Mandalia Scale Criteria → Output: Green light with recommended scale increment (15-20% budget increase)
-3. Incremental Scale → Agent: Media Buyer → Framework: Gradual Budget Increase → Output: Budget increased, timestamp logged
-4. 48h Monitor → Agent: Analyst → Framework: GECO-ANA → Output: Performance delta report comparing pre/post scale metrics
-5. Stabilize or Rollback → Agent: Media Buyer → Framework: Decision Matrix → Output: If CPA within 15% of target, hold; if above, rollback to prior budget
-6. Horizontal Scale → Agent: Media Buyer → Framework: Audience Expansion → Output: New ad sets with lookalikes, interest expansion, or geo expansion
-7. Document Learnings → Agent: Analyst → Framework: Scale Log → Output: Entry documenting what worked, what did not, and current ceiling
+1. Stability Validation → Agent: performance-analyst → Framework: Coefficient of Variation → Output: Stability score confirming CPA variance below 20% over 7 days
+2. Scale Readiness Check → Agent: scale-optimizer → Framework: Mandalia Scale Criteria → Output: Green light with recommended scale increment (15-20% budget increase)
+3. Incremental Scale → Agent: media-buyer → Framework: Gradual Budget Increase → Output: Budget increased, timestamp logged
+4. 48h Monitor → Agent: performance-analyst → Framework: GECO-ANA → Output: Performance delta report comparing pre/post scale metrics
+5. Stabilize or Rollback → Agent: media-buyer → Framework: Decision Matrix → Output: If CPA within 15% of target, hold; if above, rollback to prior budget
+6. Horizontal Scale → Agent: scale-optimizer → Framework: Audience Expansion → Output: New ad sets with lookalikes, interest expansion, or geo expansion
+7. Document Learnings → Agent: performance-analyst → Framework: Scale Log → Output: Entry documenting what worked, what did not, and current ceiling
 
 ## Quality Gates
 - [ ] 7-day stability confirmed before any scale action
@@ -41,3 +41,5 @@ Updated budget forecast based on proven scale capacity.
 - Monday and Tuesday are safest days to scale (full week of data ahead)
 - Never scale during platform instability or holiday anomalies
 - Sobral rule: if it breaks at scale, the creative was carrying the campaign
+
+> **Quality Gates Reference**: See [Quality Gates Guide](../docs/quality-gates-guide.md) for gate definitions and override policy.

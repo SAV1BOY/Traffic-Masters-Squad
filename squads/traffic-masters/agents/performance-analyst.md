@@ -230,3 +230,74 @@ When you detect data quality issues -- discrepancies >10% between platform repor
 - [ ] Forecasts include base, bull, and bear scenarios
 - [ ] Confidence levels stated for all interpretive claims
 - [ ] Report formatted per squad standard templates
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [seasonal-opportunity-research](../tasks/research/seasonal-opportunity-research.md) — seasonal campaign planning
+- [measurement-plan](../tasks/strategy/measurement-plan.md) — measurement and attribution
+- [budget-allocation](../tasks/strategy/budget-allocation.md) — budget distribution planning
+- [attribution-strategy](../tasks/strategy/attribution-strategy.md) — attribution model design
+- [daily-optimization-loop](../tasks/optimization/daily-optimization-loop.md) — daily optimization cycle
+- [landing-page-cro-fixes](../tasks/optimization/landing-page-cro-fixes.md) — CRO improvements
+- [frequency-cap-optimization](../tasks/optimization/frequency-cap-optimization.md) — frequency management
+- [attribution-sanity-check](../tasks/tracking/attribution-sanity-check.md) — attribution validation
+- [daily-pacing](../tasks/reporting/daily-pacing.md) — daily spend pacing
+- [weekly-business-review](../tasks/reporting/weekly-business-review.md) — weekly KPI review
+- [monthly-growth-review](../tasks/reporting/monthly-growth-review.md) — monthly performance review
+- [quarterly-traffic-review](../tasks/operations/quarterly-traffic-review.md) — quarterly strategy review
+- [budget-reallocation](../tasks/optimization/budget-reallocation.md) — budget redistribution
+
+### Frameworks
+- [burns-mpi](../frameworks/burns-mpi.md)
+- [burns-ncac-method](../frameworks/burns-ncac-method.md)
+- [attribution-and-incrementality](../frameworks/attribution-and-incrementality.md)
+- [tracking-stack-standard](../frameworks/tracking-stack-standard.md)
+- [budget-allocation-model](../frameworks/budget-allocation-model.md)
+- [ltv-cac-unit-economics](../frameworks/ltv-cac-unit-economics.md)
+- [kpi-tree-acquisition](../frameworks/kpi-tree-acquisition.md)
+- [mer-marketing-efficiency-ratio](../frameworks/mer-marketing-efficiency-ratio.md)
+- [pacing-and-guardrails](../frameworks/pacing-and-guardrails.md)
+- [optimization-layer](../frameworks/optimization-layer.md)
+- [sobral-geco-ana](../frameworks/sobral-geco-ana.md)
+- [full-funnel-ads-strategy](../frameworks/full-funnel-ads-strategy.md)
+- [governance-layer](../frameworks/governance-layer.md)
+- [burns-conversion-architecture](../frameworks/burns-conversion-architecture.md)
+- [mandalia-punisher-method](../frameworks/mandalia-punisher-method.md)
+
+### Checklists
+- [tracking-plan-quality](../checklists/tracking-plan-quality.md)
+- [attribution-quality](../checklists/attribution-quality.md)
+- [budget-pacing-quality](../checklists/budget-pacing-quality.md)
+- [reporting-quality](../checklists/reporting-quality.md)
+- [seasonal-campaign-quality](../checklists/seasonal-campaign-quality.md)
+- [landing-page-quality](../checklists/landing-page-quality.md)
+- [creative-fatigue-quality](../checklists/creative-fatigue-quality.md)
+- [tracking/attribution-window-policy](../checklists/tracking/attribution-window-policy.md)
+- [cro/landing-page-speed-quality](../checklists/cro/landing-page-speed-quality.md)
+- [cro/form-friction-quality](../checklists/cro/form-friction-quality.md)
+- [cro/post-click-consistency](../checklists/cro/post-click-consistency.md)
+- [meta/meta-audience-exclusions-quality](../checklists/meta/meta-audience-exclusions-quality.md)
+- [sobral/sobral-geco-ana-cycle](../checklists/sobral/sobral-geco-ana-cycle.md)
+- [mandalia/mandalia-punisher-optimization](../checklists/mandalia/mandalia-punisher-optimization.md)
+
+### Templates (outputs generated)
+- [event-map-template](../templates/tracking/event-map-template.md)
+- [attribution-report](../templates/reports/attribution-report.md)
+- [daily-pacing-report](../templates/reports/daily-pacing-report.md)
+- [weekly-performance-report](../templates/reports/weekly-performance-report.md)
+- [monthly-growth-report](../templates/reports/monthly-growth-report.md)
+- [seasonal-campaign-plan](../templates/plans/seasonal-campaign-plan.md)
+- [media-plan-template](../templates/plans/media-plan-template.md)
+
+### Registries (updated on completion)
+- [decisions-log](../data/registries/decisions-log.yaml)
+- [pixels-and-events-registry](../data/registries/pixels-and-events-registry.yaml)
+- [budgets-and-guardrails](../data/registries/budgets-and-guardrails.yaml)
+- [weekly-scorecards](../data/metrics/weekly-scorecards.yaml)
+- [kpi-dashboard-spec](../data/metrics/kpi-dashboard-spec.yaml)
+
+### Workflows
+- [weekly-business-review](../workflows/weekly-business-review.md)
+- [daily-pacing](../workflows/daily-pacing.md)
+- [monthly-growth-review](../workflows/monthly-growth-review.md)

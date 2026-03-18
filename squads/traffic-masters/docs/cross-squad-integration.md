@@ -1,6 +1,6 @@
 # Cross-Squad Integration Guide
 
-> Guide to integrating Traffic Masters Squad with Copy Squad, Brand Squad, and other squads in the ecosystem.
+> Guide to integrating Traffic Masters Squad with Copy Squad, Brand Squad, Content Squad, Sales Squad, Analytics Squad, and Product Squad.
 
 ---
 
@@ -18,10 +18,16 @@ Traffic Masters Squad does not operate in isolation. It relies on and contribute
                     guidelines, voice)
                         |
                         v
-Copy Squad <------> Traffic Masters Squad
-(Content,               (Paid media,
- messaging,              campaigns,
- copywriting)            optimization)
+Copy Squad <------> Traffic Masters Squad <------> Sales Squad
+(Content,               (Paid media,                (Lead quality,
+ messaging,              campaigns,                  pipeline,
+ copywriting)            optimization)               CRM data)
+                        ^         ^
+                        |         |
+                Content Squad   Analytics Squad     Product Squad
+               (Blog content,  (Attribution,       (Launches,
+                lead magnets,   cohort analysis,    features,
+                calendar)       dashboards)         pricing)
 ```
 
 ---
@@ -87,6 +93,126 @@ Copy Squad <------> Traffic Masters Squad
 - **Compliance review:** Brand Squad reviews creative before launch (part of Creative Review Checklist)
 - **Campaign reporting:** Brand lift and sentiment metrics shared with Brand Squad
 - **Competitive intelligence:** Brand positioning insights shared through Intelligence Agent
+
+---
+
+## Integration with Content Squad
+
+### What Content Squad Provides to Traffic Masters
+| Asset | Description | Location |
+|-------|-------------|----------|
+| Blog content for promotion | Published blog posts and articles ready for paid distribution | `content-squad/blog/` |
+| Lead magnets | Ebooks, whitepapers, guides, and gated content for lead gen campaigns | `content-squad/lead-magnets/` |
+| Content calendar | Upcoming content schedule for coordinated promotion timing | `content-squad/planning/` |
+
+### What Traffic Masters Provides to Content Squad
+| Asset | Description | Location |
+|-------|-------------|----------|
+| Content topic performance | Which topics and themes drive the most traffic and engagement | `traffic-masters/data/metrics/` |
+| Audience engagement data | How different audience segments interact with promoted content | `traffic-masters/data/registries/` |
+| Conversion data per content | Which content pieces drive leads, signups, and revenue | `traffic-masters/data/metrics/` |
+
+### Coordination Protocol
+1. **Weekly sync:** Align on content calendar and upcoming promotion needs
+2. **Content briefs:** Traffic Masters shares top-performing topics to inform content creation
+3. **Promotion requests:** Content Squad submits promotion requests for high-priority content
+4. **Performance reviews:** Traffic Masters shares content performance data to guide future content strategy
+
+### Workflow Integration Points
+- **Content launch:** Traffic Masters builds promotion campaigns around new content releases
+- **Lead magnet promotion:** Dedicated campaigns for gated content with lead gen objectives
+- **Content repurposing:** High-performing ad angles inform new content topics
+- **Reporting:** Traffic Masters shares engagement and conversion data per content asset
+
+---
+
+## Integration with Sales Squad
+
+### What Sales Squad Provides to Traffic Masters
+| Asset | Description | Location |
+|-------|-------------|----------|
+| Lead quality feedback | MQL-to-SQL conversion rates by source and campaign | `sales-squad/data/lead-quality/` |
+| Close rates by source | Win rates segmented by traffic channel and campaign | `sales-squad/data/pipeline/` |
+| CRM pipeline data | Pipeline stages, deal velocity, and revenue attribution | `sales-squad/data/crm/` |
+
+### What Traffic Masters Provides to Sales Squad
+| Asset | Description | Location |
+|-------|-------------|----------|
+| Lead volume and CPL by channel | Lead counts and cost-per-lead across all paid channels | `traffic-masters/data/metrics/` |
+| Attribution data | Multi-touch attribution showing traffic's contribution to pipeline | `traffic-masters/data/metrics/` |
+| Audience segment performance | Which audience segments produce the highest quality leads | `traffic-masters/data/registries/` |
+
+### Coordination Protocol
+1. **Bi-weekly sync:** Review lead quality, volume trends, and pipeline impact
+2. **Lead scoring alignment:** Coordinate on lead scoring criteria to improve MQL quality
+3. **Campaign feedback loop:** Sales provides qualitative feedback on lead quality per campaign
+4. **Revenue attribution:** Joint review of attribution data to optimize for revenue, not just leads
+
+### Workflow Integration Points
+- **New campaign launch:** Sales Squad confirms target audience and lead quality expectations
+- **Lead quality alerts:** Sales flags significant changes in lead quality for immediate campaign review
+- **Pipeline reporting:** Joint dashboard showing traffic spend through to closed revenue
+- **Audience building:** CRM data informs lookalike audiences and suppression lists
+
+---
+
+## Integration with Analytics Squad
+
+### What Analytics Squad Provides to Traffic Masters
+| Asset | Description | Location |
+|-------|-------------|----------|
+| Attribution model outputs | Multi-touch and algorithmic attribution results across channels | `analytics-squad/models/attribution/` |
+| Cohort analysis and LTV | Customer lifetime value by acquisition channel and campaign | `analytics-squad/analysis/cohorts/` |
+| Custom dashboards | Tailored reporting views for traffic performance and optimization | `analytics-squad/dashboards/` |
+
+### What Traffic Masters Provides to Analytics Squad
+| Asset | Description | Location |
+|-------|-------------|----------|
+| Raw campaign data exports | Platform-level campaign data for ingestion into analytics models | `traffic-masters/data/metrics/` |
+| Experiment results | A/B test outcomes, creative test data, and audience test results | `traffic-masters/data/metrics/` |
+| Tracking specs | UTM conventions, pixel configurations, and tagging requirements | `traffic-masters/docs/` |
+
+### Coordination Protocol
+1. **Weekly data quality check:** Verify data accuracy, tracking integrity, and attribution consistency
+2. **Model updates:** Analytics Squad notifies Traffic Masters when attribution models are recalibrated
+3. **Experiment design:** Collaborate on test design to ensure statistical rigor and proper tracking
+4. **Dashboard requests:** Traffic Masters submits requirements for new or updated dashboards
+
+### Workflow Integration Points
+- **Tracking implementation:** Analytics Squad validates tracking setup before campaign launch
+- **Data reconciliation:** Regular comparison of platform-reported data vs. analytics model data
+- **LTV optimization:** Traffic Masters shifts budget toward channels with highest LTV based on cohort data
+- **Reporting:** Shared attribution dashboards serve as single source of truth for performance
+
+---
+
+## Integration with Product Squad
+
+### What Product Squad Provides to Traffic Masters
+| Asset | Description | Location |
+|-------|-------------|----------|
+| Launch dates and messaging | Product launch timelines and approved launch messaging | `product-squad/launches/` |
+| Feature updates | New features, improvements, and changes that affect positioning | `product-squad/updates/` |
+| Pricing changes | Upcoming pricing adjustments, new plans, and promotional offers | `product-squad/pricing/` |
+
+### What Traffic Masters Provides to Product Squad
+| Asset | Description | Location |
+|-------|-------------|----------|
+| Market demand signals | Search volume trends, audience interest data, and demand indicators | `traffic-masters/data/metrics/` |
+| Customer objection patterns | Common objections and friction points surfaced through ad engagement | `traffic-masters/data/registries/` |
+| Competitive positioning | How competitors position and message their products in paid media | `traffic-masters/data/competitive/` |
+
+### Coordination Protocol
+1. **Monthly alignment:** Review upcoming launches, feature updates, and messaging changes
+2. **Launch coordination:** Product Squad provides launch briefs at least 2 weeks before launch date
+3. **Feedback loop:** Traffic Masters shares market signals that inform product positioning
+4. **Pricing promotions:** Coordinate on promotional campaigns around pricing changes or new plans
+
+### Workflow Integration Points
+- **Product launch campaigns:** Traffic Masters builds launch campaigns based on Product Squad briefs
+- **Feature adoption:** Targeted campaigns to drive adoption of new features among existing users
+- **Market research:** Ad performance data informs product-market fit and demand validation
+- **Competitive intelligence:** Traffic Masters shares competitor ad activity and positioning shifts
 
 ---
 

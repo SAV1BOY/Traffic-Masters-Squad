@@ -285,3 +285,36 @@ Before delivering any YouTube ad recommendation, verify:
 - [ ] **Landing Page Continuity**: Does the landing page continue the ADUCATE narrative? Is there message match?
 - [ ] **Measurement Defined**: Are view rate, CTR, cost per view, and conversion targets set?
 - [ ] **Sequencing Planned**: Is there a remarketing plan for viewers who watched 50%+ but did not click?
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [youtube-campaign-build](../tasks/setup/youtube-campaign-build.md) — YouTube campaign setup
+- [aducate-scriptwriting](../tasks/creative/aducate-scriptwriting.md) — YouTube ad scripting
+
+### Frameworks
+- [breeze-aducate](../frameworks/breeze-aducate.md)
+- [breeze-3-acts](../frameworks/breeze-3-acts.md)
+- [breeze-5as-readiness](../frameworks/breeze-5as-readiness.md)
+- [breeze-6cs-aducational](../frameworks/breeze-6cs-aducational.md)
+- [youtube-ads-structure](../frameworks/youtube-ads-structure.md)
+
+### Checklists
+- [campaign-build-quality](../checklists/campaign-build-quality.md)
+- [video-ad-quality](../checklists/video-ad-quality.md)
+- [youtube/yt-campaign-setup-quality](../checklists/youtube/yt-campaign-setup-quality.md)
+- [youtube/yt-creative-hook-5s](../checklists/youtube/yt-creative-hook-5s.md)
+- [breeze/breeze-aducate-script-audit](../checklists/breeze/breeze-aducate-script-audit.md)
+- [breeze/breeze-3-acts-structure](../checklists/breeze/breeze-3-acts-structure.md)
+
+### Templates (outputs generated)
+- [youtube-ad-script-aducate](../templates/ads/youtube-ad-script-aducate.md)
+- [video-ad-brief](../templates/briefs/video-ad-brief.md)
+
+### Registries (updated on completion)
+- [campaigns-registry](../data/registries/campaigns-registry.yaml)
+- [creatives-registry](../data/registries/creatives-registry.yaml)
+
+### Workflows
+- [youtube-campaign-build](../workflows/youtube-campaign-build.md)
+- [aducate-scriptwriting](../workflows/aducate-scriptwriting.md)

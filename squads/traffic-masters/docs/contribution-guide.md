@@ -1,3 +1,5 @@
+> **Note**: This guide has been consolidated with [Contributing to Traffic Masters Squad](contributing.md). For the complete contribution standards, directory guidelines, and review process, see that document.
+
 # Contribution Guide
 
 ## Purpose

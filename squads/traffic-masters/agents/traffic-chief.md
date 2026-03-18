@@ -204,3 +204,77 @@ Always reference config.yaml for routing rules, thresholds, and naming conventio
 - [ ] Stakeholder communication sent on schedule with no surprises
 - [ ] ICE scores current for all backlog items
 - [ ] Config.yaml routing rules match current operational reality
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [icp-and-avatar-deep-dive](../tasks/research/icp-and-avatar-deep-dive.md) — deep audience research
+- [offer-research](../tasks/research/offer-research.md) — offer validation and research
+- [platform-feasibility](../tasks/research/platform-feasibility.md) — channel feasibility assessment
+- [seasonal-opportunity-research](../tasks/research/seasonal-opportunity-research.md) — seasonal campaign planning
+- [acquisition-plan](../tasks/strategy/acquisition-plan.md) — full acquisition strategy
+- [funnel-mapping](../tasks/strategy/funnel-mapping.md) — customer journey mapping
+- [budget-allocation](../tasks/strategy/budget-allocation.md) — budget distribution planning
+- [launch-traffic-strategy](../tasks/strategy/launch-traffic-strategy.md) — launch traffic planning
+- [scaling-strategy](../tasks/strategy/scaling-strategy.md) — scaling strategy design
+- [budget-reallocation](../tasks/optimization/budget-reallocation.md) — budget redistribution
+- [horizontal-scaling](../tasks/scaling/horizontal-scaling.md) — audience expansion scaling
+- [channel-diversification](../tasks/scaling/channel-diversification.md) — multi-channel expansion
+- [international-expansion](../tasks/scaling/international-expansion.md) — geo expansion planning
+- [weekly-business-review](../tasks/reporting/weekly-business-review.md) — weekly KPI review
+- [monthly-growth-review](../tasks/reporting/monthly-growth-review.md) — monthly performance review
+- [account-audit-30-60-90](../tasks/reporting/account-audit-30-60-90.md) — full account audit
+- [campaign-review](../tasks/review/campaign-review.md) — campaign quality review
+- [budget-approval](../tasks/finance/budget-approval.md) — budget approval process
+- [quarterly-traffic-review](../tasks/operations/quarterly-traffic-review.md) — quarterly strategy review
+- [cross-squad-sync](../tasks/operations/cross-squad-sync.md) — cross-team coordination
+- [new-account-onboarding](../tasks/operations/onboard-new-account.md) — new account setup
+
+### Frameworks
+- [burns-sgp-30-60-90](../frameworks/burns-sgp-30-60-90.md)
+- [burns-mpi](../frameworks/burns-mpi.md)
+- [burns-ncac-method](../frameworks/burns-ncac-method.md)
+- [full-funnel-ads-strategy](../frameworks/full-funnel-ads-strategy.md)
+- [ltv-cac-unit-economics](../frameworks/ltv-cac-unit-economics.md)
+- [budget-allocation-model](../frameworks/budget-allocation-model.md)
+- [omnichannel-media-strategy](../frameworks/omnichannel-media-strategy.md)
+- [pittman-traffic-engine-9-steps](../frameworks/pittman-traffic-engine-9-steps.md)
+- [scaling-playbook](../frameworks/scaling-playbook.md)
+- [governance-layer](../frameworks/governance-layer.md)
+- [client-ops-handoff](../frameworks/client-ops-handoff.md)
+- [tracking-stack-standard](../frameworks/tracking-stack-standard.md)
+- [mer-marketing-efficiency-ratio](../frameworks/mer-marketing-efficiency-ratio.md)
+- [kpi-tree-acquisition](../frameworks/kpi-tree-acquisition.md)
+- [pacing-and-guardrails](../frameworks/pacing-and-guardrails.md)
+
+### Checklists
+- [acquisition-strategy-quality](../checklists/acquisition-strategy-quality.md)
+- [budget-pacing-quality](../checklists/budget-pacing-quality.md)
+- [cross-platform-consistency-quality](../checklists/cross-platform-consistency-quality.md)
+- [seasonal-campaign-quality](../checklists/seasonal-campaign-quality.md)
+- [reporting-quality](../checklists/reporting-quality.md)
+- [scaling-quality](../checklists/scaling-quality.md)
+- [compliance-ad-policies-quality](../checklists/compliance-ad-policies-quality.md)
+- [campaign-build-quality](../checklists/campaign-build-quality.md)
+- [account-audit-quality](../checklists/account-audit-quality.md)
+
+### Templates (outputs generated)
+- [acquisition-strategy-brief](../templates/briefs/acquisition-strategy-brief.md)
+- [media-plan-template](../templates/plans/media-plan-template.md)
+- [scaling-plan-template](../templates/plans/scaling-plan-template.md)
+- [weekly-performance-report](../templates/reports/weekly-performance-report.md)
+- [monthly-growth-report](../templates/reports/monthly-growth-report.md)
+- [quarterly-media-report](../templates/reports/quarterly-media-report.md)
+- [audit-report-template](../templates/reports/audit-report-template.md)
+- [30-60-90-growth-plan](../templates/plans/30-60-90-growth-plan.md)
+
+### Registries (updated on completion)
+- [decisions-log](../data/registries/decisions-log.yaml)
+- [budgets-and-guardrails](../data/registries/budgets-and-guardrails.yaml)
+- [campaigns-registry](../data/registries/campaigns-registry.yaml)
+
+### Workflows
+- [weekly-business-review](../workflows/weekly-business-review.md)
+- [monthly-growth-review](../workflows/monthly-growth-review.md)
+- [quarterly-traffic-review](../workflows/quarterly-traffic-review.md)
+- [cross-squad-sync](../workflows/cross-squad-sync.md)

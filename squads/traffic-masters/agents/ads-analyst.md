@@ -286,3 +286,56 @@ Collaborate with Traffic Chief (receives reports and sets priorities), Media Buy
 - [ ] All findings routed to the correct agent for action
 - [ ] Trend analysis compared to previous audit (if applicable)
 - [ ] Report formatted per squad standard template
+
+## FILE REFERENCES
+
+### Tasks (from config.yaml routing)
+- [competitor-ads-swipe-mining](../tasks/research/competitor-ads-swipe-mining.md) — competitor creative analysis
+- [keyword-research-google](../tasks/research/keyword-research-google.md) — Google keyword research
+- [landing-page-benchmark](../tasks/research/landing-page-benchmark.md) — landing page benchmarking
+- [platform-feasibility](../tasks/research/platform-feasibility.md) — channel feasibility assessment
+- [policy-risk-scan](../tasks/research/policy-risk-scan.md) — policy compliance scan
+- [account-audit-30-60-90](../tasks/reporting/account-audit-30-60-90.md) — full account audit
+- [account-structure-review](../tasks/review/account-structure-review.md) — account structure audit
+- [compliance-review](../tasks/review/compliance-review.md) — compliance quality review
+- [new-account-onboarding](../tasks/operations/onboard-new-account.md) — new account setup
+
+### Frameworks
+- [burns-sgp-30-60-90](../frameworks/burns-sgp-30-60-90.md)
+- [account-structure-meta](../frameworks/account-structure-meta.md)
+- [account-structure-google](../frameworks/account-structure-google.md)
+- [policy-risk-classification](../frameworks/policy-risk-classification.md)
+- [creative-angle-matrix](../frameworks/creative-angle-matrix.md)
+- [hook-library-system](../frameworks/hook-library-system.md)
+- [aslam-4-core-campaign-types](../frameworks/aslam-4-core-campaign-types.md)
+- [omnichannel-media-strategy](../frameworks/omnichannel-media-strategy.md)
+- [breeze-5as-readiness](../frameworks/breeze-5as-readiness.md)
+- [governance-layer](../frameworks/governance-layer.md)
+- [tracking-stack-standard](../frameworks/tracking-stack-standard.md)
+
+### Checklists
+- [account-audit-quality](../checklists/account-audit-quality.md)
+- [compliance-ad-policies-quality](../checklists/compliance-ad-policies-quality.md)
+- [cross-platform-consistency-quality](../checklists/cross-platform-consistency-quality.md)
+- [creative/angle-coverage-quality](../checklists/creative/angle-coverage-quality.md)
+- [landing-page-quality](../checklists/landing-page-quality.md)
+- [cro/landing-page-speed-quality](../checklists/cro/landing-page-speed-quality.md)
+- [tracking-plan-quality](../checklists/tracking-plan-quality.md)
+- [aslam/aslam-search-query-hygiene](../checklists/aslam/aslam-search-query-hygiene.md)
+- [burns/burns-ncac-mpi-metrics-audit](../checklists/burns/burns-ncac-mpi-metrics-audit.md)
+- [financial-reconciliation-quality](../checklists/financial-reconciliation-quality.md)
+
+### Templates (outputs generated)
+- [audit-report-template](../templates/reports/audit-report-template.md)
+- [30-60-90-growth-plan](../templates/plans/30-60-90-growth-plan.md)
+- [competitor-ads-analysis-report](../templates/reports/competitor-ads-analysis-report.md)
+- [acquisition-strategy-brief](../templates/briefs/acquisition-strategy-brief.md)
+- [audit-engagement-brief](../templates/briefs/audit-engagement-brief.md)
+
+### Registries (updated on completion)
+- [decisions-log](../data/registries/decisions-log.yaml)
+- [campaigns-registry](../data/registries/campaigns-registry.yaml)
+
+### Workflows
+- [account-audit-30-60-90](../workflows/account-audit-30-60-90.md)
+- [account-structure-review](../workflows/account-structure-review.md)
